@@ -1,4 +1,4 @@
-<html>
+`<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
@@ -8,28 +8,27 @@
             body {
                 font-size: 14pt;
                 margin: 10%;
-                margin-top:20%;
+                margin-top:16%;
                 background: url("images/earlyfallbenches.png") #DDDDDD; /* MK Carroll http://www.pbase.com/mkcarroll/image/34591839 */
                 background-repeat: no-repeat;
                 background-size: 100%;
             }
+            #left-float {
+                float: left;
+                padding-right: 3%;
+                width: 250px;
+            }
+            #right-float {
+                overflow:auto;
+            }
             main { 
-                background: #FFFFFF; /* Fallback for web browsers that doesn't support RGBa */
-                /*background: rgba(255, 255, 255, 0.9);  /*RGBa with 0.6 opacity */
+                background: #FFFFFF;
                 padding: 3%;
             }
             h1 {font-size: 36pt; line-height: 0; padding-bottom: 10px;}
             h2 {font-size: 20pt;}
             h3 {font-size: 14pt;}
             a {font-weight:550;}
-            #headshot {
-                float: left;
-                padding-right: 3%;
-                width: 250px;
-            }
-            #content {
-                overflow:auto;
-            }
             #footer {
                 text-align:center;
                 font-size: 10pt;
@@ -40,54 +39,87 @@
             .shield {
                 width: 20px;
                 height: 20px;
+                padding-left: 5px;
                 padding-right: 10px;
                 vertical-align: text-bottom;
                 border: 0px;
+            }
+            .noshield {
+                margin-left:50px;
             }
             .logo-paragraph{
                 position: relative;
             }
             .logo-paragraph img {
-                width: 70px;
+                width: 60px;
                 border: 0px;
                 margin: auto;
                 position: absolute;
                 top: 0;
                 bottom: 0;
-                left: 5;
+                left: 15;
             }
             .logo-paragraph p {
-                margin-left: 90px;
+                margin-left: 95px;
             }
         </style>
     </head>
     <body>
         <main>
-            <img id="headshot" src="images/dan-leyzberg.jpg">
-            <div id="content">
+            <div id="left-float">
+                <img id="headshot" src="images/dan-leyzberg.jpg" width="250">
+                <div id="twitter_update_list">
+                    <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+                    <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/fliqlo.json?callback=twitterCallback2&count=1"></script>
+                </div>
+            </div>
+            <div id="right-float">
                 <h1>Dan Leyzberg</h1>
-                <p><a href="http://www.princeton.edu/"><img src="images/princeton-logo.jpg" class="shield"></a>(Soon-to-be) Lecturer, <a href="http://www.cs.princeton.edu/">Department of Computer Science</a>, <a href="http://www.princeton.edu/">Princeton University</a> (<i>Starting Fall 2014</i>)</p>
+                <p><a href="http://www.cs.princeton.edu/"><img src="images/princeton-logo.jpg" class="shield"></a>Soon-to-be Lecturer, <a href="http://www.cs.princeton.edu/">Department of Computer Science</a>, <a href="http://www.princeton.edu/">Princeton University</a> (<i>Starting Fall 2014</i>)</p>
+                <!--<p><a href="mailto:dan.leyzberg@gmail.com">dan.leyzberg@gmail.com</a>, office 508A @ 35 Olden St.
+                <!--<h2>Hello world!</h2>
+                <p>Hello and welcome to my homepage! My name is Dan Leyzberg and I am a Lecturer in the <a href="http://www.cs.princeton.edu/">Department of Computer Science</a> at <a href="http://www.princeton.edu">Princeton University</a>. Go Tigers! On this page, you will learn almost everything there is to know about me, including where I went to school, what classes I've taught, who I've mentored, and what projects I'm currently working on. Should you find yourself wanting to get in touch with me, feel free to drop me a line at <a href="mailto:dan.leyzberg@gmail.com">dan.leyzberg@gmail.com</a> or find your way to my office at room 2000, 35 Olden St., Princeton, NJ 08540.</p>
+                -->
                 <h2>Education</h2>
-                <p><a href="http://www.yale.edu/"><img src="images/yale-shield.svg" class="shield"></a>Ph.D. <a href="http://cpsc.yale.edu/">Computer Science</a>, <a href="http://www.yale.edu/">Yale University</a>, 2014 <i>(in progress)</i></p>
+                <p><a href="http://www.yale.edu/"><img src="images/yale-shield.svg" class="shield"></a>Ph.D. <a href="http://cpsc.yale.edu/">Computer Science</a>, <a href="http://www.yale.edu/">Yale University</a>, 2014 <i>(in progress)</i>
+                <!--
+                <ul style="margin-left:10px;">
+                    <li>Dissertation: <a href="">Creating Personalized Robot Tutors That Adapt to Individual Students</a></li>
+                    <li>Research Group: <a href="http://scazlab.yale.edu">Social Robotics Lab</a></li>
+                    <li>Advisor: <a href="http://cs.yale.edu/~scaz">Brian Scassellati</a></li>
+                </ul>
+                -->
+                </p>
                 <p><a href="http://www.yale.edu/"><img src="images/yale-shield.svg" class="shield"></a>M.S. <a href="http://cpsc.yale.edu/">Computer Science</a>, <a href="http://www.yale.edu/">Yale University</a>, 2009</p>
                 <p><a href="http://www.rpi.edu/"><img src="images/rpi-shield.svg" class="shield"></a>B.S. <a href="http://www.cs.rpi.edu/">Computer Science</a> &amp; <a href="http://rpi.edu/dept/math/">Mathematics</a>, <a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a>, 2007</p>
                 <h2>Teaching</h2>
                 <div class="logo-paragraph">
                     <a href="http://cs.princeton.edu/"><img src="images/princeton-logo.jpg" class="logo"></a>
-                    <p class="logo-right">This is my first semester at Princeton. I am teaching ____.  <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </i></p>
+                    <p>This will be my first semester at Princeton. I will be precepting for <a href="http://www.cs.princeton.edu/~cos126">COS 126</a>. I'll also be working on some software tools for computer science education that will, hopefully, one day be used by thousands of students all over the world. If you're interested in changing the way high schoolers learn to program, contact me!</p>
                 </div>
                 <div class="logo-paragraph">
                     <a href="http://www.hamdenhall.org/"><img src="images/hh-logo.jpg" class="logo"></a>
-                    <p class="logo-right">Before coming to Princeton and while I was still working on my Ph.D., I taught high school computer science classes part-time for six years  at <a href="http://www.hamdenhall.org/">Hamden Hall Country Day School</a>, a private preparatory K-12 school in Hamden, Connecticut. These classes were often the only exposure my students had to CS, besides summer camps and independent pursuits. I taught <q>AP Computer Science A</q> -- a Java-based course that covers about 45% of the material in <a href="http://www.cs.princeton.edu/~cos126/">COS 126</a>, and I taught a course similar to <a href="http://www.cs.princeton.edu/courses/archive/fall13/cos109/">COS 109</a> called <q>Computer Science Principles</q>, which is soon to be offered as an AP test by the College Board. In addition, I also taught two summer courses of "Introduction to Social Robotics" for grades 4-8.</p>
+                    <p>Before I came to Princeton, while I was still working on my Ph.D., I taught high school computer science classes part-time for six years at <a href="http://www.hamdenhall.org/">Hamden Hall Country Day School</a>. I taught "AP Computer Science A" -- which covers about 40% of the material in <a href="http://www.cs.princeton.edu/~cos126/">COS 126</a>, and I taught a course similar to <a href="http://www.cs.princeton.edu/courses/archive/fall13/cos109/">COS 109</a> called "Computer Science Principles," which was inspired by the <a href="http://www.csprinciples.org">new AP course</a> of the same name currently in development. I also used to teach a summer "Introduction to Robotics" for grades 4-8.</p>
+                </div>
+                <h2>Memorable Mentees</h2>
+                <p>One of my favorite things to do at work is to mentor bright young students. Excuse me while I brag a bit about my students achievements here.</p>
+                <div class="logo-paragraph">
+                    <a href="http://www.hamdenhall.org/"><img src="images/jenny-liu.jpg" class="logo"></a>
+                    <p><b>Jenny Liu</b> was a junior at Amity High School when she first walked into the Yale Social Robotics Lab. I mentored her with one of my earliest projects. Her name was on the publication, she played a pivotol role in the project, and she won 9th place at the Intel Science Fair in 2011. Now she's finishing up at Harvard.</p>
+                </div>
+                <div class="logo-paragraph">
+                    <a href="http://www.hamdenhall.org/"><img src="images/peter-delong.jpg" class="logo"></a>
+                    <p><b>Peter DeLong</b> was a stand-out student in my AP Computer Science class in 2011. He and I worked on a summer project that became a very useful tool for high school students and teachers to find good practice problems for Math League competitions called <a href="http://gnhml.org/browse">GNHML</a>. So far as I know, it's still used by the whole district today! Now she's finishing up at Harvard.</p>
                 </div>
                 <h2>Research</h2>
                 <div class="logo-paragraph">
                     <a href="http://www.sigcse.org/events/symposia"><img src="images/sigcse-logo.gif"></a>
-                    <p>You may know me from from a past <a href="http://sigcse2014.sigcse.org/">SIGCSE</a> conference. <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p>
+                    <p>You may know me from from a past <a href="http://sigcse2014.sigcse.org/">SIGCSE</a> conference. Right now I'm very interested in creating tools for computer science education. I have a few projects in the works at the moment on this topic. My goal is to get thousands of students to use them, all over the world. I think the tools we use to introduce students to programming affect their perception of computer science for years to come. Making good tools would increase participating in computer science by a wider range of students.</p>
+                    <p>I'm also very interested in the public and layman perception of computer science as a discipline. We have come a long way since the 70's and 80's but there is still a lot to do.</p></p>
                 </div>
                 <div class="logo-paragraph">
                     <a href="http://scazlab.yale.edu/"><img src="images/yale-robotics-logo.png" class="logo"></a>
-                    <p>Ph.D. student at <a href="http://cpsc.yale.edu">Yale University</a>, advised by <a href="http://cs.yale.edu/~scaz">Brian Scassellati</a>. I build models of individual learning differences in order to build robot tutors that personalize their instruction to suit the particular needs of individual students. This is a difficult problem to solve, even if a content expert defines the skills that the robot is assessing and teaching in advance, because the robot must decode the many-to-many relationship between the observations it makes of the student and the internal skills those observations represent. For instance, a calculus tutor who observes a student incorrectly solve an integral equation faces the non-trivial task of assessing which skills the student may need to review. It is a non-trivial task because more than one skill can be necessary for a single step in a calculus problem and each step a student takes may reflect proficiency in one of many skills.</p>
+                    <p>In a past life, I was a robotics researcher. I got my Ph.D. (pending) from <a href="http://cpsc.yale.edu">Yale University</a>, advised by <a href="http://cs.yale.edu/~scaz">Brian Scassellati</a>. I built robot tutors that adapted to individual students' needs.  models of individual learning differences in order to build robot tutors that personalize their instruction to suit the particular needs of individual students. This is a difficult problem to solve, even if a content expert defines the skills that the robot is assessing and teaching in advance, because the robot must decode the many-to-many relationship between the observations it makes of the student and the internal skills those observations represent. For instance, a calculus tutor who observes a student incorrectly solve an integral equation faces the non-trivial task of assessing which skills the student may need to review. It is a non-trivial task because more than one skill can be necessary for a single step in a calculus problem and each step a student takes may reflect proficiency in one of many skills.</p>
                 </div>
                 <h2>Publications (<a href="dan-leyzberg-cv.pdf">CV</a>)</h2>
                 <h3>Journal Articles</h3>
@@ -138,7 +170,7 @@
                 </p>
             </div>
             <div id="footer">
-                Photo credit:<br>"Early Fall Benches"<br>Melissa K. Carroll<br><br><br>Last updated:<br>May 26th, 2014
+                Photo credit:<br>"Early Fall Benches"<br>Melissa K. Carroll<br><br><br>Last updated:<br>June 6th, 2014
             </div>
         </main>
     </body>
