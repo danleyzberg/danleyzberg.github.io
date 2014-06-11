@@ -8,7 +8,7 @@
             body {
                 font-size: 14pt;
                 margin: 10%;
-                margin-top:16%;
+                margin-top:18%;
                 background: url("images/earlyfallbenches.png") #DDDDDD; /* MK Carroll http://www.pbase.com/mkcarroll/image/34591839 */
                 background-repeat: no-repeat;
                 background-size: 100%;
@@ -16,7 +16,7 @@
             #left-float {
                 float: left;
                 padding-right: 3%;
-                width: 250px;
+                width: 300px;
             }
             #right-float {
                 overflow:auto;
@@ -62,16 +62,18 @@
             .logo-paragraph p {
                 margin-left: 95px;
             }
+            iframe {
+                font-size:14pt;
+            }
         </style>
     </head>
     <body>
         <main>
             <div id="left-float">
-                <img id="headshot" src="images/dan-leyzberg.jpg" width="250">
-                <div id="twitter_update_list">
-                    <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-                    <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/fliqlo.json?callback=twitterCallback2&count=1"></script>
-                </div>
+                <img id="headshot" src="images/dan-leyzberg.jpg" width="100%">
+                <br><br>
+                <a class="twitter-timeline" href="https://twitter.com/danleyzberg" data-widget-id="476828660188454912" data-chrome="nofooter" data-tweet-limit="3" twtr-tweet-text="font-size:14pt">Tweets by @danleyzberg</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
             <div id="right-float">
                 <h1>Dan Leyzberg</h1>
@@ -103,6 +105,10 @@
                 </div>
                 <h2>Mentoring</h2>
                 <div class="logo-paragraph">
+                    <img src="images/sam-spaulding.jpg" class="logo">
+                    <p><b>Sam Spaulding</b> joined the Social Robotics Lab as a Yale freshman in 2010 and collaborated with me on a number of projects and papers. He presented one of our papers at the prestigious Human Robot Interaction conference in 2014. He also did very well on Jeopardy, Millionaire. Sam is currently in graduate school at the MIT Media Center.</p>
+                </div>
+                <div class="logo-paragraph">
                     <img src="images/jenny-liu.jpg" class="logo">
                     <p><b>Jenny Liu</b> was a junior at Amity High School when she first walked into the Yale Social Robotics Lab. She contributed to one of my earliest projects in grad school. Her name was on the resulting publication, and she won 9th place at the Intel Science Fair in 2011! Jenny is now a Computer Science concentrator at Harvard.</p>
                 </div>
@@ -110,8 +116,10 @@
                     <img src="images/peter-delong.jpg" class="logo">
                     <p><b>Peter DeLong</b> was a stand-out student in my AP Computer Science class in 2011. He and I worked on a summer project that became a very useful tool for high school students and teachers to find good practice problems for Math League competitions called <a href="http://gnhml.org/browse">GNHML</a>. It is still in wide use by students and teachers from all over the district today! Peter is matriculating at Princeton in 2014.</p>
                 </div>
+                <p>Let me note that, in no way am I trying to take credit for my mentees' success and accomplishments. All of these students worked their butts off and achieved these things on their own merits. I provided relatively minor amounts of support and guidance. I hope they are all proud of their achievements, because I certainly am!</p>
                 <h2>Education Technology</h2>
                 <p>I think that despite being the field that enabled much of today's education technology, computer science education somehow manages not to have the best education tools available for teachers. It's my mission to make some really great web tools to help students learn programming to help teachers teach CS. Especially with the rise in computer science AP test takers, teachers are going to need all the help they can get.</p>
+                <!--
                 <h2>Research</h2>
                 <div class="logo-paragraph">
                     <a href="http://www.sigcse.org/events/symposia"><img src="images/sigcse-logo.gif"></a>
@@ -169,9 +177,12 @@
                 <p>
                     My office mailing address is: 51 Prospect St., New Haven, CT 06511.
                 </p>
+            -->
             </div>
             <div id="footer">
-                Photo credit:<br>"Early Fall Benches"<br>Melissa K. Carroll<br><br><br>Last updated:<br>June 6th, 2014
+                Photo credit: "Early Fall Benches" Melissa K. Carroll
+                <br><br>
+                Last updated: June 10th, 2014
             </div>
         </main>
     </body>
