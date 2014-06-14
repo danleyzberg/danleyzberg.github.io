@@ -1,4 +1,4 @@
-`<html>
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
@@ -67,56 +67,59 @@
             }
             a:hover {
                 color: black;
-                border-bottom: 1px solid orange;
-            }
-            a:hover .shield {
-                border:none;
+                border-bottom: 3px solid orange;
             }
             .welcome-sign {
                 width:220px;
                 position:absolute;
-                top:12%;
+                top:10%;
                 left:50%;
                 margin-left: -110px;
-                padding: 5px 5px;
+                padding: 5px 10px;
+                padding-right:15px;
                 background: rgb(255,255,255);
-                background: rgba(255,255,255,0.8);
+                background: rgba(255,255,255,0.7);
+            }
+            .welcome-arrow {
+                height: 50px;
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                margin-top: 12px;
+                margin-left: 190px;
+                opacity: 0.7;
+                filter: alpha(opacity=70);
             }
         </style>
     </head>
     <body>
-        <a href="http://www.cs.princeton.edu">
-        <table class="welcome-sign"><tr>
-            <td>
-                <img src="images/princeton-logo.png" height="50" style="padding-right:5px;">
-            </td>
-            <td>
-                <div style="font-size:24pt;font-weight:900;">Princeton</div>
-                <div style="font-size:13.5pt;">Computer Science</div>
-            </td>
-        </tr></table>
-        </a>
+        <table class="welcome-sign">
+            <tr>
+                <td><img src="images/princeton-logo.png" height="50" style="padding-right:5px;"></td>
+                <td>
+                    <div style="font-size:24pt;font-weight:900;">Princeton</div>
+                    <div style="font-size:13.5pt;">Computer Science</div>
+                </td>
+            </tr>
+        </table>
+        <img src="images/arrow.png" class="welcome-arrow">
         <main>
             <div id="left-float">
                 <img id="headshot" src="images/dan-leyzberg.jpg" width="100%">
                 <br>
                 <p>Office #TBD<br>35 Olden St.<br>Princeton, NJ 08540</p>
                 <p><a href="mailto:dan.leyzberg@gmail.com">dan.leyzberg@gmail.com</a></p>
-                <p><a href="https://twitter.com/danleyzberg"><img src="images/twitter.png" class="shield">@danleyzberg</a></p>
-                <!--
-                <a class="twitter-timeline" href="https://twitter.com/danleyzberg" data-widget-id="476828660188454912" data-chrome="nofooter noborders" data-tweet-limit="6">Tweets by @danleyzberg</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                -->
+                <p><img src="images/twitter.png" class="shield"><a href="https://twitter.com/danleyzberg">@danleyzberg</a></p>
             </div>
             <div id="right-float">
                 <h1>Dan Leyzberg</h1>
-                <p><a href="http://www.cs.princeton.edu/"><img src="images/princeton-logo.png" class="shield"></a>Soon-to-be Lecturer, <a href="http://www.cs.princeton.edu/">Department of Computer Science</a>, <a href="http://www.princeton.edu/" class="princeton">Princeton University</a> (<i>Starting Fall 2014</i>)</p>
+                <p><img src="images/princeton-logo.png" class="shield">Soon-to-be Lecturer, <a href="http://www.cs.princeton.edu/">Department of Computer Science</a>, <a href="http://www.princeton.edu/" class="princeton">Princeton University</a> (<i>Starting Fall 2014</i>)</p>
                 <!--<p><a href="mailto:dan.leyzberg@gmail.com">dan.leyzberg@gmail.com</a>, office 508A @ 35 Olden St.
                 <!--<h2>Hello world!</h2>
                 <p>Hello and welcome to my homepage! My name is Dan Leyzberg and I am a Lecturer in the <a href="http://www.cs.princeton.edu/">Department of Computer Science</a> at <a href="http://www.princeton.edu">Princeton University</a>. Go Tigers! On this page, you will learn almost everything there is to know about me, including where I went to school, what classes I've taught, who I've mentored, and what projects I'm currently working on. Should you find yourself wanting to get in touch with me, feel free to drop me a line at <a href="mailto:dan.leyzberg@gmail.com">dan.leyzberg@gmail.com</a> or find your way to my office at room 2000, 35 Olden St., Princeton, NJ 08540.</p>
                 -->
                 <h2>Education</h2>
-                <p><a href="http://www.yale.edu/"><img src="images/yale-shield.svg" class="shield"></a>Ph.D. <a href="http://cpsc.yale.edu/" class="yale">Computer Science</a>, <a href="http://www.yale.edu/" class="yale">Yale University</a>, 2014 <i>(in progress)</i>
+                <p><img src="images/yale-shield.svg" class="shield">Ph.D. <a href="http://cpsc.yale.edu/" class="yale">Computer Science</a>, <a href="http://www.yale.edu/" class="yale">Yale University</a>, 2014 <i>(in progress)</i>
                 <!--
                 <ul style="margin-left:10px;">
                     <li>Dissertation: <a href="">Creating Personalized Robot Tutors That Adapt to Individual Students</a></li>
