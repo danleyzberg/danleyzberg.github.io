@@ -25,7 +25,7 @@
             main { 
                 background: #FFFFFF;
                 padding:3%;
-                border: 2px #555555 solid;
+                border: 4px #555555 solid;
             }
             h1 {font-size: 36pt; line-height: 0; padding-bottom: 10px;}
             h2 {font-size: 20pt;}
@@ -71,35 +71,37 @@
                 border-bottom: 2px solid orange;
             }
             .welcome-sign {
-                width:200px;
                 position:absolute;
                 top: 9%;
-                right: 50%;
-                margin-right: -130px;
-                padding: 5px;
+                right: 30%;
+                padding: 3px;
+                padding-right: 4px;
                 background: rgb(255,255,255);
                 background: rgba(255,255,255,0.8);
-                border: 2px #333333 solid;
+                border: 2px #555555 solid;
+            }
+            .welcome-sign img {
+                padding-right:4px;
             }
             .welcome-arrow {
-                height: 40px;
+                height: 30px;
                 position: absolute;
                 top: 9%;
-                right: 50%;
-                margin-top: 16px;
-                margin-right: -240px;
+                right: 30%;
+                margin-top: 14px;
+                margin-right: -80px;
                 opacity: 0.8;
-                filter: alpha(opacity=85);
+                filter: alpha(opacity=80);
             }
         </style>
     </head>
     <body>
         <table class="welcome-sign">
             <tr>
-                <td><img src="images/princeton-shield.png" height="45" style="padding-right:3px;"></td>
+                <td><img src="images/princeton-shield.png" height="35"></td>
                 <td>
-                    <div style="font-size:22pt;font-weight:900;">Princeton</div>
-                    <div style="font-size:12pt;">Computer Science</div>
+                    <div style="font-size:17pt;font-weight:900;">Princeton</div>
+                    <div style="font-size:10pt;">Computer Science</div>
                 </td>
             </tr>
         </table>
