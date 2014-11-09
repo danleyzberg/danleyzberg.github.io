@@ -7,21 +7,24 @@
         <style type="text/css" media="screen">
             body {
                 font-size: 14pt;
-                margin: 5% 10%;
+                margin: 70px 10%;
                 background: white;
-                line-height: 1.25;
+                line-height: 1.4;
             }
             #left-float {
                 float: left;
-                padding-right: 40px;
-                width: 160px;
+                padding-right: 50px;
+                width: 175px;
                 text-align: center;
+            }
+            #left-float img {
+              padding-bottom: 15px;
             }
             #right-float {
                 overflow: auto;
             }
-            h1 {font-size: 32pt; line-height: 0; padding-bottom: 20px;}
-            h2 {font-size: 20pt; padding-top: 10px;}
+            h1 {font-size: 32pt; line-height: 0; padding-bottom: 10px;}
+            h2 {font-size: 20pt; padding-top: 20px;}
             h3 {font-size: 14pt;}
             #footer {
                 text-align:center;
@@ -109,47 +112,53 @@
         -->
         <main>
             <div id="left-float">
-                <img id="headshot" src="images/dan-leyzberg.jpg" width="100%" style="padding-bottom:20px;">
+                <img id="headshot" src="images/dan-leyzberg.jpg" width="100%">
+                <p><i>Lecturer in<br>Computer Science</i><br>Princeton University</p>
+                <p>Office #208</p>
+                <p>
+                  Computer Science Building<br>
+                  35 Olden St.<br>
+                  Princeton, NJ 08544
+                </p>
                 <p><a href="mailto:dan.leyzberg@princeton.edu">dan.leyzberg<br>@princeton.edu</a></p>
-                <p>Office #208<br>Computer Science Building</p>
-                <p>35 Olden St.<br>Princeton, NJ 08544</p>
+                <p><a href="http://www.danleyzberg.com/">www.danleyzberg.com</a></p>
                 <!--
                 <p><a href="https://twitter.com/danleyzberg">@danleyzberg</a></p>
                 -->
             </div>
             <div id="right-float">
-                <h1>Dan Leyzberg</h1>
-                <p><img src="images/princeton-shield.png" class="shield">Lecturer, <a href="http://www.cs.princeton.edu/">Department of Computer Science</a>, <a href="http://www.princeton.edu/" class="princeton">Princeton University</a></p>
-                <h2>Hello world!</h2>
-                <p>Hello and welcome to my homepage. My name is Dan Leyzberg and I am a <a href="http://www.cs.princeton.edu/people/faculty">Lecturer in Computer Science</a> at the lovely <a href="http://www.princeton.edu/">Princeton University</a>. Go Tigers!</p>
-                <p>On this page, you will learn almost everything there is to know about me, including where I went to school, what classes I'm teaching and what I've taught before, who I've mentored, and what projects I'm currently working on.</p>
-                <p>Should you find yourself wanting to get in touch, please feel free to drop me a line at <a href="mailto:dan.leyzberg@princeton.com">dan.leyzberg@princeton.com</a> or find your way to my office in room 208 in the Computer Science Building at 35 Olden Street in Princeton, NJ.</p>
-                <h2>Education</h2>
-                <p><img src="images/yale-shield.svg" class="shield">Ph.D. <i>(Expected)</i> <a href="http://cpsc.yale.edu/" class="yale">Computer Science</a>, <a href="http://www.yale.edu/" class="yale">Yale University</a>, 2014 <i>(Defended August 2014)</i>
-                <!--
-                <ul style="margin-left:10px;">
-                    <li>Dissertation: <a href="">Creating Personalized Robot Tutors That Adapt to Individual Students</a></li>
-                    <li>Research Group: <a href="http://scazlab.yale.edu">Social Robotics Lab</a></li>
-                    <li>Advisor: <a href="http://cs.yale.edu/~scaz">Brian Scassellati</a></li>
-                </ul>
-                -->
-                </p>
-                <p><img src="images/yale-shield.svg" class="shield">M.S. <a href="http://cpsc.yale.edu/">Computer Science</a>, <a href="http://www.yale.edu/">Yale University</a>, 2009</p>
-                <p><img src="images/rpi-shield.svg" class="shield">B.S. <a href="http://www.cs.rpi.edu/">Computer Science</a> &amp; <a href="http://rpi.edu/dept/math/">Mathematics</a>, <a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a>, 2007 (Where I graduated in 3 years with a 3.95 GPA.)</p>
-                <h2>Teaching</h2>
-                <div class="logo-paragraph">
-                    <img src="images/princeton-shield.png" class="logo">
-                    <p>Hello Princetonians! This is my first semester here at Princeton and I am very excited to be precepting for <a href="http://www.cs.princeton.edu/~cos126" class="princeton">COS 126</a>. In addition to precepting, I'm also helping Sandra Batista, a fellow COS Lecturer, advise junior and senior COS majors in their independent work as part of Facebook's <a href="https://www.facebook.com/OpenAcademyProgram">Open Academy</a> program, in which students are matched with open-source software development teams to get real-world software dev. experience by contributing to their codebases. In addition to those two things, I'm also very interested in developing software to help students and teachers better communicate about code. If you're interested in any of those three things, come chat!</p>
-                </div>
-                <div class="logo-paragraph">
-                    <img src="images/hh-logo.jpg" class="logo">
-                    <p>Before coming to Princeton, back while I was working on my Ph.D., I taught high school computer science. For six years, I taught two of my own CS courses, at the lovely <a href="http://www.hamdenhall.org/" class="hamdenhall">Hamden Hall Country Day School</a>, a fancy private school in Connecticut. I taught "AP Computer Science A" (<a href="ap-syllabus.pdf">my old syllabus</a>) -- which covers about a third of the material in Princeton's <a href="http://www.cs.princeton.edu/~cos126/">COS 126</a>, as well as an introductory course called "Computer Science Principles," based on the <a href="http://www.csprinciples.org">new AP course</a> in development by the College Board. For two summers, I also taught an "Introduction to Robotics" class for grades 4-8 at <a href="http://www.hamdenhall.org/summeracademy">Hamden Hall's Summer Academy</a>.</p>
-                </div>
-                <h2>Mentoring</h2>
-                <p>I take mentoring rather seriously, which is to say I'm very hands-on and involved. Below are the best and brightest students I've had the pleasure of working with. If you're a Princeton COS major, I would be happy to advise your IW.</p>
-                <div class="logo-paragraph">
-                    <img src="images/sam-spaulding.jpg" class="logo">
-                    <p><b>Sam Spaulding</b> joined the Yale Social Robotics Lab as a freshman in 2010 and collaborated with me on a number of projects and papers. He presented one of our papers at the prestigious Human Robot Interaction conference in 2014. As an aside, he played Jeopardy and "Who Wants to be a Millionaire?" on TV and did very well for himself. Sam is currently <a href="http://web.media.mit.edu/~samuelsp/">working on his Ph.D.</a> at MIT.</p>
+              <img src="princeton-university-logo.jpg" width=200 style="float:right;padding:10px;">
+              <h1>Dan Leyzberg</h1>
+              <p>System.out.println("Hello world!");</p>
+              <p>Welcome to my homepage! My name is Dan Leyzberg and I am a member of the faculty in the <a href="http://www.cs.princeton.edu/">Computer Science Department</a> at the fabulous <a href="http://www.princeton.edu">Princeton University</a>. I am a <i>Lecturer</i>, which means I get paid to do what I love, teach computer science to some of the brightest young people on the planet!</p>
+              <p>On this page, you can learn almost everything there is to know about me, including where I went to school, what classes I'm teaching and what I've taught in the past, who I've mentored, and what projects I'm currently spending my time on.</p>
+              <p>Should you find yourself wanting to get in touch, please feel free to drop me a line at <a href="mailto:dan.leyzberg@princeton.com">dan.leyzberg@princeton.com</a> or find your way to my office in room 208 in the Computer Science Building at 35 Olden Street in Princeton, NJ.</p>
+              <h2>Education</h2>
+              <p><img src="images/yale-shield.svg" class="shield">Ph.D. <i>(Expected)</i> <a href="http://cpsc.yale.edu/" class="yale">Computer Science</a>, <a href="http://www.yale.edu/" class="yale">Yale University</a>, 2014 <i>(Defended August 2014)</i>
+              <!--
+              <ul style="margin-left:10px;">
+                  <li>Dissertation: <a href="">Creating Personalized Robot Tutors That Adapt to Individual Students</a></li>
+                  <li>Research Group: <a href="http://scazlab.yale.edu">Social Robotics Lab</a></li>
+                  <li>Advisor: <a href="http://cs.yale.edu/~scaz">Brian Scassellati</a></li>
+              </ul>
+              -->
+              </p>
+              <p><img src="images/yale-shield.svg" class="shield">M.S. <a href="http://cpsc.yale.edu/">Computer Science</a>, <a href="http://www.yale.edu/">Yale University</a>, 2009</p>
+              <p><img src="images/rpi-shield.svg" class="shield">B.S. <a href="http://www.cs.rpi.edu/">Computer Science</a> &amp; <a href="http://rpi.edu/dept/math/">Mathematics</a>, <a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a>, 2007 (Where I graduated in 3 years with a 3.95 GPA.)</p>
+              <h2>Teaching</h2>
+              <div class="logo-paragraph">
+                  <img src="images/princeton-shield.png" class="logo">
+                  <p>Hello Princetonians! This is my first semester here at Princeton and I am very excited to be precepting for <a href="http://www.cs.princeton.edu/~cos126" class="princeton">COS 126</a>. In addition to precepting, I'm also helping Sandra Batista, a fellow COS Lecturer, advise junior and senior COS majors in their independent work as part of Facebook's <a href="https://www.facebook.com/OpenAcademyProgram">Open Academy</a> program, in which students are matched with open-source software development teams to get real-world software dev. experience by contributing to their codebases. In addition to those two things, I'm also very interested in developing software to help students and teachers better communicate about code. If you're interested in any of those three things, come chat!</p>
+              </div>
+              <div class="logo-paragraph">
+                  <img src="images/hh-logo.jpg" class="logo">
+                  <p>Before coming to Princeton, back while I was working on my Ph.D., I taught high school computer science. For six years, I taught two of my own CS courses, at the lovely <a href="http://www.hamdenhall.org/" class="hamdenhall">Hamden Hall Country Day School</a>, a fancy private school in Connecticut. I taught "AP Computer Science A" (<a href="ap-syllabus.pdf">my old syllabus</a>) -- which covers about a third of the material in Princeton's <a href="http://www.cs.princeton.edu/~cos126/">COS 126</a>, as well as an introductory course called "Computer Science Principles," based on the <a href="http://www.csprinciples.org">new AP course</a> in development by the College Board. For two summers, I also taught an "Introduction to Robotics" class for grades 4-8 at <a href="http://www.hamdenhall.org/summeracademy">Hamden Hall's Summer Academy</a>.</p>
+              </div>
+              <h2>Mentoring</h2>
+              <p>I take mentoring rather seriously, which is to say I'm very hands-on and involved. Below are the best and brightest students I've had the pleasure of working with. If you're a Princeton COS major, I would be happy to advise your IW.</p>
+              <div class="logo-paragraph">
+                  <img src="images/sam-spaulding.jpg" class="logo">
+                  <p><b>Sam Spaulding</b> joined the Yale Social Robotics Lab as a freshman in 2010 and collaborated with me on a number of projects and papers. He presented one of our papers at the prestigious Human Robot Interaction conference in 2014. As an aside, he played Jeopardy and "Who Wants to be a Millionaire?" on TV and did very well for himself. Sam is currently <a href="http://web.media.mit.edu/~samuelsp/">working on his Ph.D.</a> at MIT.</p>
                 </div>
                 <div class="logo-paragraph">
                     <img src="images/jenny-liu.jpg" class="logo">
