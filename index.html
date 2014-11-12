@@ -7,24 +7,28 @@
         <style type="text/css" media="screen">
             body {
                 font-size: 14pt;
-                margin: 70px 10%;
-                background: white;
-                line-height: 1.4;
+                margin: 10%;
+                margin-top: 18%;
+                background: url("images/earlyfallbenches.png") #DDDDDD; /* MK Carroll http://www.pbase.com/mkcarroll/image/34591839 */
+                background-repeat: no-repeat;
+                background-size: 100%;
             }
             #left-float {
                 float: left;
-                padding-right: 50px;
-                width: 175px;
+                padding-right: 3%;
+                width: 240px;
                 text-align: center;
-            }
-            #left-float img {
-              padding-bottom: 15px;
             }
             #right-float {
                 overflow: auto;
             }
-            h1 {font-size: 32pt; line-height: 0; padding-bottom: 10px;}
-            h2 {font-size: 20pt; padding-top: 20px;}
+            main { 
+                background: #FFFFFF;
+                padding: 3%;
+                border: 6px #CCCCCC solid;
+            }
+            h1 {font-size: 32pt; line-height: 0; padding-bottom: 20px;}
+            h2 {font-size: 20pt; padding-top: 10px;}
             h3 {font-size: 14pt;}
             #footer {
                 text-align:center;
@@ -32,10 +36,6 @@
                 font-style: italic;
                 padding-top: 30px;
                 padding-bottom: 30px;
-            }
-            ul li {
-              margin-bottom:20pt;
-
             }
             .shield {
                 width: 20px;
@@ -58,7 +58,7 @@
                 left: 15;
             }
             .logo-paragraph p {
-                margin-left: 100px;
+                margin-left: 95px;
             }
             a {
                 color: #0000BB;
@@ -67,7 +67,7 @@
                 border:0px;
             }
             a:hover {
-                text-decoration:underline;
+                color: black;
             }
             .welcome-sign {
                 position:absolute;
@@ -96,8 +96,7 @@
         </style>
     </head>
     <body>
-        <!--
-        <a href="http://www.cs.princeton.edu/">
+        <!--<a href="http://www.cs.princeton.edu/">
         <table class="welcome-sign">
             <tr>
                 <td><img src="images/princeton-shield.png" height="35"></td>
@@ -108,84 +107,70 @@
             </tr>
         </table>
         <img src="images/arrow.png" class="welcome-arrow" onLoad="do {this.style.margin-right">
-        </a>
-        -->
+        </a>-->
         <main>
             <div id="left-float">
-                <img id="headshot" src="images/dan-leyzberg.jpg" width="100%">
-                <p><i>Lecturer in<br>Computer Science</i><br>Princeton University</p>
-                <p>Office #208</p>
-                <p>
-                  Computer Science Building<br>
-                  35 Olden St.<br>
-                  Princeton, NJ 08544
-                </p>
+                <img id="headshot" src="images/dan-leyzberg.jpg" width="100%" style="padding-bottom:20px;">
+                <br>
                 <p><a href="mailto:dan.leyzberg@princeton.edu">dan.leyzberg<br>@princeton.edu</a></p>
-                <p><a href="http://www.danleyzberg.com/">www.danleyzberg.com</a></p>
-                <!--
+                <p>Office 208<br>35 Olden St.</p>
                 <p><a href="https://twitter.com/danleyzberg">@danleyzberg</a></p>
-                -->
             </div>
             <div id="right-float">
-              <img src="princeton-university-logo.jpg" width=200 style="float:right;padding:10px;">
-              <h1>Dan Leyzberg</h1>
-              <p>System.out.println("Hello world!");</p>
-              <p>Welcome to my homepage! My name is Dan Leyzberg and I am a member of the faculty in the <a href="http://www.cs.princeton.edu/">Computer Science Department</a> at the fabulous <a href="http://www.princeton.edu">Princeton University</a>. I am a <i>Lecturer</i>, which means I get paid to do what I love, teach computer science to some of the brightest young people on the planet!</p>
-              <p>On this page, you can learn almost everything there is to know about me, including where I went to school, what classes I'm teaching and what I've taught in the past, who I've mentored, and what projects I'm currently spending my time on.</p>
-              <p>Should you find yourself wanting to get in touch, please feel free to drop me a line at <a href="mailto:dan.leyzberg@princeton.com">dan.leyzberg@princeton.com</a> or find your way to my office in room 208 in the Computer Science Building at 35 Olden Street in Princeton, NJ.</p>
-              <h2>Education</h2>
-              <p><img src="images/yale-shield.svg" class="shield">Ph.D. <i>(Expected)</i> <a href="http://cpsc.yale.edu/" class="yale">Computer Science</a>, <a href="http://www.yale.edu/" class="yale">Yale University</a>, 2014 <i>(Defended August 2014)</i>
-              <!--
-              <ul style="margin-left:10px;">
-                  <li>Dissertation: <a href="">Creating Personalized Robot Tutors That Adapt to Individual Students</a></li>
-                  <li>Research Group: <a href="http://scazlab.yale.edu">Social Robotics Lab</a></li>
-                  <li>Advisor: <a href="http://cs.yale.edu/~scaz">Brian Scassellati</a></li>
-              </ul>
-              -->
-              </p>
-              <p><img src="images/yale-shield.svg" class="shield">M.S. <a href="http://cpsc.yale.edu/">Computer Science</a>, <a href="http://www.yale.edu/">Yale University</a>, 2009</p>
-              <p><img src="images/rpi-shield.svg" class="shield">B.S. <a href="http://www.cs.rpi.edu/">Computer Science</a> &amp; <a href="http://rpi.edu/dept/math/">Mathematics</a>, <a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a>, 2007 (Where I graduated in 3 years with a 3.95 GPA.)</p>
-              <h2>Teaching</h2>
-              <div class="logo-paragraph">
-                  <img src="images/princeton-shield.png" class="logo">
-                  <p>Hello Princetonians! This is my first semester here at Princeton and I am very excited to be precepting for <a href="http://www.cs.princeton.edu/~cos126" class="princeton">COS 126</a>. In addition to precepting, I'm also helping Sandra Batista, a fellow COS Lecturer, advise junior and senior COS majors in their independent work as part of Facebook's <a href="https://www.facebook.com/OpenAcademyProgram">Open Academy</a> program, in which students are matched with open-source software development teams to get real-world software dev. experience by contributing to their codebases. In addition to those two things, I'm also very interested in developing software to help students and teachers better communicate about code. If you're interested in any of those three things, come chat!</p>
-              </div>
-              <div class="logo-paragraph">
-                  <img src="images/hh-logo.jpg" class="logo">
-                  <p>Before coming to Princeton, back while I was working on my Ph.D., I taught high school computer science. For six years, I taught two of my own CS courses, at the lovely <a href="http://www.hamdenhall.org/" class="hamdenhall">Hamden Hall Country Day School</a>, a fancy private school in Connecticut. I taught "AP Computer Science A" (<a href="ap-syllabus.pdf">my old syllabus</a>) -- which covers about a third of the material in Princeton's <a href="http://www.cs.princeton.edu/~cos126/">COS 126</a>, as well as an introductory course called "Computer Science Principles," based on the <a href="http://www.csprinciples.org">new AP course</a> in development by the College Board. For two summers, I also taught an "Introduction to Robotics" class for grades 4-8 at <a href="http://www.hamdenhall.org/summeracademy">Hamden Hall's Summer Academy</a>.</p>
-              </div>
-              <h2>Mentoring</h2>
-              <p>I take mentoring rather seriously, which is to say I'm very hands-on and involved. Below are the best and brightest students I've had the pleasure of working with. If you're a Princeton COS major, I would be happy to advise your IW.</p>
-              <div class="logo-paragraph">
-                  <img src="images/sam-spaulding.jpg" class="logo">
-                  <p><b>Sam Spaulding</b> joined the Yale Social Robotics Lab as a freshman in 2010 and collaborated with me on a number of projects and papers. He presented one of our papers at the prestigious Human Robot Interaction conference in 2014. As an aside, he played Jeopardy and "Who Wants to be a Millionaire?" on TV and did very well for himself. Sam is currently <a href="http://web.media.mit.edu/~samuelsp/">working on his Ph.D.</a> at MIT.</p>
+                <h1>Dan Leyzberg</h1>
+                <p><img src="images/princeton-shield.png" class="shield">Lecturer, <a href="http://www.cs.princeton.edu/">Department of Computer Science</a>, <a href="http://www.princeton.edu/" class="princeton">Princeton University</a></p>
+                <!--<p><a href="mailto:dan.leyzberg@gmail.com">dan.leyzberg@gmail.com</a>, office 508A @ 35 Olden St.
+                <!--<h2>Hello world!</h2>
+                <p>Hello and welcome to my homepage! My name is Dan Leyzberg and I am a Lecturer in the <a href="http://www.cs.princeton.edu/">Department of Computer Science</a> at <a href="http://www.princeton.edu">Princeton University</a>. Go Tigers! On this page, you will learn almost everything there is to know about me, including where I went to school, what classes I've taught, who I've mentored, and what projects I'm currently working on. Should you find yourself wanting to get in touch with me, feel free to drop me a line at <a href="mailto:dan.leyzberg@gmail.com">dan.leyzberg@gmail.com</a> or find your way to my office at room 2000, 35 Olden St., Princeton, NJ 08540.</p>
+                -->
+                <h2>Education</h2>
+                <p><img src="images/yale-shield.svg" class="shield">Ph.D. <i>(Expected)</i> <a href="http://cpsc.yale.edu/" class="yale">Computer Science</a>, <a href="http://www.yale.edu/" class="yale">Yale University</a>, 2014 <i>(Defended August 2014)</i>
+                <!--
+                <ul style="margin-left:10px;">
+                    <li>Dissertation: <a href="">Creating Personalized Robot Tutors That Adapt to Individual Students</a></li>
+                    <li>Research Group: <a href="http://scazlab.yale.edu">Social Robotics Lab</a></li>
+                    <li>Advisor: <a href="http://cs.yale.edu/~scaz">Brian Scassellati</a></li>
+                </ul>
+                -->
+                </p>
+                <p><img src="images/yale-shield.svg" class="shield">M.S. <a href="http://cpsc.yale.edu/">Computer Science</a>, <a href="http://www.yale.edu/">Yale University</a>, 2009</p>
+                <p><img src="images/rpi-shield.svg" class="shield">B.S. <a href="http://www.cs.rpi.edu/">Computer Science</a> &amp; <a href="http://rpi.edu/dept/math/">Mathematics</a>, <a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a>, 2007</p>
+                <h2>Teaching</h2>
+                <div class="logo-paragraph">
+                    <img src="images/princeton-shield.png" class="logo">
+                    <p>Hello Princetonians! This is my first semester here at Princeton and I am very excited to be precepting for <a href="http://www.cs.princeton.edu/~cos126" class="princeton">COS 126</a>. In addition to precepting I am also working on software tools for high school computer science teachers that will, hopefully, one day be used by thousands of students learning computer science all over the world. If you're interested in changing the way CS is taught in high school, get in touch!</p>
+                </div>
+                <div class="logo-paragraph">
+                    <img src="images/hh-logo.jpg" class="logo">
+                    <p>Before coming to Princeton, while I was in grad school at Yale, I taught high school computer science classes two days a week for six years at <a href="http://www.hamdenhall.org/" class="hamdenhall">Hamden Hall Country Day School</a>. I taught "AP Computer Science A" (<a href="ap-syllabus.pdf">my old syllabus</a>) -- which covered about the first third of the material in Princeton's <a href="http://www.cs.princeton.edu/~cos126/">COS 126</a>. I also taught an introductory course called "Computer Science Principles," based on the <a href="http://www.csprinciples.org">new AP course</a> in development at the College Board. Two summers, I also taught an "Introduction to Robotics" class for grades 4-8.</p>
+                </div>
+                <h2>Mentoring</h2>
+                <div class="logo-paragraph">
+                    <img src="images/sam-spaulding.jpg" class="logo">
+                    <p><b>Sam Spaulding</b> joined the Social Robotics Lab as a Yale freshman in 2010 and collaborated with me on a number of projects and papers. He presented one of our papers at the prestigious Human Robot Interaction conference in 2014. He also did very well on Jeopardy, Millionaire. Sam is currently in graduate school at the MIT Media Center.</p>
                 </div>
                 <div class="logo-paragraph">
                     <img src="images/jenny-liu.jpg" class="logo">
-                    <p><b>Jenny Liu</b> was a junior at Amity High School when she first came to the Yale Social Robotics Lab. She contributed to one of my earliest projects in grad school. She was a coauthor on the resulting publication, and she won 9th place nationally at the <a href="https://www.societyforscience.org/press-release-intel-sts-2011">2011 Intel Science Fair</a> presenting her work! Jenny is now a Computer Science concentrator at Harvard.</p>
+                    <p><b>Jenny Liu</b> was a junior at Amity High School when she first walked into the Yale Social Robotics Lab. She contributed to one of my earliest projects in grad school. Her name was on the resulting publication, and she won 9th place at the <a href="https://www.societyforscience.org/press-release-intel-sts-2011">2011 Intel Science Fair</a>! Jenny is now a Computer Science concentrator at Harvard.</p>
                 </div>
                 <div class="logo-paragraph">
                     <img src="images/peter-delong.jpg" class="logo">
-                    <p><b>Peter DeLong</b> was a stand-out student in my AP Computer Science class in 2011. He and I worked on a summer project that became a very useful tool for high school students and teachers to find good practice problems for Math League competitions called <a href="http://gnhml.org/browse" class="hamdenhall">GNHML</a>. It is still in wide use by students and teachers from all over the district today! Peter matriculated at Princeton in 2014.</p>
+                    <p><b>Peter DeLong</b> was a stand-out student in my AP Computer Science class in 2011. He and I worked on a summer project that became a very useful tool for high school students and teachers to find good practice problems for Math League competitions called <a href="http://gnhml.org/browse" class="hamdenhall">GNHML</a>. It is still in wide use by students and teachers from all over the district today! Peter is matriculating at Princeton in 2014.</p>
                 </div>
-                <h2>Educational Software</h2>
-                <div class="logo-paragraph">
-                    <img src="images/java-drills.png" class="logo">
-                    <p>I am particularly interested in building tools for teachers and students to better communicate about code. I am going to be maintaining internal Princeton tools used in <a href="http://cs.princeton.edu/~cos126">COS 126</a> like the Java Visualizer built by <a href="http://daveagp.wordpress.com/">Dave Pritchart</a>. Then, I'd like to build more generalizable versions of this software and other tools so other teachers and classes can use them. I'm especially interested in targeting high school AP Computer Science classes, because I think there still aren't enough good web tools for teachers in that space.</p>
-                </div>
-                <h2>Research</h2>
+                <h2>Software</h2>
+                <p>I am excited to get the chance to build some tools for teachers and students to improve computer science education. My first task is to improve our internal tools at Princeton, like those used in COS126, WebSheets and the Java Visualizer. Then, I'd like to allow the public to use them, and to build a teacher access point that allows high school teachers to effectively communicate with their students about code through the site.</p>
                 <!--
+                <h2>Research</h2>
                 <div class="logo-paragraph">
                     <a href="http://www.sigcse.org/events/symposia"><img src="images/sigcse-logo.gif"></a>
                     <p>You may know me from from a past <a href="http://sigcse2014.sigcse.org/">SIGCSE</a> conference. Right now I'm very interested in creating tools for computer science education. I have a few projects in the works at the moment on this topic. My goal is to get thousands of students to use them, all over the world. I think the tools we use to introduce students to programming affect their perception of computer science for years to come. Making good tools would increase participating in computer science by a wider range of students.</p>
                     <p>I'm also very interested in the public and layman perception of computer science as a discipline. We have come a long way since the 70's and 80's but there is still a lot to do.</p></p>
                 </div>
-                -->
                 <div class="logo-paragraph">
                     <a href="http://scazlab.yale.edu/"><img src="images/yale-robotics-logo.png" class="logo"></a>
-                    <p>I did robotics research in grad school. Or, more specifically, Human-Robot Interaction (HRI) research. I got my Ph.D. (pending) from <a href="http://cpsc.yale.edu">Yale University</a>, advised by <a href="http://cs.yale.edu/~scaz">Dr. Brian Scassellati</a>. I built robot tutors that adapted to individual students' needs by building models of individual learning differences upon which robot tutors could personalize their instruction. I'm still happy to advise students in this area, or more broadly in Human-Computer Interaction (HCI). If you're interested in this work, please let me know.</p>
+                    <p>In a past life, I was a robotics researcher. I got my Ph.D. (pending) from <a href="http://cpsc.yale.edu">Yale University</a>, advised by <a href="http://cs.yale.edu/~scaz">Brian Scassellati</a>. I built robot tutors that adapted to individual students' needs.  models of individual learning differences in order to build robot tutors that personalize their instruction to suit the particular needs of individual students. This is a difficult problem to solve, even if a content expert defines the skills that the robot is assessing and teaching in advance, because the robot must decode the many-to-many relationship between the observations it makes of the student and the internal skills those observations represent. For instance, a calculus tutor who observes a student incorrectly solve an integral equation faces the non-trivial task of assessing which skills the student may need to review. It is a non-trivial task because more than one skill can be necessary for a single step in a calculus problem and each step a student takes may reflect proficiency in one of many skills.</p>
                 </div>
-                <h2>Publications<!-- (<a href="dan-leyzberg-cv.pdf">CV</a>)--></h2>
+                <h2>Publications (<a href="dan-leyzberg-cv.pdf">CV</a>)</h2>
                 <h3>Journal Articles</h3>
                 <ul>
                     <li>
@@ -225,7 +210,6 @@
                         <em>Proceeding of the 39th SIGCSE Technical Symposium on Computer Science Education</em><br \="">
                     </li>
                 </ul>
-                <!--
                 <h2>Contact Information</h2>
                 <p>
                     The best way to reach me is via email at: <a href="mailto:dan.leyzberg@yale.edu">dan.leyzberg@yale.edu</a>.
@@ -233,24 +217,23 @@
                 <p>
                     My office mailing address is: 51 Prospect St., New Haven, CT 06511.
                 </p>
-                -->
+            -->
             </div>
             <div id="footer">
-              <!--
-              Photo credit: "Early Fall Benches" Melissa K. Carroll
-              <br><br>
-              -->
-              Last updated: October 2014
+                Photo credit: "Early Fall Benches" Melissa K. Carroll
+                <br><br>
+                Last updated: August 2014
             </div>
         </main>
     </body>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-XXXXXX-XX', 'example.com');
-ga('require', 'displayfeatures');
-ga('send', 'pageview');
-</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51956475-1', 'danleyzberg.com');
+      ga('send', 'pageview');
+    </script>
 </html>
