@@ -2,88 +2,116 @@
 
 <head>
 <title>COS 126: Syllabus</title>
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="cos126-site.css">
-<script src="javascript/classie.js"></script>
-<script src="javascript/smaller-header-on-scroll.js"></script>
+
+<meta charset='utf-8' />
+<link href='fullcalendar-2.2.3/fullcalendar.css' rel='stylesheet' />
+<link href='fullcalendar-2.2.3/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='fullcalendar-2.2.3/lib/moment.min.js'></script>
+<script src='fullcalendar-2.2.3/lib/jquery.min.js'></script>
+<script src='fullcalendar-2.2.3/fullcalendar.min.js'></script>
+<script src='fullcalendar-2.2.3/gcal.js'></script>
+<script>
+
+$(document).ready(function() {
+
+	$('#calendar').fullCalendar({
+
+		// THIS KEY WON'T WORK IN PRODUCTION!!!
+		// To make your own Google API key, follow the directions here:
+		// http://fullcalendar.io/docs/google_calendar/
+		googleCalendarApiKey: 'AIzaSyC1T8SMnMGA8ADvm397BX-kgj65OK1XQ3M',
+
+		eventSources: [
+		{
+			googleCalendarId: 'ct0bjk5tlatm36eecgf556iijs@group.calendar.google.com',
+			color: '#3C4A1C'
+		},
+		{
+			googleCalendarId: '224q5o8nkur7aqmf7jv0b0tk1o@group.calendar.google.com',
+			color: '#2A1C4A'
+		},
+		{
+			googleCalendarId: '9scv30k1kj4ji40cvp81mjrjj0@group.calendar.google.com',
+			color: '#2B2B2B'
+		},
+		{
+			googleCalendarId: '1ucmk8gv30m7he6chntnk4pets@group.calendar.google.com',
+			color: '#4A1C29'
+		}
+		],
+
+		eventClick: function(event) {
+			// opens events in a popup window
+			window.open(event.url, 'gcalevent', 'width=700,height=600');
+			return false;
+		},
+
+		loading: function(bool) {
+			$('#loading').toggle(bool);
+		},
+
+		defaultView: 'agendaWeek',
+		minTime: "10:00",
+		maxTime: "23:00",
+		allDaySlot: false,
+		contentHeight: 600
+
+	});
+
+});
+
+</script>
+<style>
+
+#calendar {
+	max-height: 1000px;
+	margin: 0 auto;
+}
+
+#calendar * {
+	margin: 0px;
+}
+
+#calendar .fc-day-header {
+	padding: 10px 0px;
+}
+
+.fc-axis {
+	font-size: 10pt;
+}
+
+</style>
 </head>
 
 <body>
 <!-- NAVIGATION -->
 <!-- NOTE: Put id="here" on the link to the current page. -->
 <div id="nav">
-	<a href="syllabus.html"><img src="images/shield.gif"><div id="dept">COS</div><div id="course-number">126</div></a>
+	<a href="http://www.cs.princeton.edu/~cos126">
+		<img src="shield.gif">
+		<p><b>COS</b>126</p>
+	</a>
 	<ul>
-		<li><a href="lectures.html" id="here">Lectures</a></li>
+		<li><a href="syllabus.html" id="here">Syllabus</a></li>
+		<li><a href="lectures.html">Lectures</a></li>
 		<li><a href="precepts.html">Precepts</a></li>
 		<li><a href="assignments.html">Assignments</a></li>
 		<li><a href="exams.html">Exams</a></li>
-		<li><a href="help.html">Help!</a></i>
+		<li><a href="help.html">Help</a></i>
 	</ul>
 </div>
 
 <!-- PAGE NAME -->
-<h1>Lectures</h1>
+<h2>SYLLABUS</h2>
 
-<p>On this page you will find lecture slides, as well as recommended reading and study strategies. Please note, we may change the contents of these slides before lecture.</p>
+<div id='calendar'></div>
 
-<table>
-	<tr>
-		<th>#</th>
-		<th>DATE</th>
-		<th>TOPIC</th>
-		<th>SLIDES</th>
-		<th>REQUIRED READING</th>
-		<th>DEMOS</th>
-	</tr>
-	<tr>
-		<td>1</td>
-		<td>9/11</td>
-		<td>Prologue</td>
-		<td>
-			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/01-Prologue.pdf">1up</a><br>
-			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/01-Prologue-2x2.pdf">4up</a>
-		</td>
-		<td>
-			Book: Chapter 1 Intro<br>
-			Booksite: <a href="http://introcs.cs.princeton.edu/java/10elements/">Chapter 1 Intro</a>
-		</td>
-		<td>--</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>9/16</td>
-		<td>Introduction to Java</td>
-		<td>
-			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/02-Basics.pdf">1up</a><br>
-			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/02-Basics-2x2.pdf">4up</a>
-		</td>
-		<td>
-			Book: Section 1.1-1.2<br>
-			Booksite: <a href="http://introcs.cs.princeton.edu/java/11hello/">Section 1.1</a> &amp; <a href="http://introcs.cs.princeton.edu/java/12types/">1.2</a>
-		</td>
-		<td>
-			<a href="http://goo.gl/STnNH2">Exchange</a><br>
-			<a href="http://goo.gl/0F1Mf5">IntOps</a><br>
-			<a href="http://goo.gl/s8ob4w">LeapYear</a>
-		</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>9/18</td>
-		<td>Conditionals &amp; Loops</td>
-		<td>
-			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/02-Basics.pdf">1up</a><br>
-			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/02-Basics-2x2.pdf">4up</a>
-		</td>
-		<td>
-			Book: Section 1.3<br>
-			Booksite: <a href="http://introcs.cs.princeton.edu/java/11hello/">Section 1.3</a>
-		</td>
-		<td>--</td>
-	</tr>
-</table>
+<p>
+	<b>Description.</b>
+	An introduction to computer science in the context of scientific, engineering, and commercial applications. The goal of the course is to teach basic principles and practical issues, while at the same time preparing students to use computers effectively for applications in computer science, physics, biology, chemistry, engineering, and other disciplines. Topics include: programming in Java; hardware and software systems; algorithms and data structures; fundamental principles of computation; and scientific computing, including simulation, optimization, and data analysis.
+</p>
+
 <p>
 	<b>Prerequisites.</b>
 	None.

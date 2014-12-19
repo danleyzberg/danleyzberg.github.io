@@ -1,132 +1,231 @@
-	body{
-		background-color: white;
-		margin:20px 13%;
-		line-height: 1.5;
-		font-size: 12pt;
-	}
-	#logo {
-		/* centering */
-		display: block;
-		margin: 0px auto;
-	}
-	h1 {
-		font-family: Georgia, Utopia, Charter, serif;
-		text-align: center;
-		font-weight: normal;
-		font-size: 12pt;
-	}
+body{
+	font-family: "Oxygen";
+	background-color: white;
+	margin: 150px 15% 50px 15%;
+	line-height: 1.7;
+	font-size: 12pt;
+}
+h1 {
+	font-family: "Oswald",Georgia, Utopia, Charter, serif;
+	font-weight: normal;
+	font-size: 24pt;
+	text-transform: uppercase;
+}
+/* nav
+ */
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 9999;
+	background: black;
+	color: white;
+	font-family: helvetica;
+	font-size: 24pt;
+	padding: 15px 15% 10px 15%;
+	/* Adds shadow to the bottom of the bar */ /*
+	-webkit-box-shadow: 0px 0px 8px 0px #000000;
+	-moz-box-shadow:    0px 0px 8px 0px #000000;
+	box-shadow:         0px 0px 8px 0px #000000; */
+	border-bottom: orange 4px solid;
+}
 
-	h1 + h1 {
-		font-family: 'Times New Roman';
-		font-weight: normal;
-		font-size: 11pt;
-	}
+#nav, #nav ul li a, #nav img {
+	-webkit-transition: all 0.2s;
+	-moz-transition:    all 0.2s;
+	-ms-transition:     all 0.2s;
+	-o-transition:      all 0.2s;
+	transition:         all 0.2s;
+}
 
-	/* nav
-	 */
-	#nav {
-    text-align: center;
-		list-style-type: none;
-		padding: 0px;
-		margin-top: 20px;
-		margin-bottom: 25px;
-	}
-	#nav li {
-		position: relative;
-    	display: inline;
-		padding: 0px 10px;
-	}
-	#nav li a {
-	    display:inline-block;
-	}
-	#nav li a#here{
-		color:black;
-		text-decoration: none;
-	}
+#nav.smaller {
+	font-size: 16pt;
+	padding: 3px 15% 2px 15%;
+	/*-webkit-box-shadow: 0px 0px 3px 0px #000000;
+	-moz-box-shadow:    0px 0px 3px 0px #000000;
+	box-shadow:         0px 0px 3px 0px #000000;*/
+	border-bottom: orange 3px solid;
+}
 
-	/* nav popup menus
-	 * ---------------
-	 * looks too busy & is hard to maintain, got rid of it
-	 */
-	/*
-	#nav ul {
-		position:absolute;
-		top:100%;
-		left:-9999px;
-		margin: 0;
-		padding: 4px;
-		background-color:white;
-		text-align:left;
-	}
-	#nav ul li {
-		display: block;
-		padding: 4px 5px;
-	}
-	#nav li:hover ul{
-		left:0;
-	}
-	#nav ul a {
-		white-space: nowrap;
-		display: block;
-	}
-	*/
+#nav.smaller img {
+	height: 20px;
+	margin-top: 6px;
+	margin-right: 5px;
+}
+#nav.smaller li a {
+	font-size: 12pt;
+}
+#nav.smaller li a#here {
+	border-bottom: 2px solid #555555;
+}
+#nav.smaller li {
+	padding: 10px;
+}
 
-	h2 {
-		font-size: 16pt;
-	}
+#nav img {
+	height: 28px;
+	margin-top: 13px;
+	margin-right: 8px;
+	float: left;
+}
+#nav a * {
+	color: white;
+	text-decoration: none;
+	display: block;
+	float: left;
+}
+#nav #dept {
+	font-weight: bold;
+}
+#nav #course-number {
+}
+#nav ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 30%;
+}
+#nav ul li {
+	display: inline;
+	padding: 5px;
+}
+#nav ul li a {
+	vertical-align: 3px;
+	font-size: 14pt;
+	color: #D0D0D0;
+	font-weight: bold;
+}
+#nav li a:hover {
+	color: white;
+	text-decoration: none;
+	-webkit-transition: color .1s;
+	-moz-transition:    color .1s;
+	-ms-transition:     color .1s;
+	-o-transition:      color .1s;
+	transition:         color .1s;
+}
+#nav li a#here {
+	color: white;
+	border-bottom: 3px solid #555555;
+}
 
-	h2~h2 {
-		margin-bottom: 0px;
-		margin-top: 20px;
-	}
-	h3 {
-		display: inline;
-		margin: 0;
-		margin-right: 10px;
-		font-size: 12pt;
-	}
-	h3+p { display: inline; }
-	p~h3:before { content:'\A'; white-space:pre; }
-	h3+p:after { content:'\A'; white-space:pre; }
+/* nav popup menus
+ * ---------------
+ * looks too busy & is hard to maintain, got rid of it
+ */
+/*
+#nav ul {
+	position:absolute;
+	top:100%;
+	left:-9999px;
+	margin: 0;
+	padding: 4px;
+	background-color:white;
+	text-align:left;
+}
+#nav ul li {
+	display: block;
+	padding: 4px 5px;
+}
+#nav li:hover ul{
+	left:0;
+}
+#nav ul a {
+	white-space: nowrap;
+	display: block;
+}
+*/
 
-	a {
-		color: blue;
-		text-decoration: none;
-	}
-	a:hover{
-		text-decoration: underline;
-	}
+/*
+h2 {
+	font-size: 16pt;
+}
 
-	a[href$='.pdf'] {
-		padding: 5px 20px 5px 0px;
-		background: transparent url(pdf-icon.gif) no-repeat center right;
-		border-right: 5px solid transparent;
-	}
-	.alert-box {
-		width: 80%;
-		margin: 20 auto;
+h2~h2 {
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+h3 {
+	display: inline;
+	margin: 0;
+	margin-right: 10px;
+	font-size: 12pt;
+}
+h3+p {
+	font-size: 12pt;
+	display: inline;
+}
+p~h3 {
+	font-size: 12pt;
+}
+p~h3:before { content:'\A'; white-space:pre; }
+h3+p:after { content:'\A'; white-space:pre; }
+*/
 
-		border: 1 black solid;
-		padding: 10px;
 
-		padding-left: 46px;
-		background: url("alert.png") no-repeat 10px 50%;
-	}
+p b:first-child {
+	padding-right: 10px;
+}
 
-	.alert-text { color: red; }
+a {
+	color: blue;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
 
-	table {
-		margin: 20px auto;
-	}
-	td {
-		text-align: center;
-		padding: 15px;
-		border-left: 1px;
-		border-right: 1px;
-	}
-	tr:first-child {
-		border-left: none;
-	}
-	tr:last-child{
-		border-right: none;
-	}
+a[href*='introcs.cs.princeton.edu'] {
+	padding: 5px 20px 5px 0px;
+	background: transparent url(images/external-link.gif) no-repeat center right;
+	border-right: 5px solid transparent;
+}
+
+a[href*='goo.gl'] {
+	padding: 5px 20px 5px 0px;
+	background: transparent url(images/java-visualizer-link.png) no-repeat center right;
+	border-right: 5px solid transparent;
+}
+
+a[href$='.pdf'] {
+	padding: 5px 20px 5px 0px;
+	background: transparent url(images/pdf-link.gif) no-repeat center right;
+	border-right: 5px solid transparent;
+}
+
+a.url {
+	font-family: Monaco, Courier New;
+	font-size: 10pt;
+}
+.alert-box {
+	width: 80%;
+	margin: 20 auto;
+
+	border: 1 black solid;
+	padding: 10px;
+
+	padding-left: 46px;
+	background: url("alert.png") no-repeat 10px 50%;
+}
+
+.alert-text { color: red; }
+
+table {
+	margin: 20px auto;
+}
+td {
+	text-align: center;
+	padding: 15px;
+	border-left: 1px;
+	border-right: 1px;
+}
+/*
+tr:first-child {
+	border-left: none;
+}
+tr:last-child{
+	border-right: none;
+}
+*/
