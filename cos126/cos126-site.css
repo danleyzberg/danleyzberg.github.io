@@ -11,57 +11,27 @@ h1 {
 	font-size: 24pt;
 	text-transform: uppercase;
 }
-/* nav
- */
+
+/* * * * * * * * * * * * * * * * * * * * *\
+|* all the many things having to do with *|
+|* the nav bar                           *|
+\* * * * * * * * * * * * * * * * * * * * */
 #nav {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	width: 100%;
 	z-index: 9999;
 	background: black;
 	color: white;
 	font-family: helvetica;
 	font-size: 24pt;
 	padding: 15px 15% 10px 15%;
-	/* Adds shadow to the bottom of the bar */ /*
-	-webkit-box-shadow: 0px 0px 8px 0px #000000;
-	-moz-box-shadow:    0px 0px 8px 0px #000000;
-	box-shadow:         0px 0px 8px 0px #000000; */
-	border-bottom: orange 4px solid;
-}
-
-#nav, #nav ul li a, #nav img {
-	-webkit-transition: all 0.2s;
-	-moz-transition:    all 0.2s;
-	-ms-transition:     all 0.2s;
-	-o-transition:      all 0.2s;
-	transition:         all 0.2s;
-}
-
-#nav.smaller {
-	font-size: 16pt;
-	padding: 3px 15% 2px 15%;
-	/*-webkit-box-shadow: 0px 0px 3px 0px #000000;
-	-moz-box-shadow:    0px 0px 3px 0px #000000;
-	box-shadow:         0px 0px 3px 0px #000000;*/
-	border-bottom: orange 3px solid;
-}
-
-#nav.smaller img {
-	height: 20px;
-	margin-top: 6px;
-	margin-right: 5px;
-}
-#nav.smaller li a {
-	font-size: 12pt;
-}
-#nav.smaller li a#here {
-	border-bottom: 2px solid #555555;
-}
-#nav.smaller li {
-	padding: 10px;
+	border-bottom: orange 5px solid;
+	/* Adds shadow to the bottom of the bar */
+	-webkit-box-shadow: 0px 0px 5px 0px #BBBBBB;
+	-moz-box-shadow:    0px 0px 5px 0px #BBBBBB;
+	box-shadow:         0px 0px 5px 0px #BBBBBB;
 }
 
 #nav img {
@@ -70,11 +40,11 @@ h1 {
 	margin-right: 8px;
 	float: left;
 }
-#nav a * {
+#nav #logo * {
+	float: left;
 	color: white;
 	text-decoration: none;
 	display: block;
-	float: left;
 }
 #nav #dept {
 	font-weight: bold;
@@ -85,7 +55,6 @@ h1 {
 	float: right;
 	margin: 0;
 	padding: 0;
-	margin-right: 30%;
 }
 #nav ul li {
 	display: inline;
@@ -94,22 +63,90 @@ h1 {
 #nav ul li a {
 	vertical-align: 3px;
 	font-size: 14pt;
-	color: #D0D0D0;
+	color: #CCCCCC;
 	font-weight: bold;
-}
-#nav li a:hover {
-	color: white;
-	text-decoration: none;
 	-webkit-transition: color .1s;
 	-moz-transition:    color .1s;
 	-ms-transition:     color .1s;
 	-o-transition:      color .1s;
 	transition:         color .1s;
 }
+#nav li a:hover {
+	color: white;
+	text-decoration: none;
+}
 #nav li a#here {
 	color: white;
-	border-bottom: 3px solid #555555;
+	border-bottom: 4px solid #444444;
 }
+
+
+#nav, #nav img, #nav ul li, #nav ul li a {
+	-webkit-transition: all 0.5s;
+	-moz-transition:    all 0.5s;
+	-ms-transition:     all 0.5s;
+	-o-transition:      all 0.5s;
+	transition:         all 0.5s;
+}
+
+#nav.smaller {
+	font-size: 16pt;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	border-bottom: orange 4px solid;
+	-webkit-box-shadow: 0px 0px 3px 0px #BBBBBB;
+	-moz-box-shadow:    0px 0px 3px 0px #BBBBBB;
+	box-shadow:         0px 0px 3px 0px #BBBBBB;
+}
+
+#nav.smaller img {
+	height: 20px;
+	margin-top: 6px;
+	margin-right: 5px;
+}
+#nav.smaller ul li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#nav.smaller ul li a {
+	font-size: 12pt;
+}
+#nav.smaller ul li a#here {
+	border-bottom: 2px solid #555555;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+	body {
+		margin-left: 8%;
+		margin-right: 8%;
+	}
+	#nav {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+	/*
+	#nav a {
+		font-size: 14pt;
+	}
+	#nav img {
+		height: 20px;
+		margin-top: 6px;
+		margin-right: 5px;
+		font-size: 14pt;
+	}
+	*/
+	#nav ul li {
+		padding: 2px;
+	}
+	/*
+	#nav ul li a {
+		font-size: 12pt;
+	}
+	*/
+}
+
 
 /* nav popup menus
  * ---------------
