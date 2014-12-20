@@ -2,7 +2,7 @@
 
 
 window.onload = function() {
-	window.addEventListener('scroll',function() {
+	window.addEventListener('scroll', function() {
 		var nav = document.getElementById("nav");
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
 		if (distanceY > 300) {
@@ -14,9 +14,24 @@ window.onload = function() {
 		}
 	});
 
+	/*
+	window.addEventListener('mousemove', function(e) {
+		if (e.screenY < 300) {
+			var nav = document.getElementById("nav");
+			if (classie.has(nav,"smaller")) {
+				classie.remove(nav,"smaller");
+			}
+		} else {
+			var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+			if (distanceY > 300) {
+				classie.add(document.getElementById("nav"),"smaller");
+			}
+		}
+	});
+
 	document.getElementById("nav").addEventListener('click', function() {
 		if (classie.has(this,"smaller")) {
 			classie.remove(this,"smaller");
 		}
-	});
+	});*/
 };
