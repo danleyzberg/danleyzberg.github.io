@@ -1,33 +1,50 @@
 // source: http://callmenick.com/2014/02/18/create-an-animated-resizing-header-on-scroll/
 
 
+
 window.onload = function() {
+	var nav = document.getElementById("nav");
+	var previousScreenY;
+
 	window.addEventListener('scroll', function() {
-		var nav = document.getElementById("nav");
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
 		if (distanceY > 300) {
 			classie.add(nav,"smaller");
 		} else {
-			if (classie.has(nav,"smaller")) {
-				classie.remove(nav,"smaller");
-			}
+			classie.remove(nav,"smaller");
 		}
 	});
 
 
-	window.addEventListener('mousemove', function(e) {
-		if (e.screenY < 300) {
-			var nav = document.getElementById("nav");
-			if (classie.has(nav,"smaller")) {
-				classie.remove(nav,"smaller");
-			}
+	function onMouseMove(e) {
+
+		// if cursor moved up and make nav big
+		if (e.screenY < previousScreenY) {
+
+			classie.remove(nav,"smaller");
+
+			// don't check again for a second
+			previousScreenY = e.screenY;
+			window.removeEventListener('mousemove', onMouseMove);
+			setTimeout(function() {window.addEventListener('mousemove', onMouseMove);}, 1000);
+
+
 		} else {
+
 			var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-			if (distanceY > 300) {
-				classie.add(document.getElementById("nav"),"smaller");
+			if (e.screenY > 300 && distanceY > 300) {
+				classie.add(nav,"smaller");
 			}
+
+			// keep checking every tenth second
+			previousScreenY = e.screenY;
+			window.removeEventListener('mousemove', onMouseMove);
+			setTimeout(function() {window.addEventListener('mousemove', onMouseMove);}, 100);
 		}
-	});
+	}
+
+	window.addEventListener('mousemove', onMouseMove);
+
 
 	/*document.getElementById("nav").addEventListener('click', function() {
 		if (classie.has(this,"smaller")) {

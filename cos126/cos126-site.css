@@ -16,74 +16,90 @@ h1 {
 |* all the many things having to do with *|
 |* the nav bar                           *|
 \* * * * * * * * * * * * * * * * * * * * */
+
 #nav {
 	position: fixed;
 	display: table;
 	top: 0;
 	left: 0;
-	right: 0;
 	z-index: 9999;
 	background: black;
 	color: white;
 	font-family: helvetica;
-	padding: 15px 15% 8px 15%;
+	padding: 10px 15%;
 	width: 70%;
 	border-bottom: orange 5px solid;
-	/* Adds shadow to the bottom of the bar */
 	-webkit-box-shadow: 0px 0px 8px 0px #BBBBBB;
 	-moz-box-shadow:    0px 0px 8px 0px #BBBBBB;
 	box-shadow:         0px 0px 8px 0px #BBBBBB;
+	font-family: 'Raleway', sans-serif;
 }
 
-#nav img {
+/* * * * * * * * * * * * * * * * * * * * * * * * *\
+|* The #nav bar has two children: logo and links.*|
+|* All the stuff in logo is aligned left center, *|
+|* links are aligned right-center.               *|
+\* * * * * * * * * * * * * * * * * * * * * * * * */
+
+#nav #logo {
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#nav #links {
+	text-align: right;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * *\
+|* The #logo part of the #nav bar has an image *|
+|* and any number of text elements as children *|
+\* * * * * * * * * * * * * * * * * * * * * * * */
+
+#nav #logo img {
 	height: 28px;
-	margin-top: 13px;
 	margin-right: 8px;
 }
 #nav #logo * {
-	font-family: 'Raleway', sans-serif;
 	font-size: 24pt;
-	float: left;
 	color: white;
 	text-decoration: none;
-	display: block;
+	display: inline-block;
 }
-#nav #dept {
+#nav #logo #dept {
 	font-weight: bold;
 }
-#nav #course-number {
+#nav #logo #course-number {
 }
-#nav ul {
+#nav #links {
 	display: table-cell;
 	vertical-align: middle;
-	text-align: right;
 	margin: 0;
 	padding: 0;
 }
-#nav ul li {
-	display: inline;
-	padding: 5px;
-	padding-left: 15px;
-	padding-right: 15px;
+#nav #links li {
+	display: inline-block;
 }
-#nav ul li a {
-	font-family: 'Raleway', sans-serif;
-	font-size: 13pt;
+#nav #links a {
+	display: inline-block;
+	font-size: 14pt;
 	color: #CCCCCC;
 	font-weight: bold;
-	-webkit-transition: color .1s;
-	-moz-transition:    color .1s;
-	-ms-transition:     color .1s;
-	-o-transition:      color .1s;
-	transition:         color .1s;
+	padding: 3px 15px;
 }
-#nav li a:hover {
+#nav #links a:hover {
 	color: white;
 	text-decoration: none;
 }
-#nav li a#here {
+#nav #links a#here {
 	color: white;
-	border-bottom: 4px solid #444444;
+	background: #333333;
+	border-color: #333333;
+	border-style: solid;
+	border-width: 0px 4px;
+	border-radius: 10px;
 }
 
 
@@ -104,28 +120,24 @@ h1 {
 	box-shadow:         0px 0px 5px 0px #BBBBBB;
 }
 
-#nav.smaller img {
+#nav.smaller #logo img {
 	height: 20px;
-	margin-top: 6px;
 	margin-right: 5px;
 }
 #nav.smaller #logo * {
 	font-size: 16pt;
 }
-#nav.smaller ul li {
-	padding-left: 6px;
-	padding-right: 6px;
-}
-#nav.smaller ul li a {
+#nav.smaller #links a {
 	font-size: 12pt;
+	padding: 0px 10px;
 }
-#nav.smaller ul li a#here {
-	border-bottom: 3px solid #555555;
+#nav.smaller #links a#here {
+	border-width: 0px 2px;
 }
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
 	body {
 		margin-left: 8%;
 		margin-right: 8%;
@@ -135,81 +147,28 @@ h1 {
 		padding-right: 8%;
 		width: 84%;
 	}
-	#nav ul li {
-		padding-left: 10px;
-		padding-right: 10px;
+	#nav #links a {
+		padding: 3px 10px;
 	}
-	/*
-	#nav a {
-		font-size: 14pt;
-	}
-	#nav img {
+}
+
+@media screen and (max-width: 900px) {
+	#nav #logo img {
 		height: 20px;
-		margin-top: 6px;
 		margin-right: 5px;
-		font-size: 14pt;
 	}
-	*/
-	/*
-	#nav ul li a {
+	#nav #logo * {
+		font-size: 16pt;
+	}
+	#nav #links a {
 		font-size: 12pt;
+		padding: 0px 10px;
 	}
-	*/
+	#nav #links a#here {
+		border-width: 0px 2px;
+	}
 }
 
-
-/* nav popup menus
- * ---------------
- * looks too busy & is hard to maintain, got rid of it
- */
-/*
-#nav ul {
-	position:absolute;
-	top:100%;
-	left:-9999px;
-	margin: 0;
-	padding: 4px;
-	background-color:white;
-	text-align:left;
-}
-#nav ul li {
-	display: block;
-	padding: 4px 5px;
-}
-#nav li:hover ul{
-	left:0;
-}
-#nav ul a {
-	white-space: nowrap;
-	display: block;
-}
-*/
-
-/*
-h2 {
-	font-size: 16pt;
-}
-
-h2~h2 {
-	margin-bottom: 0px;
-	margin-top: 20px;
-}
-h3 {
-	display: inline;
-	margin: 0;
-	margin-right: 10px;
-	font-size: 12pt;
-}
-h3+p {
-	font-size: 12pt;
-	display: inline;
-}
-p~h3 {
-	font-size: 12pt;
-}
-p~h3:before { content:'\A'; white-space:pre; }
-h3+p:after { content:'\A'; white-space:pre; }
-*/
 
 
 p b:first-child {
