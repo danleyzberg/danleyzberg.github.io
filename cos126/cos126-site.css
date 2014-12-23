@@ -1,7 +1,7 @@
 body{
 	font-family: "Oxygen";
 	background-color: white;
-	margin: 150px 15% 50px 15%;
+	margin: 120px 15% 50px 15%;
 	line-height: 1.7;
 	font-size: 12pt;
 }
@@ -18,6 +18,7 @@ h1 {
 \* * * * * * * * * * * * * * * * * * * * */
 #nav {
 	position: fixed;
+	display: table;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -26,6 +27,7 @@ h1 {
 	color: white;
 	font-family: helvetica;
 	padding: 15px 15% 8px 15%;
+	width: 70%;
 	border-bottom: orange 5px solid;
 	/* Adds shadow to the bottom of the bar */
 	-webkit-box-shadow: 0px 0px 8px 0px #BBBBBB;
@@ -52,10 +54,11 @@ h1 {
 #nav #course-number {
 }
 #nav ul {
-	float: right;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
 	margin: 0;
 	padding: 0;
-	margin-top: 8px;
 }
 #nav ul li {
 	display: inline;
@@ -65,8 +68,7 @@ h1 {
 }
 #nav ul li a {
 	font-family: 'Raleway', sans-serif;
-	vertical-align: 3px;
-	font-size: 14pt;
+	font-size: 13pt;
 	color: #CCCCCC;
 	font-weight: bold;
 	-webkit-transition: color .1s;
@@ -85,7 +87,7 @@ h1 {
 }
 
 
-#nav, #nav img, #nav.smaller #logo *, #nav ul li a {
+#nav, #nav #logo *, #nav ul li a {
 	-webkit-transition: all 0.2s;
 	-moz-transition:    all 0.2s;
 	-ms-transition:     all 0.2s;
@@ -115,11 +117,10 @@ h1 {
 	padding-right: 6px;
 }
 #nav.smaller ul li a {
-	vertical-align: 0px;
 	font-size: 12pt;
 }
 #nav.smaller ul li a#here {
-	border-bottom: 2px solid #555555;
+	border-bottom: 3px solid #555555;
 }
 
 
@@ -132,6 +133,11 @@ h1 {
 	#nav {
 		padding-left: 8%;
 		padding-right: 8%;
+		width: 84%;
+	}
+	#nav ul li {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	/*
 	#nav a {
@@ -144,10 +150,6 @@ h1 {
 		font-size: 14pt;
 	}
 	*/
-	#nav ul li {
-		padding-left: 6px;
-		padding-right: 6px;
-	}
 	/*
 	#nav ul li a {
 		font-size: 12pt;

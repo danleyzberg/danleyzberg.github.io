@@ -14,7 +14,7 @@ window.onload = function() {
 		}
 	});
 
-	/*
+
 	window.addEventListener('mousemove', function(e) {
 		if (e.screenY < 300) {
 			var nav = document.getElementById("nav");
@@ -29,7 +29,7 @@ window.onload = function() {
 		}
 	});
 
-	document.getElementById("nav").addEventListener('click', function() {
+	/*document.getElementById("nav").addEventListener('click', function() {
 		if (classie.has(this,"smaller")) {
 			classie.remove(this,"smaller");
 		}
