@@ -19,7 +19,7 @@ window.onload = function() {
 	function onMouseMove(e) {
 
 		// if cursor moved up and make nav big
-		if (e.screenY < previousScreenY) {
+		if (e.screenY < previousScreenY - 10) {
 
 			classie.remove(nav,"smaller");
 
@@ -36,10 +36,9 @@ window.onload = function() {
 				classie.add(nav,"smaller");
 			}
 
-			// keep checking every tenth second
+			// keep checking
 			previousScreenY = e.screenY;
-			window.removeEventListener('mousemove', onMouseMove);
-			setTimeout(function() {window.addEventListener('mousemove', onMouseMove);}, 100);
+			window.addEventListener('mousemove', onMouseMove);
 		}
 	}
 
