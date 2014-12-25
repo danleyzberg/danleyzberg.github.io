@@ -4,40 +4,38 @@
 
 window.onload = function() {
 	var nav = document.getElementById("nav");
-	var previousScreenY;
+	var previousClientY;
 
 	window.addEventListener('scroll', function() {
-		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-		if (distanceY > 300) {
+		var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+		if (scrollY > 300) {
 			classie.add(nav,"smaller");
 		} else {
 			classie.remove(nav,"smaller");
 		}
 	});
 
-
 	function onMouseMove(e) {
 
 		// if cursor moved up and make nav big
-		if (e.screenY < previousScreenY - 10) {
-
+		if (e.clientY < 100 || (e.clientY < 300 && e.clientY < previousClientY - 15)) {
 			classie.remove(nav,"smaller");
 
 			// don't check again for a second
-			previousScreenY = e.screenY;
+			previousClientY = e.clientY;
 			window.removeEventListener('mousemove', onMouseMove);
 			setTimeout(function() {window.addEventListener('mousemove', onMouseMove);}, 1000);
 
 
 		} else {
 
-			var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-			if (e.screenY > 300 && distanceY > 300) {
+			var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+			if (e.clientY > 300 && scrollY > 300) {
 				classie.add(nav,"smaller");
 			}
 
 			// keep checking
-			previousScreenY = e.screenY;
+			previousClientY = e.clientY;
 			window.addEventListener('mousemove', onMouseMove);
 		}
 	}

@@ -1,15 +1,6 @@
 body{
-	font-family: "Oxygen";
 	background-color: white;
-	margin: 120px 15% 50px 15%;
-	line-height: 1.7;
-	font-size: 12pt;
-}
-h1 {
-	font-family: "Oswald",Georgia, Utopia, Charter, serif;
-	font-weight: normal;
-	font-size: 24pt;
-	text-transform: uppercase;
+	margin: 120px 15% 5% 15%;
 }
 
 /* * * * * * * * * * * * * * * * * * * * *\
@@ -60,7 +51,9 @@ h1 {
 
 #nav #logo img {
 	height: 28px;
-	margin-right: 8px;
+	margin-right: 5px;
+	position: relative;
+	top: 2px;
 }
 #nav #logo * {
 	font-size: 24pt;
@@ -100,7 +93,7 @@ h1 {
 	border-color: #333333;
 	border-style: solid;
 	border-width: 0px 4px;
-	border-radius: 10px;
+	border-radius: 4px;
 	margin: 0px;
 }
 
@@ -114,9 +107,9 @@ h1 {
 }
 
 #nav.smaller {
-	padding-top: 3px;
-	padding-bottom: 2px;
-	border-bottom: orange 4px solid;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	border-bottom: orange 3px solid;
 	-webkit-box-shadow: 0px 0px 3px 0px #BBBBBB;
 	-moz-box-shadow:    0px 0px 3px 0px #BBBBBB;
 	box-shadow:         0px 0px 3px 0px #BBBBBB;
@@ -130,7 +123,7 @@ h1 {
 	font-size: 16pt;
 }
 #nav.smaller #links a {
-	font-size: 11pt;
+	font-size: 10pt;
 	padding: 0px 5px;
 	margin: 0px 4px;
 }
@@ -153,6 +146,14 @@ h1 {
 }
 
 @media screen and (max-width: 900px) {
+	body {
+		margin: 70px 5% 3% 5%;
+	}
+	#nav{
+		padding-top: 4px;
+		padding-bottom: 3px;
+		border-bottom: orange 3px solid;
+	}
 	#nav #logo img {
 		height: 20px;
 		margin-right: 5px;
@@ -161,7 +162,7 @@ h1 {
 		font-size: 16pt;
 	}
 	#nav #links a {
-		font-size: 11pt;
+		font-size: 10pt;
 		padding: 0px 5px;
 		margin: 0px 4px;
 	}
@@ -169,10 +170,6 @@ h1 {
 }
 
 
-
-p b:first-child {
-	padding-right: 10px;
-}
 
 a {
 	color: blue;
@@ -206,13 +203,14 @@ a.url {
 }
 .alert-box {
 	width: 90%;
-	margin: 0 auto;
+	margin: 20px auto;
 
-	/*border: 1 #aaaaaa solid;*/
-
-	padding-left: 50px;
-	background: url("images/alert.png") no-repeat 20px 50%;
+	padding: 15px;
+	padding-left: 60px;
+	line-height: 2;
+	background: #F0F0F0 url("images/alert.png") no-repeat 20px 50%;
 }
+
 
 .alert-text { color: red; }
 
@@ -225,6 +223,9 @@ td {
 	border-left: 1px;
 	border-right: 1px;
 }
+td + .alert-box {
+	padding: 0px;
+}
 /*
 tr:first-child {
 	border-left: none;
@@ -233,3 +234,26 @@ tr:last-child{
 	border-right: none;
 }
 */
+p > b:first-child {
+	padding-right: 13px;
+	font-size: 13pt;
+}
+
+
+
+body, td, th {
+	font-family: "Oxygen", Helvetica, sans-serif;
+	line-height: 1.7;
+	font-size: 12pt;
+}
+
+h1, h2 {
+	font-family: "Oswald",Georgia, Utopia, Charter, serif;
+	font-weight: normal;
+	font-size: 24pt;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 16pt;
+}
