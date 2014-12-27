@@ -1,6 +1,6 @@
 body{
 	background-color: white;
-	margin: 120px 15% 5% 15%;
+	margin: 120px 10% 5% 10%;
 }
 
 /* * * * * * * * * * * * * * * * * * * * *\
@@ -17,8 +17,8 @@ body{
 	background: black;
 	color: white;
 	font-family: helvetica;
-	padding: 10px 15%;
-	width: 70%;
+	padding: 10px 10%;
+    width: 80%;
 	border-bottom: orange 5px solid;
 	-webkit-box-shadow: 0px 0px 5px 0px #BBBBBB;
 	-moz-box-shadow:    0px 0px 5px 0px #BBBBBB;
@@ -172,7 +172,7 @@ body{
 
 
 a {
-	color: blue;
+	color: navy;
 	text-decoration: none;
 }
 a:hover{
@@ -181,19 +181,33 @@ a:hover{
 
 a[href*='introcs.cs.princeton.edu'] {
 	padding: 5px 20px 5px 0px;
-	background: transparent url(images/external-link.gif) no-repeat center right;
+	background: transparent
+        url("images/booksite-link.png")
+        no-repeat center right;
 	border-right: 5px solid transparent;
 }
 
 a[href*='goo.gl'] {
 	padding: 5px 20px 5px 0px;
-	background: transparent url(images/java-visualizer-link.png) no-repeat center right;
+	background: transparent
+        url("images/java-visualizer-link.png")
+        no-repeat center right;
 	border-right: 5px solid transparent;
 }
 
 a[href$='.pdf'] {
 	padding: 5px 20px 5px 0px;
-	background: transparent url("images/pdf-link.gif") no-repeat center right;
+	background: transparent
+        url("images/pdf-link.gif")
+        no-repeat center right;
+	border-right: 5px solid transparent;
+}
+
+a[href$='.ppt'], a[href$='.pptx'] {
+	padding: 5px 20px 5px 0px;
+	background: transparent
+        url("images/powerpoint-link.png")
+        no-repeat center right;
 	border-right: 5px solid transparent;
 }
 
@@ -201,19 +215,6 @@ a.url {
 	font-family: Monaco, Courier New;
 	font-size: 10pt;
 }
-.alert-box {
-	width: 90%;
-	margin: 20px auto;
-
-	padding: 15px;
-	padding-left: 60px;
-	line-height: 2;
-	background: #F0F0F0 url("images/alert.png") no-repeat 20px 50%;
-}
-
-
-.alert-text { color: red; }
-
 table {
 	margin: 20px auto;
 }
@@ -243,7 +244,7 @@ p > b:first-child {
 
 body, td, th {
 	font-family: "Oxygen", Helvetica, sans-serif;
-	line-height: 1.7;
+	line-height: 2;
 	font-size: 12pt;
 }
 
@@ -256,4 +257,74 @@ h1, h2 {
 
 h2 {
 	font-size: 16pt;
+}
+
+/*
+table {
+	margin: auto;
+	border-spacing: 0px 3px;
+	border-left:  3px solid #DDDDDD;
+	border-right: 3px solid #DDDDDD;
+	border-radius: 3px;
+	background: white;
+	box-shadow: 3px 3px #CCCCCC;
+}
+td, th {
+	padding: 15px 30px;
+}
+*/
+/*
+tr:nth-child(even) {
+	background: #FFF0E3;
+}
+tr:nth-child(even):hover {
+	background: #FFF8F1;
+}
+tr:nth-child(odd) {
+	background: #FDFBFA;
+}
+tr:nth-child(odd):hover {
+	background: #FFFFFF;
+}
+*/
+
+table {
+	border-spacing: 0px 3px;
+}
+td, th {
+	padding: 10px 20px;
+}
+tr > :first-child {
+	padding-left: 30px;
+}
+tr > :last-child {
+	padding-right: 30px;
+}
+tr:nth-child(even) {
+	background: #F9F9F9;
+}
+tr:nth-child(odd) {
+	background: #FFFFFF;
+}
+
+table > :first-child {
+	border-collapse: separate;
+	border-spacing: 4px 3px;
+	border-color: black;
+}
+
+
+
+.alert-box {
+	width: 90%;
+	margin: 20px auto;
+    text-align: center;
+
+	padding: 15px;
+	padding-left: 60px;
+	line-height: 2;
+	background: #FFF8F1 url("images/alert.png") no-repeat 20px 50%;
+
+	border: #CCCCCC solid 2px;
+	box-shadow: 3px 3px #AAAAAA;
 }
