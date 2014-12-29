@@ -1,6 +1,6 @@
 body{
 	background-color: white;
-	margin: 120px 10% 5% 10%;
+	margin: 100px 10% 5% 10%;
 }
 
 /* * * * * * * * * * * * * * * * * * * * *\
@@ -17,12 +17,13 @@ body{
 	background: black;
 	color: white;
 	font-family: helvetica;
-	padding: 10px 10%;
+	padding: 5px 10%;
+    padding-bottom: 2px;
     width: 80%;
 	border-bottom: orange 5px solid;
-	-webkit-box-shadow: 0px 0px 5px 0px #BBBBBB;
-	-moz-box-shadow:    0px 0px 5px 0px #BBBBBB;
-	box-shadow:         0px 0px 5px 0px #BBBBBB;
+	-webkit-box-shadow: 0px 0px 5px 0px #999999;
+	-moz-box-shadow:    0px 0px 5px 0px #999999;
+	box-shadow:         0px 0px 5px 0px #999999;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -97,6 +98,10 @@ body{
 	margin: 0px;
 }
 
+#nav #links ul li {
+	display: inline-block;
+}
+
 
 #nav, #nav #logo *, #nav ul li a {
 	-webkit-transition: all 0.2s;
@@ -108,11 +113,8 @@ body{
 
 #nav.smaller {
 	padding-top: 4px;
-	padding-bottom: 3px;
-	border-bottom: orange 3px solid;
-	-webkit-box-shadow: 0px 0px 3px 0px #BBBBBB;
-	-moz-box-shadow:    0px 0px 3px 0px #BBBBBB;
-	box-shadow:         0px 0px 3px 0px #BBBBBB;
+	padding-bottom: 2px;
+	border-bottom: orange 4px solid;
 }
 
 #nav.smaller #logo img {
@@ -123,9 +125,12 @@ body{
 	font-size: 16pt;
 }
 #nav.smaller #links a {
-	font-size: 10pt;
+	font-size: 11pt;
 	padding: 0px 5px;
-	margin: 0px 4px;
+	margin: 0px 2px;
+}
+#nav.smaller #links a#here {   
+	border-width: 0px 2px;
 }
 
 
@@ -149,10 +154,10 @@ body{
 	body {
 		margin: 70px 5% 3% 5%;
 	}
-	#nav{
-		padding-top: 4px;
-		padding-bottom: 3px;
-		border-bottom: orange 3px solid;
+	#nav {
+        padding-top: 4px;
+        padding-bottom: 2px;
+        border-bottom: orange 4px solid;
 	}
 	#nav #logo img {
 		height: 20px;
@@ -161,18 +166,20 @@ body{
 	#nav #logo * {
 		font-size: 16pt;
 	}
-	#nav #links a {
-		font-size: 10pt;
-		padding: 0px 5px;
-		margin: 0px 4px;
-	}
-
+    #nav #links a {
+        font-size: 11pt;
+        padding: 0px 5px;
+        margin: 0px 2px;
+    }
+    #nav #links a#here {   
+        border-width: 0px 2px;
+    }
 }
 
 
 
 a {
-	color: navy;
+	color: blue;
 	text-decoration: none;
 }
 a:hover{
@@ -249,10 +256,13 @@ body, td, th {
 }
 
 h1, h2 {
-	font-family: "Oswald",Georgia, Utopia, Charter, serif;
+	font-family: "Oswald", Georgia, Utopia, Charter, serif;
 	font-weight: normal;
-	font-size: 24pt;
 	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 30pt;
 }
 
 h2 {
@@ -289,10 +299,10 @@ tr:nth-child(odd):hover {
 */
 
 table {
-	border-spacing: 0px 3px;
+	border-spacing: 0px;
 }
 td, th {
-	padding: 10px 20px;
+	padding: 20px 20px;
 }
 tr > :first-child {
 	padding-left: 30px;
@@ -300,8 +310,22 @@ tr > :first-child {
 tr > :last-child {
 	padding-right: 30px;
 }
+
+@media screen and (max-width: 1200px) {
+    td, th {
+        padding: 10px 5px;
+    }
+    tr > :first-child {
+        padding-left: 10px;
+    }
+    tr > :last-child {
+        padding-right: 10px;
+    }
+}
+    
+    
 tr:nth-child(even) {
-	background: #F9F9F9;
+	background: #F3F3F3;
 }
 tr:nth-child(odd) {
 	background: #FFFFFF;
@@ -312,8 +336,6 @@ table > :first-child {
 	border-spacing: 4px 3px;
 	border-color: black;
 }
-
-
 
 .alert-box {
 	width: 90%;

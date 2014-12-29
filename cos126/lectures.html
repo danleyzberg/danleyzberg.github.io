@@ -1,18 +1,30 @@
 <html>
 
 <head>
-<title>COS 126: Lectures</title>
-<link  href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="cos126-site.css">
-<script src="javascript/classie.js"></script>
-<script src="javascript/smaller-header-on-scroll.js"></script>
+    <title>COS 126: Lectures</title>
+    
+    <!-- Google-hosted fonts. "Oxygen" is the main font -->
+    <link rel='stylesheet' type='text/css'
+          href='http://fonts.googleapis.com/css?family=
+                Oxygen:400,700|Oswald|Raleway:400,700'>
+    
+    <!-- Our in-house style sheet. -->
+    <link rel="stylesheet" type="text/css" href="cos126-site.css">
+    
+    <!-- Navigation bar stays on top and shrinks. -->
+    <script src="javascript/classie.js"></script>
+    <script src="javascript/smaller-header-on-scroll.js"></script>
 </head>
 
 <body>
 <!-- NAVIGATION -->
-<!-- NOTE: Put id="here" on the link to the current page. -->
 <div id="nav">
-	<a id="logo" href="syllabus.html"><img src="images/princeton-shield.gif"><div id="dept">COS</div><div id="course-number">126</div></a>
+    <!-- LOGO is Princeton shield + dept + course number -->
+	<a id="logo" href="syllabus.html">
+        <img src="images/princeton-shield.gif">
+        <div id="dept">COS</div><div id="course-number">126</div>
+    </a>
+    <!-- NOTE: Put id="here" on the link to the current page. -->
 	<ul id="links">
 		<li><a href="syllabus.html">Syllabus</a></li>
 		<li><a href="lectures.html" id="here">Lectures</a></li>
@@ -32,31 +44,30 @@
     <tr>
         <th>#</th>
         <th>DATE</th>
-        <th>TOPIC</th>
-        <th colspan="2">SLIDES</th>
+        <th>TOPIC &amp; SLIDES</th>
         <th>REQUIRED READING</th>
         <th style="width:25%;">DEMOS</th>
     </tr>
 
     <tr>
-        <th>1</th>
+        <td>1</td>
         <td>9/11</td>
-        <td>Prologue</td>
         <td>
-            <a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/01-Prologue.pdf">1up</a></td><td>
-            <a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/01-Prologue-2x2.pdf">4up</a>
+            Prologue<br>
+            <a href="lectures/01-Prologue.pdf">1up</a> &middot;
+            <a href="lectures/01-Prologue-2x2.pdf">4up</a>
         </td>
         <td>
             Book: Chapter 1 Intro<br>
             Booksite: <a href="http://introcs.cs.princeton.edu/java/10elements/">Chapter 1 Intro</a>
         </td>
-        <td>--</td>
+        <td></td>
     </tr>
     
     <tr>
-    <td colspan="100%">
-        <div class="alert-box">
-				<strong>Caution.</strong> The slides below have not yet been updated for Spring 2014 and may change.
+        <td colspan="100%">
+            <div class="alert-box">
+				<strong>Warning.</strong> The slides below have not been updated for Spring 2014 and may change significantly.
 			</div>
 		</td>
 	</tr>
@@ -64,9 +75,9 @@
 	<tr>
 		<td>2</td>
 		<td>9/16</td>
-		<td>Introduction to Java</td>
 		<td>
-			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/02-Basics.pdf">1up</a></td><td>
+            Introduction to Java<br>
+			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/02-Basics.pdf">1up</a> &middot;
 			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/02-Basics-2x2.pdf">4up</a>
 		</td>
 		<td>
@@ -85,10 +96,10 @@
 	<tr>
 		<td>3</td>
 		<td>9/18</td>
-		<td>Conditionals &amp; Loops</td>
 		<td>
-			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/02-Basics.pdf">1up</a></td><td>
-			<a href="http://www.cs.princeton.edu/courses/archive/fall14/cos126/lectures/02-Basics-2x2.pdf">4up</a>
+            Conditionals &amp; Loops<br>
+			<a href="lectures/02-Basics.pdf">1up</a> &middot;
+			<a href="lectures/02-Basics-2x2.pdf">4up</a>
 		</td>
 		<td>
 			Book: Section 1.3<br>
@@ -100,10 +111,10 @@
     <tr>
         <td>4</td>
         <td>9/23</td>
-        <td>Arrays</td>
         <td>
-            <a href="lectures/04-Arrays.pdf">1up</a></td><td>
-            <a  href="lectures/04-Arrays-2x2.pdf">4up</a>
+            Arrays<br>
+            <a href="lectures/04-Arrays.pdf">1up</a> &middot;
+            <a href="lectures/04-Arrays-2x2.pdf">4up</a>
         </td>
         <td>
 			Book: Section 1.4<br>
@@ -120,9 +131,9 @@
     <tr>
         <td>5</td>
         <td>9/25</td>
-        <td>Input &amp; Output</td>
         <td>
-            <a href="lectures/05-InOut.pdf">1up</a></td><td>
+            Input &amp; Output<br>
+            <a href="lectures/05-InOut.pdf">1up</a> &middot;
             <a href="lectures/05-InOut-2x2.pdf">4up</a>
         </td>
         <td>
@@ -130,7 +141,7 @@
 			Booksite: <a href="http://introcs.cs.princeton.edu/java/15inout/">Section 1.5</a>
         </td>
         <td>
-            <a href="http://goo.gl/ZGzNHX">Average</a>,
+            <a href="http://goo.gl/ZGzNHX">Average</a>
             <a href="http://goo.gl/xM03r9">StdInDemo</a>
         </td>
     </tr>
@@ -138,9 +149,9 @@
     <tr>
         <td>6</td>
         <td>9/30</td>
-        <td>Functions &amp; Libraries</td>
         <td>
-            <a href="lectures/06-Functions.pdf">1up</a></td><td>
+            Functions &amp; Libraries<br>
+            <a href="lectures/06-Functions.pdf">1up</a> &middot;
             <a href="lectures/06-Functions-2x2.pdf">4up</a>
         </td>
 		<td>
@@ -161,9 +172,9 @@
     <tr>
         <td>7</td>
         <td>10/2</td>
-        <td>Recursion</td>
         <td>
-            <a href="lectures/07-Recursion.pdf">1up</a></td><td>
+            Recursion<br>
+            <a href="lectures/07-Recursion.pdf">1up</a> &middot;
             <a href="lectures/07-Recursion-2x2.pdf">4up</a>
         </td>
         <td>
@@ -184,9 +195,9 @@
     <tr>
         <td>8</td>
         <td>10/7</td>
-        <td>Performance</td>
         <td>
-            <a href="lectures/08-Performance.pdf">1up</a></td><td>
+            Performance<br>
+            <a href="lectures/08-Performance.pdf">1up</a> &middot;
             <a href="lectures/08-Performance-2x2.pdf">4up</a>
         </td>
         <td>
@@ -197,19 +208,17 @@
     </tr>
         
     <tr>
-        <td></td>
-        <td>10/9</td>
-        <td colspan="100%">
-            <b>Written Exam 1 given instead of lecture. Review <a href="exams.html">here</a>.</b>
+        <th colspan="100%" style="height: 100px;">
+            Written Exam 1 instead of lecture on Oct. 9th. Review <a href="exams.html">here</a>.
         </td>
     </tr>
         
     <tr>
         <td>9</td>
         <td>10/14</td>
-        <td>Abstract Data Types</td>
         <td>
-            <a href="lectures/09-ADTs.pdf">1up</a></td><td>
+            Abstract Data Types<br>
+            <a href="lectures/09-ADTs.pdf">1up</a> &middot;
             <a href="lectures/09-ADTs-2x2.pdf">4up</a>
         </td>
         <td>
@@ -222,9 +231,9 @@
     <tr>
         <td>10</td>
         <td>10/16</td>
-        <td>Creating Data Types</td>
         <td>
-            <a href="lectures/10-CreatingDTs.pdf">1up</a></td><td>
+            Creating Data Types<br>
+            <a href="lectures/10-CreatingDTs.pdf">1up</a> &middot;
             <a title = "Creating Data Types" href="lectures/10-CreatingDTs-2x2.pdf">4up</a>
         </td>
         <td>
@@ -233,7 +242,7 @@
         </td>
         <td>
             <a href="http://is.gd/eJGnLV">Person</a>
-            <a href="http://goo.gl/DM7eJz">Watch (with internal calls)</a>
+            <a href="http://goo.gl/DM7eJz">Watch</a>
             <a href="http://www.cs.princeton.edu/~cos126/java_visualize/#sampleFile=Complex">Complex</a>
         </td>
     </tr>
@@ -241,9 +250,9 @@
     <tr>
         <td>11</td>
         <td>10/21</td>
-        <td>Von Neumann Machine I</td>
         <td>
-            <a href="lectures/11-MachineI.pdf">1up</a></td><td>
+            Von Neumann Machine I<br>
+            <a href="lectures/11-MachineI.pdf">1up</a> &middot;
             <a href="lectures/11-MachineI-2x2.pdf">4up</a>
         </td>
         <td>
@@ -258,9 +267,9 @@
     <tr>
         <td>12</td>
         <td>10/23</td>
-        <td>Von Neumann Machine II</td>
         <td>
-            <a href="lectures/12-MachineII.pdf">1up</a></td><td>
+            Von Neumann Machine II<br>
+            <a href="lectures/12-MachineII.pdf">1up</a> &middot;
             <a href="lectures/12-MachineII-2x2.pdf">4up</a>
         </td>
         <td>
@@ -275,9 +284,9 @@
     <tr>
         <td>13</td>
         <td>11/4</td>
-        <td>Searching and Sorting</td>
         <td>
-            <a href="lectures/13-SearchSort.pdf">1up</a></td><td>
+            Searching and Sorting<br>
+            <a href="lectures/13-SearchSort.pdf">1up</a> &middot;
             <a title = "Searching and Sorting" href="lectures/13-SearchSort-2x2.pdf">4up</a>
         </td>
 		</td>
@@ -291,16 +300,16 @@
 	<tr>
 		<td>14</td>
 		<td>11/6</td>
-		<td>Stacks and Queues</td>
 		<td>
-			<a href="lectures/02-Basics.pdf">1up</a></td><td>
+            Stacks and Queues<br>
+			<a href="lectures/02-Basics.pdf">1up</a> &middot;
 			<a href="lectures/02-Basics-2x2.pdf">4up</a>
 		</td>
 		<td>
             Book: Section 4.3<br>
             Booksite: <a href="http://introcs.cs.princeton.edu/java/43stack/">Section 4.3</a>
 		</td>
-		<td><a href="demos/43demo-list.pptx">Linked List</a>
+		<td><a href="demos/43demo-list.pptx">Linked Lists</a>
 			<a href="demos/43demo-iteration.pptx">Iteration</a>
 		</td>
 	</tr>
@@ -308,114 +317,128 @@
     <tr>
         <td>15</td>
         <td>11/11</td>
-        <th>Symbol Tables</hd>
         <td>
-            <a href="lectures/15-SymbolTables.pdf">1up</a></td><td>
-            <a title = "Symbol Tables" href="lectures/15-SymbolTables-2x2.pdf">4up</a>
+            Symbol Tables<br>
+            <a href="lectures/15-SymbolTables.pdf">1up</a> &middot;
+            <a href="lectures/15-SymbolTables-2x2.pdf">4up</a>
         </td>
-        <td>4.4</td>
-        <td><a href = "demos/44demo-inorder.pptx">inorder traversal</a></td>
+        <td>
+            Book: Section 4.4<br>
+            Booksite: <a href="http://introcs.cs.princeton.edu/java/44st/">Section 4.4</a>
+        </td>
+        <td><a href = "demos/44demo-inorder.pptx">Inorder Traversal</a></td>
     </tr>
 
     <tr>
-        <th>16</th>
+        <td>16</td>
         <td>11/13</td>
-        <td>Programming Languages</td>
         <td>
-            <a href="lectures/16-Languages.pdf">1up</a></td><td>
+            Programming Languages<br>
+            <a href="lectures/16-Languages.pdf">1up</a> &middot;
             <a href="lectures/16-Languages-2x2.pdf">4up</a>
         </td>
-        <td>3.3</td>
+        <td>
+            Book: Section 3.3<br>
+            Booksite: <a href="http://introcs.cs.princeton.edu/java/33design/">Section 3.3</a>
+        </td>
         <td></td>
     </tr>
 
     <tr>
-        <th>17</th>
+        <td>17</td>
         <td>11/18</td>
-        <td>Theory of Computation</td>
         <td>
-            <a href="lectures/17-IntroTheory.pdf">1up</a></td><td>
+            Theory of Computation<br>
+            <a href="lectures/17-IntroTheory.pdf">1up</a> &middot;
             <a href="lectures/17-IntroTheory-2x2.pdf">4up</a>
         </td>
         <td>
-            <a href = "/introcs/papers/regular2up.pdf">This</a> online chapter.**<br>
-            Booksite: Section 7.1, 7.2, 7.3
+            This <a href="/introcs/papers/regular2up.pdf">online chapter</a>.**<br>
+            Booksite:
+            <a href="http://introcs.cs.princeton.edu/java/71language/">Section 7.1</a>,
+            <a href="http://introcs.cs.princeton.edu/java/72regular/">7.2</a>,
+            <a href="http://introcs.cs.princeton.edu/java/73dfa/">7.3</a>
         </td>
-        <td><a href = "demos/73demo-dfa.ppt">DFA</a></td>
+        <td><a href="demos/73demo-dfa.ppt">DFA's</a></td>
     </tr>
 
     <tr>
-        <th>18</th>
+        <td>18</td>
         <td>11/20</td>
-        <td>Universality &amp; Computability</td>
         <td>
-            <a title = "Universality and Computability" href="lectures/18-Turing.pdf">1up</a></td><td>
-            <a title = "Universality and Computability" href="lectures/18-Turing-2x2.pdf">4up</a>
-        </td>
+            Universality &amp; Computability</br>
+            <a href="lectures/18-Turing.pdf">1up</a> &middot;
+            <a href="lectures/18-Turing-2x2.pdf">4up</a>
+        </th>
         <td>
-            Booksite: Section 7.4, 7.5, 7.6<br>
+            Booksite:
+            <a href="http://introcs.cs.princeton.edu/java/74turing/">Section 7.4</a>,
+            <a href="http://introcs.cs.princeton.edu/java/75universality/">7.5</a>,
+            <a href="http://introcs.cs.princeton.edu/java/76computability/">7.6</a><br>
             Harel: Chapters 1-2 (Optional)
         </td>
         <td><a href = "http://introcs.cs.princeton.edu/turing/turing.jnlp">Turing machine</a></td>
     </tr>
 
     <tr>
-        <th>19</th>
+        <td>19</td>
         <td>11/25</td>
-        <td>Intractability</td>
         <td>
-            <a href="lectures/19-Intractability.pdf">1up</a></td><td>
+            Intractability<br>
+            <a href="lectures/19-Intractability.pdf">1up</a> &middot;
             <a href="lectures/19-Intractability-2x2.pdf">4up</a>
         </td>
         <td>
-            Booksite: Section 7.7 <br>
+            Booksite: <a href="http://introcs.cs.princeton.edu/java/77intractability/">Section 7.7</a><br>
             Harel: Chapters 3-5 (Optional)
         </td>
         <td></td>
     </tr>
 
     <tr>
-        <th>20</td>
-        <td>12/2</td>
-        <td>Combinational Circuits</td>
+        <td>20</td>
+        <td>Dec. 2nd</td>
         <td>
-            <a href="lectures/20-Circuits.pdf">1up</a></td><td>
+            Combinational Circuits<br>
+            <a href="lectures/20-Circuits.pdf">1up</a> &middot;
             <a href="lectures/20-Circuits-2x2.pdf">4up</a>
         </td>
         <td>
-            <a href="http://www.cs.princeton.edu/introcs/papers/combinational-2up.pdf">This</a> online chapter.**<br>
-            See errata <a href = "http://introcs.cs.princeton.edu/java/errata/errata-6.php">here</a>.
+            This <a href="http://www.cs.princeton.edu/introcs/papers/combinational-2up.pdf">online chapter</a>.**<br>
+            See errata <a href = "http://introcs.cs.princeton.edu/java/errata/errata-6.php">here.</a>
         </td>
         <td></td>
     </tr>
 
     <tr>
-        <th>21</td>
-        <td>12/4</td>
-        <td>Designing a CPU</td>
+        <td>21</td>
+        <td>Dec. 4th</td>
         <td>
-            <a href="lectures/21-CPU.pdf">1up</a></td><td>
+            Designing a CPU<br>
+            <a href="lectures/21-CPU.pdf">1up</a> &middot;
             <a href="lectures/21-CPU-2x2.pdf">4up</a>
         </td>
         <td></td>
-        <td><a href = "exercises/circuits/index.php">Circuits Exercise</a></td>
+        <td><a href="exercises/circuits/index.php">Circuits Exercise</a></td>
     </tr>
 
     <tr>
-        <th>22</th>
-        <td>12/9</td>
-        <td>AI</td>
-        <td><a href="lectures/22-AI.pdf">1up</a></td>
-        <td><a href="lectures/22-AI-2x2.pdf">4up</a></td>
+        <td>22</td>
+        <td>Dec. 9th</td>
+        <td>
+            AI<br>
+            <a href="lectures/22-AI.pdf">1up</a> &middot;
+            <a href="lectures/22-AI-2x2.pdf">4up</a>
+        </td>
         <td></td>
         <td></td>
     </tr>
 
     <tr>
-        <th></th>
-        <td>12/11</td>
-        <th colspan="100%">
-            Written Exam 2 given instead of lecture. Review <a href="exams.html">here</a>.
+        <th colspan="100%" style="height: 100px;">
+           Written Exam 2 instead of lecture on Dec. 11th. Review <a href="exams.html">here</a>.
         </th>
     </tr>
 </table>
+
+** These resources are only available from an on-campus IP address or via <a href="http://helpdesk.princeton.edu/kb/display.plx?ID=6023">VPN</a>.
