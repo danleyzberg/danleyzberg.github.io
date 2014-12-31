@@ -1,17 +1,20 @@
 <html>
+<html>
 
 <head>
 <title>COS 126: Help</title>
-<link  href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="cos126-site.css">
-<script src="javascript/classie.js"></script>
-<script src="javascript/smaller-header-on-scroll.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/cos126.css">
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+<script src="javascript/nav-shrink.js"></script>
+
 
 <!-- necessary for office hours calendar -->
-<link href='javascript/fullcalendar/fullcalendar.css' rel='stylesheet' />
-<link href='javascript/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href='javascript/fullcalendar/fullcalendar.css' rel='stylesheet'>
 <script src='javascript/fullcalendar/lib/moment.min.js'></script>
-<script src='javascript/fullcalendar/lib/jquery.min.js'></script>
 <script src='javascript/fullcalendar/fullcalendar.min.js'></script>
 <script src='javascript/fullcalendar/gcal.js'></script>
 <script>
@@ -127,7 +130,10 @@ $(document).ready(function() {
 <!-- NAVIGATION -->
 <!-- NOTE: Put id="here" on the link to the current page. -->
 <div id="nav">
-	<a id="logo" href="syllabus.html"><img src="images/princeton-shield.gif"><div id="dept">COS</div><div id="course-number">126</div></a>
+	<a id="logo" href="syllabus.html">
+        <img src="images/princeton-shield.gif">
+        <h1><b>COS</b>126</h1>
+    </a>
 	<ul id="links">
 		<li><a href="syllabus.html">Syllabus</a></li>
 		<li><a href="lectures.html">Lectures</a></li>

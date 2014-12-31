@@ -1,0 +1,189 @@
+body, td, th {
+	font-family: "Oxygen", Helvetica, sans-serif;
+	line-height: 2 ;
+	font-size: 12pt;
+}
+a {
+	color: black;
+    font-size: 11pt;
+	text-decoration: underline;
+}
+a:hover{
+	text-decoration: none;
+}
+
+a[href*='introcs.cs.princeton.edu'] {
+	padding: 5px 16px 5px 0px;
+	background: transparent
+        url("../images/booksite-link.png")
+        no-repeat center right;
+	border-right: 2px solid transparent;
+}
+
+a[href*='goo.gl'] {
+	padding: 5px 18px 5px 0px;
+	background: transparent
+        url("../images/java-visualizer-link.png")
+        no-repeat center right;
+	border-right: 2px solid transparent;
+}
+
+a[href$='.pdf'] {
+	padding: 5px 17px 5px 0px;
+	background: transparent
+        url("../images/pdf-link.gif")
+        no-repeat center right;
+	border-right: 2px solid transparent;
+}
+
+a[href$='.ppt'], a[href$='.pptx'] {
+	padding: 5px 18px 5px 0px;
+	background: transparent
+        url("../images/powerpoint-link.png")
+        no-repeat center right;
+	border-right: 2px solid transparent;
+}
+
+a[href$='.java.html'] {
+	padding: 5px 18px 5px 0px;
+	background: transparent
+        url("../images/java-link.png")
+        no-repeat center right;
+	border-right: 2px solid transparent;
+}
+
+table {
+	margin: 20px auto;
+}
+td {
+	text-align: center;
+	padding: 15px;
+	border-left: 1px;
+	border-right: 1px;
+}
+td + .alert-box {
+	padding: 0px;
+}
+/*
+tr:first-child {
+	border-left: none;
+}
+tr:last-child{
+	border-right: none;
+}
+*/
+p > strong:first-child {
+	padding-right: 5px;
+}
+
+
+h2 {
+	font-family: "Oswald", Georgia, Utopia, Charter, serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 16pt;
+}
+
+/*
+table {
+	margin: auto;
+	border-spacing: 0px 3px;
+	border-left:  3px solid #DDDDDD;
+	border-right: 3px solid #DDDDDD;
+	border-radius: 3px;
+	background: white;
+	box-shadow: 3px 3px #CCCCCC;
+}
+td, th {
+	padding: 15px 30px;
+}
+*/
+/*
+tr:nth-child(even) {
+	background: #FFF0E3;
+}
+tr:nth-child(even):hover {
+	background: #FFF8F1;
+}
+tr:nth-child(odd) {
+	background: #FDFBFA;
+}
+tr:nth-child(odd):hover {
+	background: #FFFFFF;
+}
+*/
+
+table {
+	border-spacing: 0px;
+}
+td, th {
+	padding: 20px 20px;
+}
+tr > :first-child {
+	padding-left: 30px;
+}
+tr > :last-child {
+	padding-right: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    td, th {
+        padding: 10px 5px;
+    }
+    tr > :first-child {
+        padding-left: 10px;
+    }
+    tr > :last-child {
+        padding-right: 10px;
+    }
+}
+    
+    
+tr:nth-child(even) {
+	background: #F3F3F3;
+}
+tr:nth-child(odd) {
+	background: #FFFFFF;
+}
+
+table > :first-child {
+	border-collapse: separate;
+	border-spacing: 4px 3px;
+	border-color: black;
+}
+
+
+table[float='left'] > td,
+table[float='left'] > th,
+table[float='right'] > td,
+table[float='right'] > th {
+    padding: 4px 2px;
+}
+
+
+table[float="left"] > :first-child,
+table[float="right"] > :first-child {
+    padding-left: 4px;
+}
+
+table[float="left"] > :first-child,
+table[float="right"] > :first-child {
+    padding-right: 4px;
+}
+    
+.alert-box {
+	width: 90%;
+	margin: 20px auto;
+    text-align: center;
+
+	padding: 15px;
+	padding-left: 60px;
+	line-height: 2;
+	background: #FFF8F1 url("images/alert.png") no-repeat 20px 50%;
+
+	border: #CCCCCC solid 2px;
+	box-shadow: 3px 3px #AAAAAA;
+}
