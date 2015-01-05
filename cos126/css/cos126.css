@@ -1,14 +1,49 @@
 body, td, th {
 	font-family: "Oxygen", Helvetica, sans-serif;
-	line-height: 2 ;
+	line-height: 2;
 	font-size: 12pt;
 }
+
+h1, h2, h3, h4, h5 {
+	font-family: "Oswald", Georgia, Utopia, Charter, serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h1 {
+    font-size: 28pt;
+}
+h2 {
+	font-size: 20pt;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    body, td, th {
+        line-height: 1.8;
+        font-size: 11pt;
+    }
+    h1 {
+        font-size: 24pt;
+    }
+    h2 {
+        font-size: 18pt;
+    }
+}
+
+
+
+p > strong:first-child {
+	padding-right: 5px;
+}
+
 a {
 	color: black;
-    font-size: 11pt;
 	text-decoration: underline;
 }
-a:hover{
+
+a:hover {
 	text-decoration: none;
 }
 
@@ -29,7 +64,7 @@ a[href*='goo.gl'] {
 }
 
 a[href$='.pdf'] {
-	padding: 5px 17px 5px 0px;
+	padding: 5px 18px 5px 0px;
 	background: transparent
         url("../images/pdf-link.gif")
         no-repeat center right;
@@ -52,127 +87,117 @@ a[href$='.java.html'] {
 	border-right: 2px solid transparent;
 }
 
-table {
-	margin: 20px auto;
+a[href*='websheets'] {
+	padding: 5px 18px 5px 0px;
+	background: transparent
+        url("../images/websheets-link.png")
+        no-repeat center right;
+	border-right: 2px solid transparent;
 }
-td {
-	text-align: center;
+
+
+
+
+td, th {
 	padding: 15px;
+}
+
+tr > :first-child {
+	padding-left: 20px;
+}
+
+tr > :last-child {
+	padding-right: 20px;
+}
+th {
+    text-align: center;
+}
+
+/*****************
+WIDE TABLE
+**********/
+
+.wide-table {
+	margin: 20px auto;
+	border-spacing: 0px;
+}
+
+.wide-table td, .wide-table th {
+    line-height: 1.5;
+	text-align: center;
+	padding: 25px 20px;
 	border-left: 1px;
 	border-right: 1px;
 }
-td + .alert-box {
-	padding: 0px;
-}
-/*
-tr:first-child {
-	border-left: none;
-}
-tr:last-child{
-	border-right: none;
-}
-*/
-p > strong:first-child {
-	padding-right: 5px;
+
+.wide-table tr > :first-child {
+	padding-left: 50px;
 }
 
-
-h2 {
-	font-family: "Oswald", Georgia, Utopia, Charter, serif;
-	font-weight: normal;
-	text-transform: uppercase;
+.wide-table tr > :last-child {
+	padding-right: 50px;
 }
 
-h2 {
-	font-size: 16pt;
+.wide-table tr:nth-child(even) {
+	background: #F3F3F3;
 }
-
-/*
-table {
-	margin: auto;
-	border-spacing: 0px 3px;
-	border-left:  3px solid #DDDDDD;
-	border-right: 3px solid #DDDDDD;
-	border-radius: 3px;
-	background: white;
-	box-shadow: 3px 3px #CCCCCC;
-}
-td, th {
-	padding: 15px 30px;
-}
-*/
-/*
-tr:nth-child(even) {
-	background: #FFF0E3;
-}
-tr:nth-child(even):hover {
-	background: #FFF8F1;
-}
-tr:nth-child(odd) {
-	background: #FDFBFA;
-}
-tr:nth-child(odd):hover {
+.wide-table tr:nth-child(odd) {
 	background: #FFFFFF;
 }
-*/
-
-table {
-	border-spacing: 0px;
-}
-td, th {
-	padding: 20px 20px;
-}
-tr > :first-child {
-	padding-left: 30px;
-}
-tr > :last-child {
-	padding-right: 30px;
+.wide-table td[colspan="100%"],
+.wide-table th[colspan="100%"] {
+    height: 150px;
 }
 
-@media screen and (max-width: 1200px) {
-    td, th {
-        padding: 10px 5px;
+
+/* Not so wide table! */
+@media screen and (max-width: 1024px) {
+    .wide-table td, .wide-table th {
+        padding: 20px 10px;
     }
-    tr > :first-child {
+    .wide-table tr > :first-child {
         padding-left: 10px;
     }
-    tr > :last-child {
+    .wide-table tr > :last-child {
         padding-right: 10px;
     }
 }
-    
-    
-tr:nth-child(even) {
+
+
+
+
+
+
+/*
+
+.narrow-table {
+	margin: 20px auto;
+	border-spacing: 0px;
+}
+
+.narrow-table td, .narrow-table th {
+    font-size: 11pt;
+	text-align: center;
+	padding: 5px;
+}
+
+.narrow-table tr > :first-child {
+	padding-left: 10px;
+}
+
+.narrow-table tr > :last-child {
+	padding-right: 10px;
+}
+
+.narrow-table tr:nth-child(even) {
 	background: #F3F3F3;
 }
-tr:nth-child(odd) {
+.narrow-table tr:nth-child(odd) {
 	background: #FFFFFF;
 }
-
-table > :first-child {
-	border-collapse: separate;
-	border-spacing: 4px 3px;
-	border-color: black;
-}
-
-
-table[float='left'] > td,
-table[float='left'] > th,
-table[float='right'] > td,
-table[float='right'] > th {
-    padding: 4px 2px;
-}
-
-
-table[float="left"] > :first-child,
-table[float="right"] > :first-child {
-    padding-left: 4px;
-}
-
-table[float="left"] > :first-child,
-table[float="right"] > :first-child {
-    padding-right: 4px;
-}
+    
+/*
+}*/
     
 .alert-box {
 	width: 90%;

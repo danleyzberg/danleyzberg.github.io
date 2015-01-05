@@ -116,6 +116,7 @@ body{
 
 #nav.smaller #logo img {
 	height: 20px;
+	top: 2px;
 }
 #nav.smaller #logo h1 {
 	font-size: 16pt;
