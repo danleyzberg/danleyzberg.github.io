@@ -18,10 +18,10 @@ h2 {
 }
 
 
-
+/*
 @media screen and (max-width: 1024px) {
     body, td, th {
-        line-height: 1.8;
+        line-height: 2;
         font-size: 11pt;
     }
     h1 {
@@ -31,6 +31,7 @@ h2 {
         font-size: 18pt;
     }
 }
+*/
 
 
 
@@ -55,7 +56,7 @@ a[href*='introcs.cs.princeton.edu'] {
 	border-right: 2px solid transparent;
 }
 
-a[href*='goo.gl'] {
+a[href*='goo.gl'], a[href*='java_visualize'] {
 	padding: 5px 18px 5px 0px;
 	background: transparent
         url("../images/java-visualizer-link.png")
@@ -91,6 +92,14 @@ a[href*='websheets'] {
 	padding: 5px 18px 5px 0px;
 	background: transparent
         url("../images/websheets-link.png")
+        no-repeat center right;
+	border-right: 2px solid transparent;
+}
+
+a[href^='mailto:'] {
+	padding: 5px 20px 5px 0px;
+	background: transparent
+        url("../images/email-link.png")
         no-repeat center right;
 	border-right: 2px solid transparent;
 }
@@ -153,7 +162,11 @@ WIDE TABLE
 /* Not so wide table! */
 @media screen and (max-width: 1024px) {
     .wide-table td, .wide-table th {
-        padding: 20px 10px;
+        padding: 20px 5px;
+        font-size: 11pt;
+    }
+    .wide-table a {
+        font-size: 11pt;
     }
     .wide-table tr > :first-child {
         padding-left: 10px;
@@ -207,7 +220,7 @@ WIDE TABLE
 	padding: 15px;
 	padding-left: 60px;
 	line-height: 2;
-	background: #FFF8F1 url("images/alert.png") no-repeat 20px 50%;
+	background: #FFF8F1 url("../images/alert.png") no-repeat 20px 50%;
 
 	border: #CCCCCC solid 2px;
 	box-shadow: 3px 3px #AAAAAA;
