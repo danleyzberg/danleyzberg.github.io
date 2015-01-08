@@ -1,32 +1,33 @@
 <html>
 
 <head>
-<title>COS 126: Assignments</title>
-<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
+  <title>COS 126: Assignments</title>
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" type="text/css" href="css/nav.css">
-<link rel="stylesheet" type="text/css" href="css/cos126.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/cos126.css">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
-<script src="javascript/nav-shrink.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+  <script src="javascript/nav-shrink.js"></script>
 </head>
 
 <body>
+
 <!-- NAVIGATION -->
 <!-- NOTE: Put id="here" on the link to the  current page. -->
 <div id="nav">
-	<a id="logo" href="syllabus.html">
-        <img src="images/princeton-shield.gif">
-        <h1><b>COS</b>126</h1>
-    </a>
-	<ul id="links">
-		<li><a href="syllabus.html">Syllabus</a></li>
-		<li><a href="lectures.html">Lectures</a></li>
-		<li><a href="precepts.html">Precepts</a></li>
-		<li><a href="assignments.html" id="here">Assignments</a></li>
-		<li><a href="exams.html">Exams</a></li>
-		<li><a href="help.html">Help!</a></li>
-	</ul>
+  <a id="logo" href="syllabus.html">
+    <img src="images/princeton-shield.gif">
+    <h1><b>COS</b>126</h1>
+  </a>
+  <ul id="links">
+    <li><a href="syllabus.html">Syllabus</a></li>
+    <li><a href="lectures.html">Lectures</a></li>
+    <li><a href="precepts.html">Precepts</a></li>
+    <li><a href="assignments.html" id="here">Assignments</a></li>
+    <li><a href="exams.html">Exams</a></li>
+    <li><a href="help.html">Help!</a></li>
+  </ul>
 </div>
 
 <!-- PAGE NAME -->
@@ -38,131 +39,168 @@
 <p><strong>Submitting your code.</strong>The submit entry links to the electronic submission system.</p>
 
 <style>
-.assignment-logo {
+  .assignment-logo {
     height: 100px;
-}
+    width: 150px;  
+  }
+  a[href^="assignments/"] {
+    font-weight: bold;
+    font-size: 12pt;
+  }
 </style>
 <table class="wide-table">
-<tr>
+  <tr>
     <th>#</th>
     <th width="100">DUE</th>
     <th>LOGO</th>
     <th>ASSIGNMENT</th>
     <th>COLLABORATION</th>
     <th>SUBMIT</th>
-</tr>
+  </tr>
+  
+  <tr>
+    <td>0</td>
+    <td>Monday<br>Feb. 9th</td>
+    <td><img src="images/assignments/helloworld.png" class="assignment-logo"></td>
+    <td>
+      <a href="assignments/hello.html"><strong>Hello, World</strong></a> (<a href="checklist/hello.html">Checklist</a>)<br>
+      This assignment will introduce you to programming in Java and familiarize you with the mechanics of preparing and submitting your assignments.
+    </td>
+    <td>This is an individual assignment.</td>
+    <td>
+      <a href="https://dropbox.cs.princeton.edu/COS126_S2014/Hello">Submit!</a><br>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="100%">
+      <div class="alert-box">
+        <strong>Warning.</strong> Assignments below this box have not yet been updated for Spring 2015 and may change substantially.
+      </div>
+    </td>
+  </tr>
 
-<tr>
-<td>0</td>
-<td>Monday<br>Feb. 11th</td>
-<td><img src="images/assignments/helloworld.png" class="assignment-logo"></td>
-<td>
-    <a href="assignments/hello.html"><strong>Hello, World</strong></a> (<a href="checklist/hello.html">Checklist</a>)
-    <p>This assignment will introduce you to programming in Java and familiarize you with the mechanics of preparing and submitting your assignments.
-    </p>
-</td>
-<td>
-    <p>This is an individual assignment. See <a href="info.html#collab-policy">policy</a>.</p>
-</td>
-<td>
-    <a href="https://dropbox.cs.princeton.edu/COS126_S2014/Hello">Submit!</a><br>
-</td>
-</tr>
+  <tr>
+    <td>1</td>
+    <td>Monday<br>Feb. 16th</td>
+    <td><img src="images/assignments/conditionals.jpg" class="assignment-logo"></td>
+    <td>
+      <a href="assignments/loops.html">Conditionals &amp; Loops</a> (<a href="checklist/loops.html">Checklist</a>)<br>
+      The goal of this assignment is to write five short Java programs to gain practice with loops, conditionals, and arrays.
+    </td>
+    <td>This is an individual assignment.</td>
+    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Loops">Submit!</a></td>
+  </tr>
 
-<tr>
-<td>1</td>
-<td>Monday<br>Feb. 18th</td>
-<td><img src="images/assignments/conditionals.jpg" class="assignment-logo"></td>
-<td>
-    <a href="assignments/loops.html"><strong>Conditionals, Loops</strong></a> (<a href="checklist/loops.html">Checklist</a>)<br>
-    The goal of this assignment is to write five short Java programs to gain practice with loops, conditionals, and arrays.
-</td>
-<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Loops">Submit!</a></td><td><a href="#collabpolicy">individual</a></td>
-</tr>
+  <tr>
+    <td>2</td>
+    <td>Monday<br>Feb. 23th</td>
+    <td><img src="images/assignments/nbody.jpg" class="assignment-logo"></td>
+    <td>
+      <a href="assignments/nbody.html">N-Body Simulation</a>
+      (<a href="checklist/nbody.html">Checklist</a>)<br>
+      Your challenge is to write a program to simulate the motion of N particles in the plane, mutually affected by gravitational forces, and animate the results.
+    </td>
+    <td>This is an individual assignment.</td>
+    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/NBody">Submit!</a></td>
+  </tr>
 
-<tr>
-<td>2</td>
-<td>Monday<br>Feb. 25th</td>
-<td><img src="images/assignments/nbody.jpg" class="assignment-logo"></td>
-<td>
-    <a href="assignments/nbody.html"><strong>N-Body Simulation</strong></a>
-    (<a href="checklist/nbody.html">Checklist</a>)<br>
-    Your challenge is to write a program to simulate the motion of N particles in the plane, mutually affected by gravitational forces, and animate the results.
-</td>
-<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/NBody">Submit!</a></td><td><a href="#collabpolicy">individual</a></td></tr>
+  <tr>
+    <td>3</td>
+    <td>Monday<br>Apr. 4th</td>
+    <td><img src="images/assignments/sierpinski.jpg" class="assignment-logo"></td>
+    <td>
+      <a href="assignments/sierpinski.html">Recursive Graphics</a> (<a href="checklist/sierpinski.html">Checklist</a>)<br>
+      Write a program that plots a Sierpinski triangle, as illustrated to the left. Then, you'll develop a program that plots a recursive pattern of your own design.
+    </td>
+    <td>This is an individual assignment.</td>
+    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Sierpinski">Submit!</a></td>
+  </tr>
 
-<tr>
-<td>3</td>
-<td>Monday<br>Apr. 4th</td>
-<td><img src="images/assignments/sierpinski.jpg" class="assignment-logo"></td>
-<td><a href="assignments/sierpinski.html"><strong>Recursive Graphics</strong></a> (<a href="checklist/sierpinski.html">Checklist</a>)</td>
-<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Sierpinski">Submit!</a></td><td><a href="#collabpolicy">individual</a></td></tr>
+  <tr>
+    <th colspan="100%">
+      Programming Exam 1 will be on Monday <b style="color:orangered">???</b>. Submit your work <a href="https://dropbox.cs.princeton.edu/COS126_S2014/Exam1Snow">here</a>.
+    </th>
+  </tr>
 
-<tr>
-<td colspan="100%">
-    Programming Exam 1 will be on Mar. 14th. <a href="https://dropbox.cs.princeton.edu/COS126_S2014/Exam1Snow">Submit</a> here.
-</td>
-</tr>
+  <tr>
+    <td>4</td>
+    <td>Monday<br><b style="color:orangered">???</b></td>
+    <td><img src="images/assignments/hamming-small.jpg" class="assignment-logo"></td>
+    <td>
+      <a href="assignments/hamming.html">Hamming Codes &amp; TOY</a> (<a href="checklist/hamming.html">Checklist</a>)<br>
+      Write a TOY program to encode data using Hamming codes. Then write a TOY program to correct encoded data that has been corrupted.
+    </td>
+    <td>This is an individual assignment.</td>
+    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Hamming">Submit!</a></td>
+  </tr>
 
-<tr>
-<td>4</td>
-<td>3/24</td>
-<td><img src="images/assignments/hamming-small.jpg" class="assignment-logo"></td>
-<td><a href="assignments/hamming.html">Hamming Codes / TOY</a> (<a href="checklist/hamming.html">Checklist</a>)</td>
-<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Hamming">Submit!</a></td><td><a href="#collabpolicy">individual</a></td></tr>
+  <tr>
+    <td>5</td>
+    <td>Monday<br><b style="color:orangered">???</b></td>
+    <td><img src="images/assignments/lfsr-alt.jpg" class="assignment-logo"></td>
+    <td>
+      <a href="assignments/lfsr.html">Linear Feedback Shift Register (LFSR)</a> (<a href="checklist/lfsr.html">Checklist</a>)<br>
+      Write a program that produces pseudo-random bits by simulating a linear feedback shift register, and then use it to implement a simple form of encryption for digital pictures.
+    </td>
+    <td>This is an individual assignment.</td>
+    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/LFSR">Submit!</a></td>
+  </tr>
 
-<tr>
-<td>5</td>
-<td>3/31</td>
-<td><img src="images/assignments/lfsr-alt.jpg" class="assignment-logo"></td>
-<td>
-    <a href="assignments/lfsr.html">Linear Feedback Shift Register</a>
-    (<a href="checklist/lfsr.html">Checklist</a>)
-</td>
-<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/LFSR">Submit!</a></td><td><a href="#collabpolicy">individual</a></td></tr>
+  <tr>
+    <td>6</td>
+    <td>Monday<br><b style="color:orangered">???</b></td>
+    <td><img src="images/assignments/guitar-hero.jpg" class="assignment-logo"></td>
+    <td>
+      <a href="assignments/guitar.html">Guitar Hero</a> (<a href="checklist/guitar.html">Checklist</a>)<br>
+      Write a program to simulate plucking a guitar string using the Karplus-Strong algorithm. Turn your computer's keyboard into a musical instrument.
+    </td>
+    <td>You may partner on this assignment.</td>
+    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Guitar">Submit!</a></td>
+  </tr>
 
-<tr>
-<td>6</td>
-<td>4/7</td>
-<td><img src="images/assignments/guitar-hero.jpg" class="assignment-logo"></td>
-<td>
-    <a href="assignments/guitar.html">Guitar Hero</a> (<a href="checklist/guitar.html">Checklist</a>)
-</td>
-<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Guitar">Submit!</a></td><td><a href="#pairing">pair programming</a></td></tr>
+  <tr>
+    <td>7</td>
+    <td>Monday<br><b style="color:orangered">???</b></td>
+    <td><img src="images/assignments/editdistance.png" class="assignment-logo"></td>
+    <td>
+      <a href="assignments/markov.html">Markov Model</a> (<a href="checklist/markov.html">Checklist</a>)<br>
+      Use a Markov chain to create a statistical model of a piece of English text. Simulate the Markov chain to generate stylized pseudo-random text.
+    </td>
+    <td>You may partner on this assignment.</td>
+    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Markov">Submit!</a></td>
+  </tr>
 
-<tr>
-<td>7</td>
-<td>4/14</td>
-<td><img src="images/assignments/editdistance.png" class="assignment-logo"></td>
-<td>
-    <strong><a href="assignments/markov.html">Markov Model</a></strong>
-    (<a href="checklist/markov.html">Checklist</a>)
-</td>
-<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Markov">Submit!</a></td><td><a href="#pairing">pair programming</a></td></tr>
+  <tr>
+    <td>8</td>
+    <td>Monday<br><b style="color:orangered">???</b></td>
+    <td><img src="images/assignments/tsp-alt.png" class="assignment-logo"></td>
+    <td>
+      <a href="assignments/tsp.html">Traveling Salesperson Problem (TSP)</a> (<a href="checklist/tsp.html">Checklist</a>)<br>
+      Implement two greedy heuristics to find good (but not optimal) solutions to the traveling salesperson problem (TSP).
+    </td>
+    <td>You may partner on this assignment.</td>
+    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/TSP">Submit!</a></td>
+  </tr>
 
-<tr>
-<td>8</td>
-<td>4/21</td>
-<td><img src="images/assignments/tsp.jpg" class="assignment-logo"></td>
-<td>
-    <strong><a href="assignments/tsp.html">Traveling Salesperson Problem</a></strong>
-    (<a href="checklist/tsp.html">Checklist</a>)
-</td>
-<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/TSP">Submit!</a></td>
-<td><a href="#pairing">pair programming</a></td></tr>
+  <tr>
+    <th colspan="100%">
+      Programming Exam 2 will be on Monday <b style="color:orangered">???</b>. Submit your work <a href="https://dropbox.cs.princeton.edu/COS126_S2014/Exam2Vote">here</a>.
+    </th>
+  </tr>
 
-<tr>
-<td colspan="100%">
-    Programming Exam 2 will be on May 2nd. Submit your work <a href="https://dropbox.cs.princeton.edu/COS126_S2014/Exam2Vote">here</a>.
-</td>
-</tr>
-
-<tr>
-<td>9</td>
-<td>5/12</td>
-<td><img src="images/assignments/atomic.jpg" class="assignment-logo"></td>
-<td><a href="assignments/atomic.html">Atomic Nature of Matter</a> (<a href="checklist/atomic.html">Checklist</a>)</td>
-<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Atomic">Submit!</a></td><td><a href="#pairing">pair programming</a></td></tr>
-</tr>
-
+  <tr>
+    <td>9</td>
+    <td>Monday<br>May 11th</td>
+    <td><img src="images/assignments/atomic.jpg" class="assignment-logo"></td>
+    <td>
+      <a href="assignments/atomic.html">Atomic Nature of Matter</a> (<a href="checklist/atomic.html">Checklist</a>)<br>
+      Re-affirm the atomic nature of matter by tracking the motion of particles undergoing Brownian motion, fitting this data to Einstein's model, and estimating Avogadro's number.
+    </td>
+    <td>You may partner on this assignment.</td>
+    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Atomic">Submit!</a></td>
+  </tr>
 </table>
+
+</body>
+</html>

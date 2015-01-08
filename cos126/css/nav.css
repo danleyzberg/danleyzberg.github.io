@@ -21,7 +21,7 @@ body{
     /* black background, orange border, + shadow */
 	background: black;
 	color: white;
-	border-bottom: orange 5px solid;
+	border-bottom: orange 4px solid;
 	box-shadow:         0px 0px 5px 0px #999999;
 	-moz-box-shadow:    0px 0px 5px 0px #999999;
 	-webkit-box-shadow: 0px 0px 5px 0px #999999;
