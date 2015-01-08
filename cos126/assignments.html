@@ -20,7 +20,7 @@
         <h1><b>COS</b>126</h1>
     </a>
 	<ul id="links">
-		<li><a href="syllabus.html">Syllabus</a></li>
+		<li><a href="info.html">Info</a></li>
 		<li><a href="lectures.html">Lectures</a></li>
 		<li><a href="precepts.html">Precepts</a></li>
 		<li><a href="assignments.html" id="here">Assignments</a></li>
@@ -37,51 +37,64 @@
 
 <p><strong>Submitting your code.</strong>The submit entry links to the electronic submission system.</p>
 
+<style>
+.assignment-logo {
+    height: 100px;
+}
+</style>
 <table class="wide-table">
 <tr>
     <th>#</th>
-    <th>DUE</th>
+    <th width="100">DUE</th>
+    <th>LOGO</th>
     <th>ASSIGNMENT</th>
-    <th>SUBMIT</th>
     <th>COLLABORATION</th>
+    <th>SUBMIT</th>
 </tr>
 
 <tr>
-    <td>0</td>
-    <td>Monday<br>Feb. 11th</td>
-    <td>
-        
-        <a href="assignments/hello.html"><strong>Hello, World</strong></a> (<a href="checklist/hello.html">Checklist</a>)
-        <p>This assignment will introduce you to programming in Java and familiarize you with the mechanics of preparing and submitting your assignments.
-        </p>
-    </td>
-    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Hello">Submit!</a></td>
-    <td><a href="#collabpolicy">individual</a></td>
+<td>0</td>
+<td>Monday<br>Feb. 11th</td>
+<td><img src="images/assignments/helloworld.png" class="assignment-logo"></td>
+<td>
+    <a href="assignments/hello.html"><strong>Hello, World</strong></a> (<a href="checklist/hello.html">Checklist</a>)
+    <p>This assignment will introduce you to programming in Java and familiarize you with the mechanics of preparing and submitting your assignments.
+    </p>
+</td>
+<td>
+    <p>This is an individual assignment. See <a href="info.html#collab-policy">policy</a>.</p>
+</td>
+<td>
+    <a href="https://dropbox.cs.princeton.edu/COS126_S2014/Hello">Submit!</a><br>
+</td>
 </tr>
 
 <tr>
-    <td>1</td>
-    <td>Monday<br>Feb. 18th</td>
-    <td>
-        <a href="assignments/loops.html"><strong>Conditionals, Loops</strong></a> (<a href="checklist/loops.html">Checklist</a>)<br>
-        The goal of this assignment is to write five short Java programs to gain practice with loops, conditionals, and arrays.
-    </td>
-    <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Loops">Submit!</a></td><td><a href="#collabpolicy">individual</a></td>
+<td>1</td>
+<td>Monday<br>Feb. 18th</td>
+<td><img src="images/assignments/conditionals.jpg" class="assignment-logo"></td>
+<td>
+    <a href="assignments/loops.html"><strong>Conditionals, Loops</strong></a> (<a href="checklist/loops.html">Checklist</a>)<br>
+    The goal of this assignment is to write five short Java programs to gain practice with loops, conditionals, and arrays.
+</td>
+<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Loops">Submit!</a></td><td><a href="#collabpolicy">individual</a></td>
 </tr>
 
 <tr>
 <td>2</td>
 <td>Monday<br>Feb. 25th</td>
+<td><img src="images/assignments/nbody.jpg" class="assignment-logo"></td>
 <td>
-<a href="assignments/nbody.html"><strong>N-Body Simulation</strong></a>
-(<a href="checklist/nbody.html">Checklist</a>)<br>
-Your challenge is to write a program to simulate the motion of N particles in the plane, mutually affected by gravitational forces, and animate the results.
+    <a href="assignments/nbody.html"><strong>N-Body Simulation</strong></a>
+    (<a href="checklist/nbody.html">Checklist</a>)<br>
+    Your challenge is to write a program to simulate the motion of N particles in the plane, mutually affected by gravitational forces, and animate the results.
 </td>
 <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/NBody">Submit!</a></td><td><a href="#collabpolicy">individual</a></td></tr>
 
 <tr>
 <td>3</td>
 <td>Monday<br>Apr. 4th</td>
+<td><img src="images/assignments/sierpinski.jpg" class="assignment-logo"></td>
 <td><a href="assignments/sierpinski.html"><strong>Recursive Graphics</strong></a> (<a href="checklist/sierpinski.html">Checklist</a>)</td>
 <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Sierpinski">Submit!</a></td><td><a href="#collabpolicy">individual</a></td></tr>
 
@@ -94,12 +107,14 @@ Your challenge is to write a program to simulate the motion of N particles in th
 <tr>
 <td>4</td>
 <td>3/24</td>
+<td><img src="images/assignments/hamming-small.jpg" class="assignment-logo"></td>
 <td><a href="assignments/hamming.html">Hamming Codes / TOY</a> (<a href="checklist/hamming.html">Checklist</a>)</td>
 <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Hamming">Submit!</a></td><td><a href="#collabpolicy">individual</a></td></tr>
 
 <tr>
 <td>5</td>
 <td>3/31</td>
+<td><img src="images/assignments/lfsr-alt.jpg" class="assignment-logo"></td>
 <td>
     <a href="assignments/lfsr.html">Linear Feedback Shift Register</a>
     (<a href="checklist/lfsr.html">Checklist</a>)
@@ -109,6 +124,7 @@ Your challenge is to write a program to simulate the motion of N particles in th
 <tr>
 <td>6</td>
 <td>4/7</td>
+<td><img src="images/assignments/guitar-hero.jpg" class="assignment-logo"></td>
 <td>
     <a href="assignments/guitar.html">Guitar Hero</a> (<a href="checklist/guitar.html">Checklist</a>)
 </td>
@@ -117,6 +133,7 @@ Your challenge is to write a program to simulate the motion of N particles in th
 <tr>
 <td>7</td>
 <td>4/14</td>
+<td><img src="images/assignments/editdistance.png" class="assignment-logo"></td>
 <td>
     <strong><a href="assignments/markov.html">Markov Model</a></strong>
     (<a href="checklist/markov.html">Checklist</a>)
@@ -126,6 +143,7 @@ Your challenge is to write a program to simulate the motion of N particles in th
 <tr>
 <td>8</td>
 <td>4/21</td>
+<td><img src="images/assignments/tsp.jpg" class="assignment-logo"></td>
 <td>
     <strong><a href="assignments/tsp.html">Traveling Salesperson Problem</a></strong>
     (<a href="checklist/tsp.html">Checklist</a>)
@@ -134,15 +152,15 @@ Your challenge is to write a program to simulate the motion of N particles in th
 <td><a href="#pairing">pair programming</a></td></tr>
 
 <tr>
-<td></td>
-<td>5/1</td>
-<td>Programming Exam 2</td>
-<td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Exam2Vote">Submit!</a></td>
-<td><a href="#collabpolicy">individual</a></td></tr>
+<td colspan="100%">
+    Programming Exam 2 will be on May 2nd. Submit your work <a href="https://dropbox.cs.princeton.edu/COS126_S2014/Exam2Vote">here</a>.
+</td>
+</tr>
 
 <tr>
 <td>9</td>
 <td>5/12</td>
+<td><img src="images/assignments/atomic.jpg" class="assignment-logo"></td>
 <td><a href="assignments/atomic.html">Atomic Nature of Matter</a> (<a href="checklist/atomic.html">Checklist</a>)</td>
 <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Atomic">Submit!</a></td><td><a href="#pairing">pair programming</a></td></tr>
 </tr>
