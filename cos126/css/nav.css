@@ -21,7 +21,7 @@ body{
     /* black background, orange border, + shadow */
 	background: black;
 	color: white;
-	border-bottom: orange 4px solid;
+	border-bottom: orange 5px solid;
 	box-shadow:         0px 0px 5px 0px #999999;
 	-moz-box-shadow:    0px 0px 5px 0px #999999;
 	-webkit-box-shadow: 0px 0px 5px 0px #999999;
@@ -55,117 +55,118 @@ body{
 \* * * * * * * * * * * * * * * * * * * * * * * */
 
 #nav #logo img {
-	height: 28px;
-	position: relative;
-	top: 2px;
+  height: 28px;
+  position: relative;
+  top: 2px;
 }
 #nav #logo h1 {
-	font-family: 'Raleway', Helvetica, sans-serif;
-    font-weight: normal;
-	font-size: 24pt;
-    line-height: 0.5;
-	color: white;
-	text-decoration: none;
-	display: inline-block;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 24pt;
+  line-height: 0.5;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
 }
 #nav #links li {
-	display: inline-block;
+  display: inline-block;
 }
 #nav #links a {
-	font-size: 14pt;
-    line-height: 1;
-	font-family: 'Raleway', Helvetica, sans-serif;
-	text-decoration: none;
-	display: inline-block;
-	color: #CCCCCC;
-	font-weight: bold;
-	padding: 10px;
-	margin: 0px 4px;
+  font-size: 14pt;
+  line-height: 1;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  color: #CCCCCC;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0px 4px;
 }
 #nav #links a:hover {
-	color: white;
+  color: white;
 }
 #nav #links a#here {
-	color: white;
-	background: #333333;
-	border-color: #333333;
-	border-style: solid;
-	margin: 0px;
-	border-width: 0px 4px;
-	border-radius: 4px;
+  color: white;
+  background: #333333;
+  border-color: #333333;
+  border-style: solid;
+  margin: 0px;
+  border-width: 0px 4px;
+  border-radius: 4px;
 }
 
 #nav #links ul li {
-	display: inline-block;
+  display: inline-block;
 }
 
 
 #nav, #nav #logo > *, #nav ul li a {
-	-webkit-transition: all 0.2s;
-	-moz-transition:    all 0.2s;
-	-ms-transition:     all 0.2s;
-	-o-transition:      all 0.2s;
-	transition:         all 0.3s;
+  -webkit-transition: all 0.2s;
+  -moz-transition:    all 0.2s;
+  -ms-transition:     all 0.2s;
+  -o-transition:      all 0.2s;
+  transition:         all 0.3s;
 }
 
 #nav.smaller {
-	padding-top: 1px;
-	padding-bottom: 1px;
-	border-bottom-width: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-bottom-width: 3px;
 }
 
 #nav.smaller #logo img {
-	height: 20px;
-	top: 2px;
+  height: 20px;
+  top: 2px;
 }
 #nav.smaller #logo h1 {
-	font-size: 16pt;
+  font-size: 16pt;
 }
 #nav.smaller #links a {
-	font-size: 11pt;
-	padding: 5px;
+  font-size: 11pt;
+  padding: 5px;
 }
 #nav.smaller #links a#here {   
-	border-width: 0px 2px;
+  border-width: 0px 2px;
 }
 
 
 
 @media screen and (max-width: 1200px) {
-	body {
-		margin-left: 8%;
-		margin-right: 8%;
-	}
-	#nav {
-		padding-left: 8%;
-		padding-right: 8%;
-		width: 84%;
-	}
-	#nav #links a {
-		padding: 8px;
-	}
+  body {
+    margin: 110px 5% 30px 5%;
+  }
+  #nav {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+  }
+  #nav #links a {
+    padding: 8px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-	body {
-		margin: 70px 5% 3% 5%;
-	}
-	#nav {
-        padding: inherit 5%;
-        width: 90%;
-	}
-	#nav #logo img {
-		height: 20px;
-		margin-right: 5px;
-	}
-	#nav #logo h1 {
-		font-size: 16pt;
-	}
-    #nav #links a {
-        padding: 5px;
-        font-size: 11pt;
-    }
-    #nav #links a#here {   
-        border-width: 0px 2px;
-    }
+  body {
+    margin-top: 180px;
+  }
+  #nav {
+	text-align: center;
+  }
+  #nav #logo {
+    display: block;
+	text-align: center;
+  }
+  #nav #links {
+    width: 400;
+    margin: 0 auto;
+    display: block;
+	text-align: center;
+  }
+  #nav #links a {
+    font-size: 16pt;
+  }
+  
+  #nav.smaller{
+    top:-170;
+  }
 }

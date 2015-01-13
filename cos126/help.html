@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>COS 126: Help</title>
+<title>COS 126: Help!</title>
 <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="css/cos126.css">
@@ -12,120 +12,15 @@
 <script src="javascript/nav-shrink.js"></script>
 
 
-<!-- necessary for office hours calendar -->
-<link href='javascript/fullcalendar/fullcalendar.css' rel='stylesheet'>
+<!-- necessary for office hours calendar: FullCalendar -->
+<link rel="stylesheet" type="text/css"  href='javascript/fullcalendar/fullcalendar.css'>
 <script src='javascript/fullcalendar/lib/moment.min.js'></script>
 <script src='javascript/fullcalendar/fullcalendar.min.js'></script>
 <script src='javascript/fullcalendar/gcal.js'></script>
-<script>
-
-var beforeMouseoverCSS;
-$(document).ready(function() {
-
-
-	$('#calendar').fullCalendar({
-		googleCalendarApiKey: 'AIzaSyC1T8SMnMGA8ADvm397BX-kgj65OK1XQ3M',
-
-		eventSources: [{
-			googleCalendarId: '224q5o8nkur7aqmf7jv0b0tk1o@group.calendar.google.com',
-			color: '#DDDDDD',
-			textColor: 'black',
-			borderColor: 'white'
-		}, {
-			googleCalendarId: '9scv30k1kj4ji40cvp81mjrjj0@group.calendar.google.com',
-			color: '#BBBBBB',
-			textColor: 'black',
-			borderColor: 'white'
-		}],
-
-		eventMouseover: function(calEvent, jsEvent, view) {
-			beforeMouseoverCSS = $(this).css(["z-index","min-height","left","margin-right",/*"border-color","border-width",*/"opacity"]);
-			$(this).css({
-				"z-index": "100",
-				"min-height": "50px",
-				"left": "0",
-				"margin-right": "0px",
-                /*"border-color": "#999999",
-                "border-width": "2px",*/
-				"opacity": ".9"
-			})
-			return false;
-		},
-
-		eventMouseout: function(calEvent, jsEvent, view) {
-			$(this).css(beforeMouseoverCSS)
-			return false;
-		},
-
-		eventClick: function(calEvent, jsEvent, view) {
-		},
-
-		loading: function(bool) {
-			$('#loading').toggle(bool);
-		},
-
-		defaultView: 'agendaWeek',
-		minTime: "10:00",
-		maxTime: "23:00",
-		allDaySlot: false,
-		contentHeight: "auto",
-		slotDuration: "01:00:00",
-		/*slotEventOverlap: false*/
-
-	});
-
-});
-
-</script>
-<style>
-#calendar{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-#calendar * {
-	margin: 0px;
-}
-
-#calendar .fc-day-header {
-	padding: 8px 0px;
-}
-
-.fc-axis {
-	font-size: 10pt;
-	padding: 10px;
-}
-
-.fc button {
-	height: 1.9em;
-}
-
-.fc table tr {
-	height: 40px;
-}
-
-.fc-state-default {
-	background: #F0F0F0;
-}
-.fc-event{
-	padding: 6px;
-	-webkit-transition: all 0.2s;
-	-moz-transition:    all 0.2s;
-	-ms-transition:     all 0.2s;
-	-o-transition:      all 0.2s;
-	transition:         all 0.2s;
-}
-.fc-title {
-	font-weight: bold;
-}
-.fc-content-skeleton > table {
-	z-index: -100;
-	margin: 0;
-	border-spacing: 0px;
-	border: none;
-	box-shadow: none;
-}
-</style>
+  
+<!-- our local customization of FullCalendar -->
+<script src="javascript/fullcalendar-settings.js"></script>
+<link rel="stylesheet" type="text/css" href="css/fullcalendar-customization.css">
 </head>
 
 <body>
@@ -146,29 +41,27 @@ $(document).ready(function() {
 	</ul>
 </div>
 
-<h1>HELP</h1>
-The COS 126 staff is very happy to help students review curriculum and work on assignments. We have set up several methods for you to reach us, we recommend taking advantage of as many of these as you wish. It's a tough class!
-
-<h2>Have a question? Post it to Piazza!</h2>
-<p>Perhaps the most important tool for this class is <a href="http://piazza.com/princeton/fall2014/cos126">Piazza</a>, an online forum where you can post a question <i>annonymously</i> and get an answer from the course staff rather quickly. In fact, our average response time is only ten minutes! Note that questions posted after midnight may not be answered until the following day. We encourage students to make Piazza an integral part of their course experience. Keeping up with the questions other students ask can be a great review tool.</p>
+<h1>Help!</h1>
+<a href="https://piazza.com/princeton/spring2015/cos126/"><img src="images/piazza-logo.png" style="width:200px; float: right; padding-left: 20px; padding-bottom: 20px;"></a>
+<p>Stuck? Confused? Falling behind? The staff is here to help! The best and fastest way to reach us is to use our <a href="https://piazza.com/princeton/spring2015/cos126/">Piazza</a>, where you can post your question <em>annonymously</em> and get an answer  <em>rather quickly</em>. Our average response time is under fifteen minutes, though questions posted after midnight are not answered as quickly. We encourage students to make Piazza <em>an integral part of their COS 126 experience</em>. Keeping up with the questions that other students asked is a great way to spot-check your progress/knowledge against your peers.</p>
 
 <h2>Office Hours &amp; Lab TA's</h2>
-<p>We are lucky to have a  runs plenty of office hours if you'd like to get help in person. We will gladly look at your code or review old exams with you. You're welcome to attend <i>any staffmembers' office hours</i>, regardless of who your preceptor is. The computer science department also hires upperclassmen COS majors as <a href="syllabus.html#undergrad-lab-tas">undergraduate teaching assistants</a> to supplement office hours.</p>
+<p> can also get help in person via our frequent office hours. Remeber, you're welcome to attend <i>any staffmembers' office hours</i>, not just your preceptor's office hours. In addition to office hours, the Computer Science Department hires <a href="http://labta.cs.princeton.edu/">undergraduate teaching assistants</a> (<a href="http://www.princetonlabtas.com">the queue</a>), who are upperclassmen COS majors who are getting paid to help you debug your programs. The schedule for both is below.</p>
 
-<p class="alert-box"><strong>Warning.</strong> Our schedule may change. Please double check this page before going to office hours.</p>
-
+<p class="alert-box"><strong>Note.</strong> We update this calendar with the latest information when we need to make a scheduling change. Though changes are rare, we still encourage students to visit this page again before going to office hours.</p>
+  
+<!-- <THIS IS WHERE THE MAGIC HAPPENS> -->
 <div id="calendar"></div>
-
-
-<!-- Altnatively, remove all the javascript above pertaining to fullCalendar and use Google's embedding instead.
-<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ufmcngpm8b2j4je65jd5s6qor8%40group.calendar.google.com&amp;color=%232F6309&amp;src=1ucmk8gv30m7he6chntnk4pets%40group.calendar.google.com&amp;color=%232F6309&amp;src=224q5o8nkur7aqmf7jv0b0tk1o%40group.calendar.google.com&amp;color=%23182C57&amp;src=ct0bjk5tlatm36eecgf556iijs%40group.calendar.google.com&amp;color=%23BE6D00&amp;src=9scv30k1kj4ji40cvp81mjrjj0%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FNew_York" style="border-width:0; overflow:hidden; overflow-x:hidden;" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
--->
+<!-- </THIS IS WHERE THE MAGIC HAPPENS> -->
+  
     
-<h2>I Missed My Precept!</h2>
-<p>Worry not my dear soul. If you missed your precept, or you are planning to miss a precept, you can attend any other COS 126 precept to get the same instructional content (and avoid falling behind in the course!). We run the same content twice a week. All the Tuesday and Wednesday precepts are interchangable, same with all Thursday and Friday precepts. All we ask is that once you've picked a replacement precept, email both preceptors as soon in advance as you can to ensure that everyone knows what's going on and both precepts run smoothly.</p>
+<h2>Missing Precept</h2>
+<p>Ah! Worry not my dear soul. If you missed your precept, or you are planning to miss a precept, you should attend another COS 126 precept to get the same instructional content (and avoid falling behind in the course!). We run the same content twice a week. All the Tuesday and Wednesday precepts are interchangable, same with all Thursday and Friday precepts. All we ask is that once you've picked a replacement precept, email both preceptors as soon in advance as you can to ensure that everyone knows what's going on and both precepts run smoothly.</p>
 
-<h2>Need more help? We offer One-On-One Review Sessions &amp; Peer Tutors</h2>
-<p>The nature of the curriculum in 126 is cumulative, such that if a student falls behind, they will need to first catch up with what they missed in order to understand the concepts currently being covered. If you find yourself falling behind, <i>be proactive</i>. Contact your preceptor as soon as possible to schedule a one-on-one meeting to review the material. It is the job of the preceptor to be available for his or her students that need review.</p>
+<h2>Need more help?</h2>
+<p>COS 126 is hard. We make it that way on purpose, but we also offer plenty of resources if you should find yourself struggling. But, as  Teddy Rosevelt once said, "Far better is it to dare mighty things, to win glorious triumphs, even though checkered by failure... than to rank with those poor spirits who neither enjoy nor suffer much, because they live in a gray twilight that knows not victory nor defeat."</p>
+
+<p>If you find yourself falling behind in COS, <b>be proactive</b>. Contact your preceptor as soon as possible to schedule a one-on-one meeting to review the material. If you don't feel comfortable talking to your preceptor, email the lead preceptors to arrange some help. We will be happy to meet with you regularly and get you a peer tutor from your college to help you succeed in this course.</p>
 
 <h2>Staff</h2>
 <p>COS 126 is staffed by a mix of professors, lecturers, and graduate students. Below you will find our contact info, precept schedules, and office hours. Note, it is <i>almost always more appropriate</i> to post your question on <a href="http://piazza.com/princeton/fall2014/cos126">Piazza</a> rather than emailing it to any single staffmember. Also note that </p>
