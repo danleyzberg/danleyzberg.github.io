@@ -3,24 +3,30 @@
 
 <head>
 <title>COS 126: Help!</title>
-<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
-
-<link rel="stylesheet" type="text/css" href="css/cos126.css">
-<link rel="stylesheet" type="text/css" href="css/nav.css">
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
-<script src="javascript/nav-shrink.js"></script>
-
-
-<!-- necessary for office hours calendar: FullCalendar -->
-<link rel="stylesheet" type="text/css"  href='javascript/fullcalendar/fullcalendar.css'>
-<script src='javascript/fullcalendar/lib/moment.min.js'></script>
-<script src='javascript/fullcalendar/fullcalendar.min.js'></script>
-<script src='javascript/fullcalendar/gcal.js'></script>
   
-<!-- our local customization of FullCalendar -->
-<script src="javascript/fullcalendar-settings.js"></script>
-<link rel="stylesheet" type="text/css" href="css/fullcalendar-customization.css">
+  <!-- Google-hosted fonts -- thanks Google! -->
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- Our local stylesheets. -->
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/cos126.css">
+
+  <!-- The JS that makes the nav bar work! -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+  <script src="javascript/nav-shrink.js"></script>
+
+  <!-- Makes the site render properly (1:1 scale) on mobile devices. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Necessary for office hours calendar (FullCalendar v2). -->
+  <link rel="stylesheet" type="text/css"  href='javascript/fullcalendar/fullcalendar.css'>
+  <script src='javascript/fullcalendar/lib/moment.min.js'></script>
+  <script src='javascript/fullcalendar/fullcalendar.min.js'></script>
+  <script src='javascript/fullcalendar/gcal.js'></script>
+
+  <!-- Our local customizated settings for FullCalendar. -->
+  <script src="javascript/fullcalendar-settings.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/fullcalendar-customization.css">
 </head>
 
 <body>
@@ -28,7 +34,7 @@
 <!-- NOTE: Put id="here" on the link to the current page. -->
 <div id="nav">
 	<a id="logo" href="syllabus.html">
-        <img src="images/princeton-shield.gif">
+        <img src="images/princeton-shield.png">
         <h1><b>COS</b>126</h1>
     </a>
 	<ul id="links">
@@ -42,321 +48,29 @@
 </div>
 
 <h1>Help!</h1>
-<a href="https://piazza.com/princeton/spring2015/cos126/"><img src="images/piazza-logo.png" style="width:200px; float: right; padding-left: 20px; padding-bottom: 20px;"></a>
-<p>Stuck? Confused? Falling behind? The staff is here to help! The best and fastest way to reach us is to use our <a href="https://piazza.com/princeton/spring2015/cos126/">Piazza</a>, where you can post your question <em>annonymously</em> and get an answer  <em>rather quickly</em>. Our average response time is under fifteen minutes, though questions posted after midnight are not answered as quickly. We encourage students to make Piazza <em>an integral part of their COS 126 experience</em>. Keeping up with the questions that other students asked is a great way to spot-check your progress/knowledge against your peers.</p>
+<a href="https://piazza.com/class/i4pvyqe8kzv1i5"><img src="images/piazza-logo.png" class="paragraph-illustration"></a>
+<p>Stuck? Confused? Falling behind? The staff is here to help! The best and fastest way to reach us is through <a href="https://piazza.com/class/i4pvyqe8kzv1i5">Piazza</a>, an online forum where you can post questions <em>annonymously</em> and get an answer from the course staff <em>rather quickly</em>. Our average response time is under fifteen minutes, though questions posted after midnight are not answered as quickly. We encourage students to make Piazza <em>an integral part of their COS 126 experience</em>. Keeping up with the questions that other students ask is a great way to spot-check your progress against your peers.</p>
 
 <h2>Office Hours &amp; Lab TA's</h2>
-<p> can also get help in person via our frequent office hours. Remeber, you're welcome to attend <i>any staffmembers' office hours</i>, not just your preceptor's office hours. In addition to office hours, the Computer Science Department hires <a href="http://labta.cs.princeton.edu/">undergraduate teaching assistants</a> (<a href="http://www.princetonlabtas.com">the queue</a>), who are upperclassmen COS majors who are getting paid to help you debug your programs. The schedule for both is below.</p>
+<p>You can also get help in person via our frequent office hours. You're welcome to attend <i>any staffmembers' office hours</i>, not just your preceptor's office hours. In addition to staff office hours, you can get help from the <a href="http://labta.cs.princeton.edu/">undergraduate teaching assistants</a>, who are upperclassmen COS majors and happy to help you debug your code.</p>
+  
+<p class="alert-box"><strong>Note.</strong> We update this calendar with the latest information when we need to make scheduling changes. Though last-last minute changes are relatively rare, please check this calendar again before going to office hours.</p>
 
-<p class="alert-box"><strong>Note.</strong> We update this calendar with the latest information when we need to make a scheduling change. Though changes are rare, we still encourage students to visit this page again before going to office hours.</p>
   
 <!-- <THIS IS WHERE THE MAGIC HAPPENS> -->
-<div id="calendar"></div>
+<div id="calendar">
+  <p id="loading">Calendar events are loading...</p>
+</div>
 <!-- </THIS IS WHERE THE MAGIC HAPPENS> -->
-  
     
-<h2>Missing Precept</h2>
-<p>Ah! Worry not my dear soul. If you missed your precept, or you are planning to miss a precept, you should attend another COS 126 precept to get the same instructional content (and avoid falling behind in the course!). We run the same content twice a week. All the Tuesday and Wednesday precepts are interchangable, same with all Thursday and Friday precepts. All we ask is that once you've picked a replacement precept, email both preceptors as soon in advance as you can to ensure that everyone knows what's going on and both precepts run smoothly.</p>
+<h2>I Missed My Precept!</h2>
+<p>Ah! Worry not my dear soul. If you missed a precept or you will be missing a precept, you should attend another COS 126 precept to get the same instructional content and avoid falling behind in the course! To pick your replacement precept, keep in mind that all Tuesday and Wednesday precepts feature the same instructional content, as do all Thursday and Friday precepts. Once you've picked a replacement precept from <a href="syllabus.html#staff-table">the staff list</a>, email both preceptors in advance to ensure that everyone knows what's going on and both precepts run smoothly.</p>
 
 <h2>Need more help?</h2>
-<p>COS 126 is hard. We make it that way on purpose, but we also offer plenty of resources if you should find yourself struggling. But, as  Teddy Rosevelt once said, "Far better is it to dare mighty things, to win glorious triumphs, even though checkered by failure... than to rank with those poor spirits who neither enjoy nor suffer much, because they live in a gray twilight that knows not victory nor defeat."</p>
+<p>COS 126 is hard. We make it that way on purpose, but we also offer plenty of resources if you should find yourself struggling. "Far better is it to dare mighty things, to win glorious triumphs, even though checkered by failure... than to rank with those poor spirits who neither enjoy nor suffer much, because they live in a gray twilight that knows not victory nor defeat." (Teddy Roosevelt, 1899)</p>
 
-<p>If you find yourself falling behind in COS, <b>be proactive</b>. Contact your preceptor as soon as possible to schedule a one-on-one meeting to review the material. If you don't feel comfortable talking to your preceptor, email the lead preceptors to arrange some help. We will be happy to meet with you regularly and get you a peer tutor from your college to help you succeed in this course.</p>
+<p>If you find yourself falling behind in COS, <b>be proactive</b>. Contact your preceptor as soon as possible to schedule a meeting to review  material and make a gameplan. If you don't feel comfortable talking to your preceptor, email the lead preceptors to arrange to get some help. We will be happy to meet with you regularly, weekly if necessary, and get you a peer tutor from your college to help you succeed in this course.</p>
 
-<h2>Staff</h2>
-<p>COS 126 is staffed by a mix of professors, lecturers, and graduate students. Below you will find our contact info, precept schedules, and office hours. Note, it is <i>almost always more appropriate</i> to post your question on <a href="http://piazza.com/princeton/fall2014/cos126">Piazza</a> rather than emailing it to any single staffmember. Also note that </p>
-
-<table class="wide-table">
-<tr>
-	<th>NAME</th>
-    <th>BIO</th>
-	<th colspan="2">PRECEPT(S)</th>
-</tr>
-
-<tr>
-	<td>
-		<img src="images/people/robert-sedgewick.jpg"><br>
-		Robert Sedgewick <br>
-		<a href="mailto:rs@cs.princeton.edu">rs@cs.princeton.edu</a>
-	</td>
-    <td>
-        Bob Sedgewick is the William O. Baker Professor of Computer Science
-    </td>
-	<td colspan="2">
-		<a href="https://www.cs.princeton.edu/courses/enrollment/?course=COS126_S2014">L01</a> -- Lecture.<br><br>
-		Tuesdays &amp; Thursdays<br>
-		10:00-10:50am<br>
-		in McCosh 10
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/default.jpg"><br>
-		Donna Gabai<br>
-		<a href='mailto:dgabai@cs.princeton.edu'>dgabai@cs.princeton.edu</a><br><br>
-		Co-Lead Preceptor
-	</td>
-	<td>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P01'>P01</a><br>
-		Tuesdays &amp; Thursdays<br>
-		12:30-1:20pm<br>
-		in Friend 108<br>
-	</td>
-	<td>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P06A'>P06A</a><br>
-		Wednesdays &amp; Fridays<br>
-		2:30-3:20pm<br>
-		in Friend 109
-	</td>
-	<td>
-		Sundays 7:00-9:00pm<br>
-		in Friend 017
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/maia-ginsburg.jpg"><br>
-		Maia Ginsburg<br>
-		<a href='mailto:maia@cs.princeton.edu'>maia@cs.princeton.edu</a>
-	</td>
-	<td>
-		<i>Co-Lead Preceptor</i><br><br>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P01A'>P01A</A><br>
-		Tuesdays &amp; Thursdays<br>
-		12:30-1:20pm<br>
-		in Friend 109<br>
-	</td>
-	<td>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P05A'>P05A</a><br>
-		Wednesdays &amp; Fridays<br>
-		1:30-2:20pm<br>
-		in Friend 109
-	</td>
-	<td>
-		Thursdays 1:30-2:00pm<br>
-		Fridays 2:30-3:00pm<br>
-		Mondays 2:00-3:00pm<br>
-		in CS 205
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/andrea-lapaugh.jpg" width=70><br>
-		Andrea LaPaugh<br>
-		<a href='mailto:aslp@cs.princeton.edu'>aslp@cs.princeton.edu</a>
-	</td>
-	<td>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P01B'>P01B</A><br>
-		Tuesdays &amp; Thursdays<br>
-		12:30-1:20pm<br>
-		in Friend 009<br>
-	</td>
-	<td>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P02B'>P02B</a><br>
-		Tuesdays &amp; Thursdays<br>
-		1:30-2:20pm<br>
-		in Friend 009
-	</td>
-	<td>
-		Thursdays 2:30-4:30pm<br>
-		in CS 304
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/dan-leyzberg.jpg" width=70><br>
-		Dan Leyzberg<br>
-		<a href='mailto:dan.leyzberg@princeton.edu'>dan.leyzberg@princeton.edu</a>
-	</td>
-	<td>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P02'>P02</A><br>
-		Tuesdays &amp; Thursdays<br>
-		12:30-1:20pm<br>
-		in Friend 009<br>
-	</td>
-	<td>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P03'>P03</a><br>
-		Tuesdays &amp; Thursdays<br>
-		1:30-2:20pm<br>
-		in Friend 009
-	</td>
-	<td>
-		Thursdays 2:00-4:00pm<br>
-		in CS 304
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/default.jpg" width=70><br>
-		Stephen Cook<br>
-		<a href='mailto:stcook@princeton.edu'>stcook@princeton.edu</a>
-	</td>
-	<td colspan=2>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P02A'>P02A</A><br>
-		Tuesdays &amp; Thursdays<br>
-		1:30-2:20pm<br>
-		in Friend 109<br>
-	</td>
-	<td>
-		Mondays 4:30-6:30pm<br>
-		in CS 001B
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/jordan-ash.jpg" width=70><br>
-		Jordan Ash<br>
-		<a href='mailto:jordanta@cs.princeton.edu'>jordanta@cs.princeton.edu</a>
-	</td>
-	<td colspan=2>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P02C'>P02C</A><br>
-		Tuesdays &amp; Thursdays<br>
-		1:30-2:20pm<br>
-		in Friend 111<br>
-	</td>
-	<td>
-		Mondays 1:00-3:00pm<br>
-		in CS 004
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/shaoqing-victor-yang.jpg" width=70><br>
-		Shaoqing (Victor) Yang<br>
-		<a href='mailto:sy2@princeton.edu'>sy2@princeton.edu</a>
-	</td>
-	<td colspan=2>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P03A'>P03A</A><br>
-		Tuesdays &amp; Thursdays<br>
-		2:30-3:20pm<br>
-		in Friend 110<br>
-	</td>
-	<td>
-		Wednesdays 1:00-3:00pm<br>
-		in 221 Nassau St., first floor
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/katie-edwards.jpg" width=70><br>
-		Katie Edwards<br>
-		<a href='mailto:ke@princeton.edu'>ke@princeton.edu</a>
-	</td>
-	<td colspan=2>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P04'>P04</A><br>
-		Tuesdays &amp; Thursdays<br>
-		7:30-8:20pm<br>
-		in Friend 108<br>
-	</td>
-	<td>
-		Tuesdays 11:30am-12:30pm<br>
-		Thursdays 6:00-7:00pm<br>
-		in CS 244
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/doug-clark.jpg" width=70><br>
-		Doug Clark<br>
-		<a href='mailto:doug@princeton.edu'>doug@princeton.edu</a>
-	</td>
-	<td>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P05'>P05</A><br>
-		Wednesdays &amp; Fridays<br>
-		1:30-2:20pm<br>
-		in Friend 108<br>
-	</td>
-	<td>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P06'>P06</A><br>
-		Wednesdays &amp; Fridays<br>
-		2:30-3:20pm<br>
-		in Friend 108<br>
-	</td>
-	<td>
-		Fridays 3:30-5:30pm<br>
-		in CS 244
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/ted-brundage.jpg" width=70><br>
-		Ted Brundage<br>
-		<a href='mailto:doug@princeton.edu'>tobrund@princeton.edu</a>
-	</td>
-	<td colspan=2>
-		<a href='https://www.cs.princeton.edu/courses/enrollment/?course=COS126_F2014&precept=P05B'>P05B</A><br>
-		Wednesdays &amp; Fridays<br>
-		2:30-3:20pm<br>
-		in Friend 110<br>
-	</td>
-	<td>
-		Fridays 3:30-5:30pm<br>
-		in CS 244
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/young-kun-ko.jpg" width=70><br>
-		Young Kun Ko<br>
-		<a href='mailto:yko@cs.princeton.edu'>yko@cs.princeton.edu</a>
-	</td>
-	<td colspan=2>
-		Office hours only.
-	</td>
-	<td>
-		Mondays 11:00am-1:00pm<br>
-		in CS 103A
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/nevin-li.jpg" width=70><br>
-		Nevin Li<br>
-		<a href='mailto:nhli@princeton.edu'>nhli@princeton.edu</a>
-	</td>
-	<td colspan=2>
-		Office hours only.
-	</td>
-	<td>
-		Mondays 3:00-5:00pm<br>
-		in 221 Nassau St., First Floor
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/colin-watson.jpg" width=70><br>
-		Colin Watson<br>
-		<a href='mailto:colinw@princeton.edu'>colinw@princeton.edu</a>
-	</td>
-	<td colspan=2>
-		ISC-only Precept<br>
-		Thursdays 3:00-4:20pm<br>
-		in Icahn 200
-	</td>
-	<td>
-		ISC-only Office Hours<br>
-		Fridays 3:00-5:00pm<br>
-		in Moffet 430A
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="images/people/emily-nelson.jpg" width=70><br>
-		Emily Nelson<br>
-		<a href='mailto:emilysn@princeton.edu'>emilysn@princeton.edu</a>
-	</td>
-	<td colspan=2>
-		ISC-only Precept<br>
-		Fridays 3:00-4:20pm<br>
-		in Icahn 200
-	</td>
-	<td>
-		ISC-only Office Hours<br>
-		Thursdays 5:00-7:00pm<br>
-		in Icahn 132
-	</td>
-</tr>
-</table>
     
 <!--<h3>Newbie Workshops</h3>
 <p>Due to the cumulative nature of the curriculum, students who have been exposed to programming in the past will have an advantage early in the course over students who have never programmed a computer. In order to allow our newbie students a more equal footing, we offer weekly newbie workshops on Sunday afternoons that act as review of the week's material as well as additional practice that newbies need. For students who have not programmed before COS 126, we strongly suggest making plans to attend these newbie sessions every week.</p>

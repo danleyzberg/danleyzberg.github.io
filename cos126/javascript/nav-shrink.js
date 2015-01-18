@@ -13,31 +13,40 @@
 
 
 $(document).ready(function() {
-	var nav = $("#nav");
-    
-    function shrinkNav() { nav.trigger("shrink"); nav.addClass("smaller"); }
-    function growNav() { nav.trigger("grow"); nav.removeClass("smaller"); }
-    
-	$(window).scroll(function() {
-		if ($(window).scrollTop() > 300)
-            shrinkNav();
-		else
-            growNav();
-	});
+  var nav = $("#nav");
 
-	var prevY; // to determine mousemove direction
-	$(window).mousemove(function(event) {
-        var currY = event.clientY;
-		if (currY < 100 || (currY < 400 && currY < prevY - 10)) {
-			growNav();
-			prevY = currY;
-			window.removeEventListener('mousemove', onMouseMove);
-			setTimeout(function() {window.addEventListener('mousemove', onMouseMove);}, 1000);
-		} else {
-			if (currY > 300 && $(window).scrollTop() > 300) {
-                shrinkNav();
-			}
-			prevY = currY;
-		}
-	});
+  var lastGrowNavTime = 0;
+  function growNav() {
+    nav.trigger("grow");
+    nav.removeClass("smaller");
+    lastGrowNavTime = Date.now();
+  }
+  
+  function shrinkNav() {
+    if (Date.now() - lastGrowNavTime > 1000) {
+      nav.trigger("shrink");
+      nav.addClass("smaller");
+    }
+  }
+  
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 250)
+      shrinkNav();
+    else
+      growNav();
+  });
+
+  var prevY; // to determine mousemove direction
+  function mouseMover(event) {
+    var currY = event.clientY;
+    if (currY < 100 || (currY < 250 && currY < prevY - 5)) {
+      growNav();
+    } else if (currY >= 100 && $(window).scrollTop() > 250) {
+      shrinkNav();
+    }
+    prevY = currY;
+  }
+
+  $(window).on("mousemove", mouseMover);
 });

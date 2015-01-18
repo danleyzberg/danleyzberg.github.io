@@ -2,13 +2,20 @@
 
 <head>
   <title>COS 126: Assignments</title>
+  
+  <!-- Google-hosted fonts -- thanks Google! -->
   <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
-
+  
+  <!-- Our local stylesheets. -->
   <link rel="stylesheet" type="text/css" href="css/nav.css">
   <link rel="stylesheet" type="text/css" href="css/cos126.css">
 
+  <!-- The JS that makes the nav bar work! -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
   <script src="javascript/nav-shrink.js"></script>
+
+  <!-- Makes the site render properly (1:1 scale) on mobile devices. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -17,7 +24,7 @@
 <!-- NOTE: Put id="here" on the link to the  current page. -->
 <div id="nav">
   <a id="logo" href="syllabus.html">
-    <img src="images/princeton-shield.gif">
+    <img src="images/princeton-shield.png">
     <h1><b>COS</b>126</h1>
   </a>
   <ul id="links">
@@ -36,22 +43,7 @@
    
 <p>On this page you'll find the programming assignments for the course. If you're stuck, we suggest reading the frequently asked questions and the possible progress steps in the checklist.</p>
 
-<style>
-  .assignment-logo {
-    height: 100px;
-    width: 150px;
-    
-    border:1px solid #;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;  
-  }
-  a[href^="assignments/"] {
-    font-weight: bold;
-    font-size: 12pt;
-  }
-</style>
-<table class="wide-table">
+<table class="wide-table" id="assignments-table">
   <tr>
     <th>#</th>
     <th width="100">DUE</th>
@@ -78,7 +70,7 @@
   <tr>
     <td colspan="100%">
       <div class="alert-box">
-        <strong>Warning.</strong> Assignments below this box have not yet been updated for Spring 2015 and may change substantially.
+        <strong>Warning.</strong> The assignments below have not yet been updated for Spring 2015 and may change substantially.
       </div>
     </td>
   </tr>
@@ -143,7 +135,7 @@
     <td>Monday<br>Mar. 30th</td>
     <td><img src="images/assignments/lfsr-alt.jpg" class="assignment-logo"></td>
     <td>
-      <a href="assignments/lfsr.html">Linear Feedback Shift Register (LFSR)</a> (<a href="checklist/lfsr.html">Checklist</a>)<br>
+      <a href="assignments/lfsr.html">Linear Feedback Shift Register</a> (<a href="checklist/lfsr.html">Checklist</a>)<br>
       Write a program that produces pseudo-random bits by simulating a linear feedback shift register, and then use it to implement a simple form of encryption for digital pictures.
     </td>
     <td>This is an individual assignment.</td>
@@ -158,7 +150,7 @@
       <a href="assignments/guitar.html">Guitar Hero</a> (<a href="checklist/guitar.html">Checklist</a>)<br>
       Write a program to simulate plucking a guitar string using the Karplus-Strong algorithm. Turn your computer's keyboard into a musical instrument.
     </td>
-    <td>You may partner on this assignment.</td>
+    <td>You may <a href="syllabus.html#pair-programming">partner</a> on this assignment.</td>
     <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Guitar">Submit!</a></td>
   </tr>
 
@@ -170,19 +162,19 @@
       <a href="assignments/markov.html">Markov Model</a> (<a href="checklist/markov.html">Checklist</a>)<br>
       Use a Markov chain to create a statistical model of a piece of English text. Simulate the Markov chain to generate stylized pseudo-random text.
     </td>
-    <td>You may partner on this assignment.</td>
+    <td>You may <a href="syllabus.html#pair-programming">partner</a> on this assignment.</td>
     <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Markov">Submit!</a></td>
   </tr>
 
   <tr>
     <td>8</td>
     <td>Monday<br>Apr. 20th</td>
-    <td><img src="images/assignments/tsp-alt.png" class="assignment-logo"></td>
+    <td><img src="images/assignments/tsp.png" class="assignment-logo"></td>
     <td>
-      <a href="assignments/tsp.html">Traveling Salesperson Problem (TSP)</a> (<a href="checklist/tsp.html">Checklist</a>)<br>
+      <a href="assignments/tsp.html">Traveling Salesperson Problem</a> (<a href="checklist/tsp.html">Checklist</a>)<br>
       Implement two greedy heuristics to find good (but not optimal) solutions to the traveling salesperson problem (TSP).
     </td>
-    <td>You may partner on this assignment.</td>
+    <td>You may <a href="syllabus.html#pair-programming">partner</a> on this assignment.</td>
     <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/TSP">Submit!</a></td>
   </tr>
 
@@ -200,7 +192,7 @@
       <a href="assignments/atomic.html">Atomic Nature of Matter</a> (<a href="checklist/atomic.html">Checklist</a>)<br>
       Re-affirm the atomic nature of matter by tracking the motion of particles undergoing Brownian motion, fitting this data to Einstein's model, and estimating Avogadro's number.
     </td>
-    <td>You may partner on this assignment.</td>
+    <td>You may <a href="syllabus.html#pair-programming">partner</a> on this assignment.</td>
     <td><a href="https://dropbox.cs.princeton.edu/COS126_S2014/Atomic">Submit!</a></td>
   </tr>
 </table>

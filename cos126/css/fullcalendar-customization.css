@@ -1,7 +1,7 @@
 
 #calendar{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #calendar * {
@@ -55,4 +55,21 @@
 
 #calendar .fc-today {
   background-color: #FFF8F1;
+}
+
+#calendar {
+  position: relative;
+}
+
+#calendar #loading {
+  position: absolute;
+  top: 45%;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 20%;
+  padding: 5% 10%;
+  width: 40%;
+  background: #CCCCCC;
+  font-size: 14pt;
+  z-index: 999;
 }

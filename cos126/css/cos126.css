@@ -1,4 +1,5 @@
-body, td, th {
+
+body, td, th{
   font-family: "Oxygen", Helvetica, sans-serif;
   line-height: 2;
   font-size: 12pt;
@@ -11,28 +12,12 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 26pt;
+  font-size: 24pt;
   line-height: 1.5;
 }
 h2 {
-  font-size: 16pt;
+  font-size: 20pt;
 }
-
-
-/*
-@media screen and (max-width: 1024px) {
-    body, td, th {
-        line-height: 2;
-        font-size: 11pt;
-    }
-    h1 {
-        font-size: 24pt;
-    }
-    h2 {
-        font-size: 18pt;
-    }
-}
-*/
 
 
 
@@ -136,12 +121,12 @@ th {
 \**************/
 
 .wide-table {
+  table-layout: fixed;
   margin: 20px auto;
   border-spacing: 0px;
 }
 
 .wide-table td, .wide-table th {
-  line-height: 1.8;
   text-align: center;
   padding: 25px 20px;
   border-left: 1px;
@@ -173,9 +158,6 @@ th {
 @media screen and (max-width: 1024px) {
   .wide-table td, .wide-table th {
     padding: 20px 5px;
-    font-size: 11pt;
-  }
-  .wide-table a {
     font-size: 11pt;
   }
   .wide-table tr > :first-child {
@@ -227,22 +209,21 @@ th {
 }*/
     
 .alert-box {
-	width: 90%;
-	margin: 20px auto;
-    text-align: center;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
 
-	padding: 15px;
-	padding-left: 60px;
-	line-height: 2;
-	background: #FFF8F1 url("../images/alert.png") no-repeat 20px 50%;
+  padding: 10px;
+  padding-left: 50px;
 
-	border: #CCCCCC solid 2px;
-	box-shadow: 3px 3px #AAAAAA;
+  background: #FFF8F1 url("../images/alert.png") no-repeat 15px 50%;
+
+  border: #CCCCCC solid 2px;
+  box-shadow: 3px 3px #999999;
 }
 
 
 a:hover {
-  color: orangered;
   position: relative;
 }
 
@@ -251,8 +232,8 @@ a[alt]:hover:after {
   padding: 4px 8px;
   color: #333;
   position: absolute;
-  left: 0;
-  width: 200px;
+  left: -75px;
+  width: 250px;
   top: 100%;
   z-index: 20px;
   -moz-border-radius: 5px;
@@ -261,8 +242,6 @@ a[alt]:hover:after {
   -moz-box-shadow: 0px 0px 4px #222;
   -webkit-box-shadow: 0px 0px 4px #222;
   box-shadow: 0px 0px 4px #222;
-  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
   background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
   background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
   background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
@@ -270,12 +249,87 @@ a[alt]:hover:after {
 }
 
 
-
-img#paragraph-visual {
+/* all pages */
+img.paragraph-illustration {
   float: right;
-  margin: 15px 0px 15px 20px;
-  border:1px solid #;
+  margin: 10px 0px 10px 15px;
   -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;  
+     -moz-border-radius: 10px;
+          border-radius: 10px;  
 }
+
+/* syllabus page */
+#staff-table td:first-child img {
+  height: 100px;
+  width: 100px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px; 
+}
+#staff-table a[href^="mailto:"] {
+  font-weight: bold;
+}
+
+/* assignment page */
+#assignments-table img.assignment-logo {
+  height: 100px;
+  width: 150px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px; 
+}
+#assignments-table a[href^="assignments/"] {
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+@media screen and (max-width: 900px) {
+  body, td, th {
+    line-height: 1.7;
+    font-size: 11pt;
+  }
+  .wide-table td, .wide-table th {
+    line-height: 1.6;
+    font-size: 10pt;
+  }
+  h1 {
+    font-size: 20pt;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 16pt;
+    line-height: 1;
+  }
+  
+  .alert-box {
+    width: 90%;
+    padding: 10px;
+    background: #FFF8F1;
+  }
+  
+  
+  /* syllabus page */
+  #staff-table td:first-child img {
+    height: 75px;
+    width: 75px;
+  }
+  
+  /* assignments page */
+  #assignments-table td:nth-child(3),
+  #assignments-table th:nth-child(3) {
+    display: none;
+  }
+  
+  /* exams page */
+  #exams-table th:nth-child(1) {
+    width: 5%;
+  }
+  
+  /* help page */
+  .fc-slats .fc-time {
+    font-size: 8pt;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+  

@@ -2,13 +2,20 @@
 
 <head>
 <title>COS 126: Precepts</title>
-<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- Google-hosted fonts -- thanks Google! -->
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Oswald|Raleway:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- Our local stylesheets. -->
+  <link rel="stylesheet" type="text/css" href="css/cos126.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
 
-<link rel="stylesheet" type="text/css" href="css/nav.css">
-<link rel="stylesheet" type="text/css" href="css/cos126.css">
+  <!-- The JS that makes the nav bar work! -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+  <script src="javascript/nav-shrink.js"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
-<script src="javascript/nav-shrink.js"></script>
+  <!-- Makes the site render properly (1:1 scale) on mobile devices. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -16,7 +23,7 @@
 <!-- NOTE: Put id="here" on the link to the  current page. -->
 <div id="nav">
 	<a id="logo" href="syllabus.html">
-        <img src="images/princeton-shield.gif">
+        <img src="images/princeton-shield.png">
         <h1><b>COS</b>126</h1>
     </a>
 	<ul id="links">
@@ -32,14 +39,13 @@
 <!-- PAGE NAME -->
 <h1>Precepts</h1>
 
-  <p>The worksheets and code on this page will largely be covered in precept, whereas the recommended exercises and websheets are here for you to practice your skills at home. The websheets are programming exercises you can type and submit in your browser that give you instant feedback and have reference solutions. We've also created a tool called the <a href="http://www.cs.princeton.edu/~cos126/java_visualize/">Java Visualizer</a> that will animate the execution of any code you like, to see exactly what Java does each step of the way.</p>
+  <p>The worksheets and code on this page will largely be covered in precept, whereas the recommended exercises and websheets are here for you to practice your skills at home. <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=HelloWorld+NameAge+NextYear+SquareOf+SquareSwap#HelloWorld">Websheets</a> are online programming exercises you can write and submit in your browser which give you instant feedback and have reference solutions if you get stuck. We've also created a tool called the <a href="http://www.cs.princeton.edu/~cos126/java_visualize/">Java Visualizer</a> that will animate the execution of any code, showing you exactly what Java does each step of the way.</p>
 
 <table class="wide-table">
   <tr>
     <th>#</th>
     <th>DATE</th>
-    <th>TOPICS</th>
-    <th>WORKSHEETS</th>
+    <th>TOPICS &amp; WORKSHEETS</th>
     <th>CODE</th>
     <th>RECOMMENDED EXERCISES</th>
     <th>WEBSHEETS</th>
@@ -48,236 +54,355 @@
   <tr>
     <td>1</td>
     <td>2/4, 2/5</td>
-    <td>Intro, HelloWorld,<br> Command-line Arguments</td>
-    <td><a href="precepts/FirstProg.pdf">First Programs</a><br><a href="precepts/PrecIntro.pdf">Assignment Guidelines</a><br><a href="precepts/TreasureHunt.pdf">Treasure Hunt</a></td>
-    <td><a href="precepts/HelloWorld.java.html">HelloWorld</a><br><a href="precepts/NameAge.java.html">NameAge</a><br><a href="precepts/NextYear.java.html">NextYear</a><br><a href="precepts/SOLUTIONS/NameAge.java.html">NameAge Solution</a><br><a href="precepts/SOLUTIONS/NextYear.java.html">NextYear Solution</a></td>
     <td>
-      Exercises 1-4 in <a href="http://introcs.cs.princeton.edu/java/11hello/#exercises">Section 1.1</a><br>
-      Exercise 7 in <a href="http://introcs.cs.princeton.edu/java/12types/#exercises">Section 1.2</a>
+      Intro, HelloWorld,<br>
+      Command-line Arguments<br>
+      <a href="precepts/FirstProg.pdf">First Programs</a><br>
+      <a href="precepts/PrecIntro.pdf">Assignment Guidelines</a><br>
+      <a href="precepts/TreasureHunt.pdf">Treasure Hunt</a>
+    </td>
+    <td>
+      <a href="precepts/HelloWorld.java.html">HelloWorld</a><br>
+      <a href="precepts/NameAge.java.html">NameAge</a> (<a href="precepts/SOLUTIONS/NameAge.java.html">Solution</a>)<br>
+      <a href="precepts/NextYear.java.html">NextYear</a> (<a href="precepts/SOLUTIONS/NextYear.java.html">Solution</a>)
+    </td>
+    <td>
+      <a href="http://introcs.cs.princeton.edu/java/11hello/#exercises">Section 1.1</a><br>
+      Exercises: 1-4<br><br>
+      <a href="http://introcs.cs.princeton.edu/java/12types/#exercises">Section 1.2</a><br>
+      Exercise: 7 
     </td>
     <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=HelloWorld+NameAge+NextYear+SquareOf+SquareSwap#HelloWorld'>HelloWorld</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=HelloWorld+NameAge+NextYear+SquareOf+SquareSwap#NameAge'>NameAge</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=HelloWorld+NameAge+NextYear+SquareOf+SquareSwap#NextYear'>NextYear</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=HelloWorld+NameAge+NextYear+SquareOf+SquareSwap#SquareOf'>SquareOf</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=HelloWorld+NameAge+NextYear+SquareOf+SquareSwap#SquareSwap'>SquareSwap</a><br></td>
   </tr>
+  
+  <!-- <MOVE THIS ROW FURTHER DOWN AS NEEDED> -->
+  <tr>
+  <td colspan="100%">
+      <div class="alert-box">
+          <strong>Warning.</strong> The exercises below have not yet been updated for Spring 2015 and may change significantly.
+      </div>
+  </td>
+  </tr>
+  <!-- </MOVE THIS ROW FURTHER DOWN AS NEEDED> -->
 
   <tr>
     <td>2</td>
     <td>2/6, 2/7</td>
-    <td>Data Types<br>(Bring textbook to precept.)</td>
-    <td><a href="precepts/DataTypes.pdf">Data Types</a><br><a href="precepts/jigsaw.pdf">Data Types Table</a><!--<br><a href="precepts/DataTypesTable.pdf">Data Types Table Solution</a>--></td>
-    <td><a href="precepts/WindChill.java.html">WindChill</a><br><a href="precepts/Distance.java.html">Distance</a><br><a href="precepts/ThreeSort.java.html">ThreeSort</a></td>
     <td>
-      Exercises: 4, 6, 9, 13, 16, 20, 25, 30, and 34 on <a href="http://introcs.cs.princeton.edu/java/11hello/#exercises">Section 1.1</a>, WebExercises 1<br>(Hint for #20: Study Program 1.2.5 on p.33)
+      Bring your textbook<br>
+      to this precept!<br><br>
+      <a href="precepts/DataTypes.pdf">Data Types</a><br>
+      <a href="precepts/jigsaw.pdf">Data Types Table</a>
     </td>
-    <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#Eggsactly'>Eggsactly</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#PercentScore'>PercentScore</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#PizzaCalculator'>PizzaCalculator</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#WindChill'>WindChill</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#Distance'>Distance</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#ThreeSort'>ThreeSort</a><br></td>
+    <td>
+      <a href="precepts/WindChill.java.html">WindChill</a><br>
+      <a href="precepts/Distance.java.html">Distance</a><br>
+      <a href="precepts/ThreeSort.java.html">ThreeSort</a>
+    </td>
+    <td>
+      <a href="http://introcs.cs.princeton.edu/java/12types/#exercises" alt="Hint for #20: Study Program 1.2.5 on p.33">Section 1.2</a><br>
+      Exercises: 4, 6, 9,<br>
+      13, 16, 20, 25, 30, 34<br>
+      Web Exercises: 1
+    </td>
+    <td>
+      <a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#Eggsactly'>Eggsactly</a><br>
+      <a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#PercentScore'>PercentScore</a><br>
+      <a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#PizzaCalculator'>PizzaCalculator</a><br>
+      <a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#WindChill'>WindChill</a><br>
+      <a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#Distance'>Distance</a><br>
+      <a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Eggsactly+PercentScore+PizzaCalculator+WindChill+Distance+ThreeSort#ThreeSort'>ThreeSort</a>
+    </td>
   </tr>
 
   <tr>
     <td>3</td>
     <td>2/11, 2/12</td>
-    <td>Conditionals and Loops</td>
-    <td><a href="precepts/Loops.pdf">Conditionals and Loops</a><br><a href="precepts/Debug5PerLine.pdf">Debugging</a><br></td>
-    <td><a href="precepts/RollDie.java.html">RollDie</a><br><a href="precepts/RollLoadedDie.java.html">RollLoadedDie</a><br><a href="precepts/Buggy1FivePerLine.java.html">Buggy1FivePerLine</a><br><a href="precepts/Buggy2FivePerLine.java.html">Buggy2FivePerLine</a><br><a href="precepts/Buggy3FivePerLine.java.html">Buggy3FivePerLine</a><br><a href="precepts/Buggy4FivePerLine.java.html">Buggy4FivePerLine</a></td>
-    <td>1.3.7, 1.3.8, 1.3.13, 1.3.16 (Booksite 1.3.15), <br>1.3.20, WebExercises 1.3.1, 1.3.2</td>
+    <td>
+      <a href="precepts/Loops.pdf">Conditionals and Loops</a><br>
+      <a href="precepts/Debug5PerLine.pdf">Debugging</a>
+    </td>
+    <td>
+      <a href="precepts/RollDie.java.html">RollDie</a><br>
+      <a href="precepts/RollLoadedDie.java.html">RollLoadedDie</a><br>
+      <a href="precepts/Buggy1FivePerLine.java.html">Buggy1FivePerLine</a><br>
+      <a href="precepts/Buggy2FivePerLine.java.html">Buggy2FivePerLine</a><br>
+      <a href="precepts/Buggy3FivePerLine.java.html">Buggy3FivePerLine</a><br>
+      <a href="precepts/Buggy4FivePerLine.java.html">Buggy4FivePerLine</a>
+    </td>
+    <td>
+      <a href="http://introcs.cs.princeton.edu/java/13flow/#exercises">Section 1.3</a><br>
+      Exercises: 7, 8, 13, 15, 20<br>
+      Web Exercises: 1, 2<br>
+    </td>
     <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Flag+AgeChecker+SquareCensus+Quadratic+ModularSqrt#Flag'>Flag</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Flag+AgeChecker+SquareCensus+Quadratic+ModularSqrt#AgeChecker'>AgeChecker</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Flag+AgeChecker+SquareCensus+Quadratic+ModularSqrt#SquareCensus'>SquareCensus</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Flag+AgeChecker+SquareCensus+Quadratic+ModularSqrt#Quadratic'>Quadratic</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Flag+AgeChecker+SquareCensus+Quadratic+ModularSqrt#ModularSqrt'>ModularSqrt</a><br></td>
   </tr>
 
   <tr>
     <td>4</td>
     <td>2/13, 2/14</td>
-    <td>Arrays</td>
-    <td><a href="precepts/ArrayEx3.pdf">Arrays</a></td>
+    <td>
+      <a href="precepts/ArrayEx3.pdf">Arrays</a>
+    </td>
     <td><a href="precepts/HowMany.java.html">HowMany</a><br><a href="precepts/Distinct.java.html">Distinct</a><br><a href="precepts/MysteryArray.java.html">MysteryArray</a><br><a href="precepts/Birthday.java.html">Birthday</a><br><a href="precepts/DiscreteDistribution.java.html">DiscreteDistribution</a><br><a href="precepts/SecretMessage.java.html">SecretMessage</a></td>
-    <td>1.4.4, 1.4.9, 1.4.10 (Hint: start with Deck.java from lecture), <br>1.4.13, WebExercises 1.4.1, 1.4.2, <br>Booksite Creative Exercise 1.4.35 (both parts)</td>
+    <td>
+      <a href="http://introcs.cs.princeton.edu/java/14array/#exercises" alt="Hint for #10: Start with Deck.java from lecture.">Section 1.4</a><br>
+      Exercises: 4, 9, 10, 13<br> 
+      Web Exercises: 1, 2<br>
+      Creative Exercise: 35
+    </td>
     <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Distinct+Reverse+NOrdered+NSwap+Commonest#Distinct'>Distinct</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Distinct+Reverse+NOrdered+NSwap+Commonest#Reverse'>Reverse</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Distinct+Reverse+NOrdered+NSwap+Commonest#NOrdered'>NOrdered</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Distinct+Reverse+NOrdered+NSwap+Commonest#NSwap'>NSwap</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Distinct+Reverse+NOrdered+NSwap+Commonest#Commonest'>Commonest</a><br></td>
   </tr>
 
   <tr>
     <td>5</td>
     <td>2/18, 2/19</td>
-    <td>StdIn, Parallel Arrays, NBody</td>
-    <td><a href="precepts/StdInEx.pdf">StdIn</a><br><a href="cmdline.html">Command-line cheatsheet</a><br><a href="precepts/CommandPromptTutorial.pdf">Command-line tutorial</a></td>
+    <td>
+      <a href="precepts/StdInEx.pdf">StdIn</a>, Parallel Arrays,<br>&amp; N-Body Assignment<br>
+      <a href="precepts/CommandPromptTutorial.pdf">Command-line Tutorial</a><br>
+      <a href="cmdline.html">Command-line Cheatsheet</a>
+    </td>
     <td><a href="precepts/MaxMin.java.html">MaxMin</a><br><a href="precepts/Students.java.html">Students</a><br><a href="http://introcs.cs.princeton.edu/15inout/students.txt">students.txt data file</a></td>
-    <td>1.5.1, 1.5.3, 1.5.11, 1.5.13, 1.5.15, WebExercise 1.5.31</td>
+    <td>
+      <a href="http://introcs.cs.princeton.edu/java/15inout/#exercises">Section 1.5</a><br>
+      Exercises: 1, 3, 11, 13, 15<br>
+      WebExercise: 31
+    </td>
     <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MaxMin+Students+Powers+Squish+Means#MaxMin'>MaxMin</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MaxMin+Students+Powers+Squish+Means#Students'>Students</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MaxMin+Students+Powers+Squish+Means#Powers'>Powers</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MaxMin+Students+Powers+Squish+Means#Squish'>Squish</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MaxMin+Students+Powers+Squish+Means#Means'>Means</a><br></td>
   </tr>
 
   <tr>
     <td>6</td>
     <td>2/20, 2/21</td>
-    <td>StdDraw, Functions</td>
-    <td><a href="precepts/StdDrawEx.pdf">CheckerBoard</a><!--<br><a href="precepts/CheckerBoard.java.html">CheckerBoard</a>--><br><a href="precepts/Methods.pdf">Functions(Maxi & Reverse)</a><br><!--<br><a href="precepts/Perimeter.pdf">Perimeter</a>--></td>
+    <td>
+      StdDraw, Functions<br>
+      <a href="precepts/StdDrawEx.pdf">CheckerBoard</a><br>
+      <!--<br><a href="precepts/CheckerBoard.java.html">CheckerBoard</a>-->
+      <a href="precepts/Methods.pdf">Functions (Maxi &amp; Reverse)</a>
+      <!--<br><a href="precepts/Perimeter.pdf">Perimeter</a>-->
+    </td>
     <td><a href="precepts/Maxi.java.html">Maxi</a><br><a href="precepts/Reverse.java.html">Reverse</a><br><!--<a href="precepts/Perimeter.java.html">Perimeter</a><br>--><a href="http://introcs.cs.princeton.edu/java/15inout/DeluxeBouncingBall.java.html">DeluxeBouncingBall</a><br>Optional media:<br><a href="precepts/TennisBall.png">TennisBall.png</a>,<br><a href="precepts/pipebang.wav">pipebang.wav</a></td>
-    <td>1.5.18, 1.5.21, 1.5.22<br>2.1.1, 2.1.3, 2.1.4, 2.1.13, 2.1.14<br> WebExercise 2.1.35<br></td>
+    <td>
+      <a href="http://introcs.cs.princeton.edu/java/15inout/#exercises">Section 1.5</a><br>
+      Exercises: 18, 21, 22<br><br>
+      <a href="http://introcs.cs.princeton.edu/java/21function/#exercises">Section 2.1</a><br>
+      Exercises: 1, 3, 4, 13, 14<br>
+      Web Exercise: 35
+    </td>
     <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Positive+Find+Boxed+Summer+Yarra#Positive'>Positive</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Positive+Find+Boxed+Summer+Yarra#Find'>Find</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Positive+Find+Boxed+Summer+Yarra#Boxed'>Boxed</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Positive+Find+Boxed+Summer+Yarra#Summer'>Summer</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Positive+Find+Boxed+Summer+Yarra#Yarra'>Yarra</a><br></td>
   </tr>
 
-<tr>
-<td>7</td>
-<td>2/25, 2/26</td>
-<td>Recursion and Fractals</td>
-<td><a href="precepts/StdDrawPolyEx.pdf">StdDraw and Methods(DiamondTile)</a><br><a href="precepts/RecurFact.pdf">Recursion(Factorial)</a><br><a href="precepts/Htree.pdf">Htree</a><br><a href="precepts/NestedCircles.pdf">NestedCircles</a></td>
-<td><a href="precepts/DiamondTile.java.html">DiamondTile</a><br><a href="precepts/Factorial.java.html">Factorial</a><br><a href="http://introcs.cs.princeton.edu/java/23recursion/Htree.java.html">Htree</a><br><a href="precepts/NestedCircles.java.html">NestedCircles</a></td>
-<td>WebExercise 2.1.1, 2.3.3, 2.3.8, 2.3.14, 2.3.22</td>
-<td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#Kettles'>Kettles</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#Factorial'>Factorial</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#TextFractal'>TextFractal</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#BinarySum'>BinarySum</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#Evaluate'>Evaluate</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#ZeroSum'>ZeroSum</a><br></td>
-</tr>
+  <tr>
+    <td>7</td>
+    <td>2/25, 2/26</td>
+    <td>
+      Recursion and Fractals<br>
+      <a href="precepts/StdDrawPolyEx.pdf">StdDraw and Methods (DiamondTile)</a><br>
+      <a href="precepts/RecurFact.pdf">Recursion (Factorial)</a><br>
+      <a href="precepts/Htree.pdf">Htree</a><br>
+      <a href="precepts/NestedCircles.pdf">NestedCircles</a>
+    </td>
+    <td>
+      <a href="precepts/DiamondTile.java.html">DiamondTile</a><br>
+      <a href="precepts/Factorial.java.html">Factorial</a><br>
+      <a href="http://introcs.cs.princeton.edu/java/23recursion/Htree.java.html">Htree</a><br>
+      <a href="precepts/NestedCircles.java.html">NestedCircles</a>
+    </td>
+    <td>
+      Web Exercises: 1, 3, 8, 14, 22<br>
+      in <a href="http://introcs.cs.princeton.edu/java/21function/#exercises">Section 2.1</a>
+    </td>
+    <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#Kettles'>Kettles</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#Factorial'>Factorial</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#TextFractal'>TextFractal</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#BinarySum'>BinarySum</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#Evaluate'>Evaluate</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Kettles+Factorial+TextFractal+BinarySum+Evaluate+ZeroSum#ZeroSum'>ZeroSum</a><br></td>
+  </tr>
 
-<tr>
-<td>8</td>
-<td>2/27, 2/28</td>
-<td>Performance and Sorting</td>
-<td><a href="precepts/Repeat.pdf">Repeat</a></td>
-<td><a href="http://introcs.cs.princeton.edu/java/42sort/InsertionTest.java.html">InsertionTest</a><br><a href="http://introcs.cs.princeton.edu/java/41analysis/Repeat.java.html">Repeat</a></td>
-<td>4.1.10, 4.1.16, 4.1.27</td>
-<td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Lambert#Lambert'>Lambert</a><br></td>
-</tr>
+  <tr>
+    <td>8</td>
+    <td>2/27, 2/28</td>
+    <td>
+      Performance and Sorting:<br>
+      <a href="precepts/Repeat.pdf">Repeat Exercise</a>
+    </td>
+    <td><a href="http://introcs.cs.princeton.edu/java/42sort/InsertionTest.java.html">InsertionTest</a><br><a href="http://introcs.cs.princeton.edu/java/41analysis/Repeat.java.html">Repeat</a></td>
+    <td>4.1.10, 4.1.16, 4.1.27</td>
+    <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Lambert#Lambert'>Lambert</a><br></td>
+  </tr>
 
-<tr>
-<td>9</td>
-<td>3/4, 3/5</td>
-<td>Number Systems<br>and Bitwise Operators</td>
-<td><a href="precepts/NumberSys.pdf">Number Systems</a><!--</br><a href="precepts/ToyEx.pdf">TOY</a><br><a href="http://introcs.cs.princeton.edu/java/53isa/cheatsheet.txt">TOY cheat sheet</a>--><br><a href="docs/miniExam1Spring.pdf">Practice Mini-Exam</a></td>
-<td><a href="precepts/NumberSysSol.pdf">Number Systems Answers</a><!--</br><a href="precepts/ToyExSol.pdf">TOY Answers</a>--></td>
-<td>Booksite 5.1.1, 5.1.16 (~ means complement), 5.1.18</td>
-<td></td>
-</tr>
+  <tr>
+    <td>9</td>
+    <td>3/4, 3/5</td>
+    <td>
+      Number Systems &amp; Bitwise Operators:<br>
+      <a href="precepts/NumberSys.pdf">Number Systems</a><br>
+      <!--</br><a href="precepts/ToyEx.pdf">TOY</a><br><a href="http://introcs.cs.princeton.edu/java/53isa/cheatsheet.txt">TOY cheat sheet</a>-->
+      <a href="docs/miniExam1Spring.pdf">Practice Mini-Exam</a>
+    </td>
+    <td><a href="precepts/NumberSysSol.pdf">Number Systems Answers</a><!--</br><a href="precepts/ToyExSol.pdf">TOY Answers</a>--></td>
+    <td>Booksite 5.1.1, 5.1.16 (~ means complement), 5.1.18</td>
+    <td></td>
+  </tr>
 
-<tr>
-<td>10</td>
-<td>3/6, 3/7</td>
-<td>TOY</td>
-<td><a href="precepts/ToyEx.pdf">TOY</a> + <a href="http://introcs.cs.princeton.edu/java/53isa/cheatsheet.txt">Reference Card</a></td>
-<td><a href="precepts/ToyExSol.pdf">TOY Answers</a><br><a href="precepts/fib.toy">fib.toy</a><br><a href="http://introcs.cs.princeton.edu/xtoy/project/toy_1.5.jar">toy_1.5.jar (X-TOY)</a><br><a href="ftp://ftp.cs.princeton.edu/pub/cs126/hamming/TOY.java">TOY.java</a><br><a href="docs/miniExam1SpringSol.pdf">Practice Mini-Exam Answers</a></td>
-<td>5.3.2, 5.3.6, 5.3.12, 5.4.8, 5.4.9, 5.4.12</td>
-<td></td>
-</tr>
+  <tr>
+    <td>10</td>
+    <td>3/6, 3/7</td>
+    <td>
+      <a href="precepts/ToyEx.pdf">TOY</a><br>
+      <a href="http://introcs.cs.princeton.edu/java/53isa/cheatsheet.txt">TOY Reference Card</a>
+    </td>
+    <td><a href="precepts/ToyExSol.pdf">TOY Answers</a><br><a href="precepts/fib.toy">fib.toy</a><br><a href="http://introcs.cs.princeton.edu/xtoy/project/toy_1.5.jar">toy_1.5.jar (X-TOY)</a><br><a href="ftp://ftp.cs.princeton.edu/pub/cs126/hamming/TOY.java">TOY.java</a><br><a href="docs/miniExam1SpringSol.pdf">Practice Mini-Exam Answers</a></td>
+    <td>5.3.2, 5.3.6, 5.3.12, 5.4.8, 5.4.9, 5.4.12</td>
+    <td></td>
+  </tr>
 
-<tr>
-<td>11</td>
-<td>3/11, 3/12</td>
-<td>Hamming Codes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+  <tr>
+    <td>11</td>
+    <td>3/11, 3/12</td>
+    <td>Hamming Codes</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 
-<tr>
-<th colspan="100%">3/13, 3/14: Precept cancelled. Programming midterm 1 Thurs 3/13 evening.<br>See <a href="exams.html">Exams</a> page. Practice: <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=HatsPart1+HatsPart2">Fall 2012 (Hats)</a> and <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FoodPart1+FoodPart2">Spring 2013 (Food)</a>.</th>
-</tr>
+  <tr>
+    <th colspan="100%">3/13, 3/14: Precept cancelled. Programming midterm 1 Thurs 3/13 evening.<br>See <a href="exams.html">Exams</a> page. Practice: <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=HatsPart1+HatsPart2">Fall 2012 (Hats)</a> and <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FoodPart1+FoodPart2">Spring 2013 (Food)</a>.</th>
+  </tr>
+
+  <tr>
+    <th colspan="100%">Have a relaxing spring break! Please fill out the <a href="cgi-bin/midtermEval.cgi">feedback form</a>.</th>
+  </tr>
   
-<tr>
-<th colspan="100%">Have a relaxing spring break! Please fill out the <a href="cgi-bin/midtermEval.cgi">feedback form</a>.</th>
-</tr>
-  
-<tr>
-<td>12</td>
-<td>3/25, 3/26</td>
-<td>Using Data Types</td>
-<td><a href="precepts/Ex3_1.pdf">Charge, Color, Picture clients</a></td>
-<td><a href="precepts/PlayTime.java.html">PlayTime</a><br><a href="precepts/FourChargeClient.java.html">FourChargeClient</a> <a href="http://introcs.cs.princeton.edu/java/32class/Charge.java.html">Charge</a><br><a href="precepts/ColorSeparation.java.html">ColorSeparation</a> <a href="http://introcs.cs.princeton.edu/31datatype/peppers.jpg">peppers.jpg</a><br><a href="http://introcs.cs.princeton.edu/java/11cheatsheet/#Picture">Picture API</a> (<a href="http://introcs.cs.princeton.edu/java/31datatype/Picture.java.html">Picture.java</a>)<br><a href="http://introcs.cs.princeton.edu/java/11cheatsheet/#Color">Color API</a></td>
-<td>3.1.1, 3.1.6 (Booksite Creative Exer. 3.1.60),<br> 3.1.13 (Booksite 3.1.25),<br> 3.1.14 (Booksite 3.1.30),<br> Booksite 3.1.14 (answer on p.340)</td>
-<td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FourChargeClient+IsPalindrome+ComplementaryDNA+CircularShift+GeneFind#FourChargeClient'>FourChargeClient</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FourChargeClient+IsPalindrome+ComplementaryDNA+CircularShift+GeneFind#IsPalindrome'>IsPalindrome</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FourChargeClient+IsPalindrome+ComplementaryDNA+CircularShift+GeneFind#ComplementaryDNA'>ComplementaryDNA</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FourChargeClient+IsPalindrome+ComplementaryDNA+CircularShift+GeneFind#CircularShift'>CircularShift</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FourChargeClient+IsPalindrome+ComplementaryDNA+CircularShift+GeneFind#GeneFind'>GeneFind</a><br></td>
-</tr>
+  <tr>
+    <td>12</td>
+    <td>3/25, 3/26</td>
+    <td>
+      Using Data Types:<br>
+      <a href="precepts/Ex3_1.pdf">Charge, Color, Picture Clients</a>
+    </td>
+    <td><a href="precepts/PlayTime.java.html">PlayTime</a><br><a href="precepts/FourChargeClient.java.html">FourChargeClient</a> <a href="http://introcs.cs.princeton.edu/java/32class/Charge.java.html">Charge</a><br><a href="precepts/ColorSeparation.java.html">ColorSeparation</a> <a href="http://introcs.cs.princeton.edu/31datatype/peppers.jpg">peppers.jpg</a><br><a href="http://introcs.cs.princeton.edu/java/11cheatsheet/#Picture">Picture API</a> (<a href="http://introcs.cs.princeton.edu/java/31datatype/Picture.java.html">Picture.java</a>)<br><a href="http://introcs.cs.princeton.edu/java/11cheatsheet/#Color">Color API</a></td>
+    <td>3.1.1, 3.1.6 (Booksite Creative Exer. 3.1.60),<br> 3.1.13 (Booksite 3.1.25),<br> 3.1.14 (Booksite 3.1.30),<br> Booksite 3.1.14 (answer on p.340)</td>
+    <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FourChargeClient+IsPalindrome+ComplementaryDNA+CircularShift+GeneFind#FourChargeClient'>FourChargeClient</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FourChargeClient+IsPalindrome+ComplementaryDNA+CircularShift+GeneFind#IsPalindrome'>IsPalindrome</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FourChargeClient+IsPalindrome+ComplementaryDNA+CircularShift+GeneFind#ComplementaryDNA'>ComplementaryDNA</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FourChargeClient+IsPalindrome+ComplementaryDNA+CircularShift+GeneFind#CircularShift'>CircularShift</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FourChargeClient+IsPalindrome+ComplementaryDNA+CircularShift+GeneFind#GeneFind'>GeneFind</a><br></td>
+  </tr>
 
-<tr>
-<td>13</td>
-<td>3/27, 3/28</td>
-<td>Creating Data Types</td>
-<td><a href="precepts/ExerciseBall.pdf">Object-orienting a bouncing ball, Ball client</a></td>
-<td><a href="http://introcs.cs.princeton.edu/java/32class/Stopwatch.java.html">Stopwatch.java</a><br><a href="precepts/Person.java.html">Person.java</a><br><a href="precepts/Ball.java.html">Ball</a>, <a href="precepts/BouncingBalls.java.html">BouncingBalls</a><br><a href="precepts/BouncingBall.java.html">BouncingBall</a> (&sect;1.5)</td>
-<td>3.2.5, 3.2.11 (Point.java code on Booksite)</td>
-<td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Recorder+Clicker+CountingSort+CombinationLock+Monomial#Recorder'>Recorder</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Recorder+Clicker+CountingSort+CombinationLock+Monomial#Clicker'>Clicker</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Recorder+Clicker+CountingSort+CombinationLock+Monomial#CountingSort'>CountingSort</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Recorder+Clicker+CountingSort+CombinationLock+Monomial#CombinationLock'>CombinationLock</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Recorder+Clicker+CountingSort+CombinationLock+Monomial#Monomial'>Monomial</a><br></td>
-</tr>
+  <tr>
+  <td>13</td>
+  <td>3/27, 3/28</td>
+  <td>
+    Creating Data Types:<br>
+    <a href="precepts/ExerciseBall.pdf">Object-orienting a bouncing ball, Ball client</a>
+  </td>
+  <td><a href="http://introcs.cs.princeton.edu/java/32class/Stopwatch.java.html">Stopwatch.java</a><br><a href="precepts/Person.java.html">Person.java</a><br><a href="precepts/Ball.java.html">Ball</a>, <a href="precepts/BouncingBalls.java.html">BouncingBalls</a><br><a href="precepts/BouncingBall.java.html">BouncingBall</a> (&sect;1.5)</td>
+  <td>3.2.5, 3.2.11 (Point.java code on Booksite)</td>
+  <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Recorder+Clicker+CountingSort+CombinationLock+Monomial#Recorder'>Recorder</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Recorder+Clicker+CountingSort+CombinationLock+Monomial#Clicker'>Clicker</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Recorder+Clicker+CountingSort+CombinationLock+Monomial#CountingSort'>CountingSort</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Recorder+Clicker+CountingSort+CombinationLock+Monomial#CombinationLock'>CombinationLock</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Recorder+Clicker+CountingSort+CombinationLock+Monomial#Monomial'>Monomial</a><br></td>
+  </tr>
 
-<tr>
-<td>14</td>
-<td>4/1, 4/2</td>
-<td>More OOP<br>Stacks and Queues<br>Guitar Hero</td>
-<td><a href="precepts/OOPExercise.pdf">OOP Example: Vector</a><br><a href="precepts/StackQueueEx.pdf">Stacks and Queues</a></td>
-<td><a href="precepts/Vector.java.html">Vector.java</a></td>
-<td>3.3.6 (answer in book), <br>3.3.7 (answer in Vector.java in Booksite 3.3)<br>4.3.1, 4.3.3, 4.3.4, 4.3.8, 4.3.9, 4.3.16</td>
-<td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Name+Interval+Vector+QMerge+LineEdit#Name'>Name</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Name+Interval+Vector+QMerge+LineEdit#Interval'>Interval</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Name+Interval+Vector+QMerge+LineEdit#Vector'>Vector</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Name+Interval+Vector+QMerge+LineEdit#QMerge'>QMerge</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Name+Interval+Vector+QMerge+LineEdit#LineEdit'>LineEdit</a><br></td>
-</tr>
+  <tr>
+    <td>14</td>
+    <td>4/1, 4/2</td>
+    <td>
+      More OOP<br>Stacks &amp; Queues<br>Guitar Hero Assignment:<br>
+      <a href="precepts/OOPExercise.pdf">OOP Example: Vector</a><br>
+      <a href="precepts/StackQueueEx.pdf">Stacks and Queues</a>
+    </td>
+    <td><a href="precepts/Vector.java.html">Vector.java</a></td>
+    <td>3.3.6 (answer in book), <br>3.3.7 (answer in Vector.java in Booksite 3.3)<br>4.3.1, 4.3.3, 4.3.4, 4.3.8, 4.3.9, 4.3.16</td>
+    <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Name+Interval+Vector+QMerge+LineEdit#Name'>Name</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Name+Interval+Vector+QMerge+LineEdit#Interval'>Interval</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Name+Interval+Vector+QMerge+LineEdit#Vector'>Vector</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Name+Interval+Vector+QMerge+LineEdit#QMerge'>QMerge</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Name+Interval+Vector+QMerge+LineEdit#LineEdit'>LineEdit</a><br></td>
+  </tr>
 
-<tr>
-<td>15</td>
-<td>4/3, 4/4</td>
-<td>BST<br>Linked Lists</td>
-<td><a href="precepts/Trees.pdf">Binary Search Trees</a><br><a href="precepts/Quote.pdf">Quote</a></td>
-<td><a href="precepts/Quote.java.html">Quote</a><br><a href="precepts/TreesSol.pdf">Binary Trees solution</a></td>
-<td>4.3.23, 4.3.25, 4.3.26, 4.3.27<br>Web Exer. 4.3.1, 4.3.2<br>4.4.8, 4.4.9</td>
-<td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MonkeyTraverse+MonkeyAddStart+MonkeyAddEnd+Quote+LinkIt#MonkeyTraverse'>MonkeyTraverse</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MonkeyTraverse+MonkeyAddStart+MonkeyAddEnd+Quote+LinkIt#MonkeyAddStart'>MonkeyAddStart</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MonkeyTraverse+MonkeyAddStart+MonkeyAddEnd+Quote+LinkIt#MonkeyAddEnd'>MonkeyAddEnd</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MonkeyTraverse+MonkeyAddStart+MonkeyAddEnd+Quote+LinkIt#Quote'>Quote</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MonkeyTraverse+MonkeyAddStart+MonkeyAddEnd+Quote+LinkIt#LinkIt'>LinkIt</a><br></td>
-</tr>
+  <tr>
+    <td>15</td>
+    <td>4/3, 4/4</td>
+    <td>
+      BST's &amp; Linked Lists:<br>
+      <a href="precepts/Trees.pdf">Binary Search Trees</a><br>
+      <a href="precepts/Quote.pdf">Quote</a>
+    </td>
+    <td><a href="precepts/Quote.java.html">Quote</a><br><a href="precepts/TreesSol.pdf">Binary Trees solution</a></td>
+    <td>4.3.23, 4.3.25, 4.3.26, 4.3.27<br>Web Exer. 4.3.1, 4.3.2<br>4.4.8, 4.4.9</td>
+    <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MonkeyTraverse+MonkeyAddStart+MonkeyAddEnd+Quote+LinkIt#MonkeyTraverse'>MonkeyTraverse</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MonkeyTraverse+MonkeyAddStart+MonkeyAddEnd+Quote+LinkIt#MonkeyAddStart'>MonkeyAddStart</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MonkeyTraverse+MonkeyAddStart+MonkeyAddEnd+Quote+LinkIt#MonkeyAddEnd'>MonkeyAddEnd</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MonkeyTraverse+MonkeyAddStart+MonkeyAddEnd+Quote+LinkIt#Quote'>Quote</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MonkeyTraverse+MonkeyAddStart+MonkeyAddEnd+Quote+LinkIt#LinkIt'>LinkIt</a><br></td>
+  </tr>
 
-<tr>
-<td>16</td>
-<td>4/8, 4/9</td>
-<td>Symbol Tables<br>Generics<br>Markov Model</td>
-<td><a href="precepts/STScrambleEx.pdf">Symbol Tables</a><br><a href="precepts/ST_FreqTable.pdf">FrequencyTable</a></td>
-<td><a href="precepts/FrequencyTable.java.html">FrequencyTable.java</a><br><a href="http://introcs.cs.princeton.edu/java/44st/ST.java.html">ST.java</a><br><a href="http://introcs.cs.princeton.edu/java/44st/mobydick.txt">mobydick.txt</a></td>
-<td>4.4.23, 4.4.36 (Booksite Creative Ex 4.4.5)</td>
-<td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FrequencyTable+ReverseLookup#FrequencyTable'>FrequencyTable</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FrequencyTable+ReverseLookup#ReverseLookup'>ReverseLookup</a><br></td>
-</tr>
+  <tr>
+    <td>16</td>
+    <td>4/8, 4/9</td>
+    <td>
+      Symbol Tables, Generics, &amp;<br>Markov Model Assignment:<br>
+      <a href="precepts/STScrambleEx.pdf">Symbol Tables</a><br>
+      <a href="precepts/ST_FreqTable.pdf">FrequencyTable</a>
+    </td>
+    <td><a href="precepts/FrequencyTable.java.html">FrequencyTable.java</a><br><a href="http://introcs.cs.princeton.edu/java/44st/ST.java.html">ST.java</a><br><a href="http://introcs.cs.princeton.edu/java/44st/mobydick.txt">mobydick.txt</a></td>
+    <td>4.4.23, 4.4.36 (Booksite Creative Ex 4.4.5)</td>
+    <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FrequencyTable+ReverseLookup#FrequencyTable'>FrequencyTable</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=FrequencyTable+ReverseLookup#ReverseLookup'>ReverseLookup</a><br></td>
+  </tr>
 
-<tr>
-<td>17</td>
-<td>4/10, 4/11</td>
-<td>RE and DFA</td>
-<td><a href="precepts/redfa.pdf">RE and DFA</a></td>
-<td><a href="precepts/redfaSol.pdf">RE and DFA Answers</a><br><a href="checklist/regular-crossword.html">Challenge for the bored</a></td>
-<td>Fall09 Exam2 #2<br>Fall12 Exam2 #4</td>
-<td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=RegularExercise#RegularExercise'>RegularExercise</a><br></td>
-</tr>
+  <tr>
+    <td>17</td>
+    <td>4/10, 4/11</td>
+    <td>
+      RE's and DFA's<br>
+      <a href="precepts/redfa.pdf">RE's and DFA's</a><br>
+      <a href="precepts/redfaSol.pdf">RE's and DFA's Answers</a><br>
+      <a href="checklist/regular-crossword.html">Challenge for the bored</a>
+    </td>
+    <td></td>
+    <td>Fall09 Exam2 #2<br>Fall12 Exam2 #4</td>
+    <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=RegularExercise#RegularExercise'>RegularExercise</a><br></td>
+  </tr>
 
-<tr>
-<td>18</td>
-<td>4/15, 4/16</td>
-<td>Turing Machines,<br>TSP heuristics</td>
-<td><a href="precepts/TMhandout.pdf">Turing Machines</a><!--<a href="precepts/CircularQuote.java.html">CircularQuote (blank)</a><br><a href="http://introcs.cs.princeton.edu/java/43stack/CircularQuote.java.html">CircularQuote.java--><br><a href="precepts/CircularQuote.pdf">CircularQuote</a></td>
-<td>Turing machine: <a href="http://introcs.cs.princeton.edu/turing/turing.jnlp">java webstart</a> or<br><a href="http://introcs.cs.princeton.edu/turing/turing.jar">jar</a> (run <tt>java -jar turing.jar</tt><br><a href="precepts/TMhandoutSol.pdf">TM handout solutions</a></td>
-<td>Spr13 Exam2 #8</td>
-<td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=CircularQuote+LinkIt#CircularQuote'>CircularQuote</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=CircularQuote+LinkIt#LinkIt'>LinkIt</a><br></td>
-</tr>
+  <tr>
+    <td>18</td>
+    <td>4/15, 4/16</td>
+    <td>
+      Turing Machines &amp; TSP Assignment<br>
+      <a href="precepts/TMhandout.pdf">Turing Machines</a><br>
+      <!--<a href="precepts/CircularQuote.java.html">CircularQuote (blank)</a><br><a href="http://introcs.cs.princeton.edu/java/43stack/CircularQuote.java.html">CircularQuote.java-->
+      <a href="precepts/CircularQuote.pdf">CircularQuote</a>
+    </td>
+    <td>Turing machine: <a href="http://introcs.cs.princeton.edu/turing/turing.jnlp">java webstart</a> or<br><a href="http://introcs.cs.princeton.edu/turing/turing.jar">jar</a> (run <tt>java -jar turing.jar</tt><br><a href="precepts/TMhandoutSol.pdf">TM handout solutions</a></td>
+    <td>Spr13 Exam2 #8</td>
+    <td><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=CircularQuote+LinkIt#CircularQuote'>CircularQuote</a><br><a href='http://www.cs.princeton.edu/~cos126/websheets/index.php?group=CircularQuote+LinkIt#LinkIt'>LinkIt</a><br></td>
+  </tr>
 
-<tr>
-<td>19</td>
-<td>4/17, 4/18</td>
-<td>Theory, Boolean Algebra</td>
-<td><a href="precepts/theorytable.html">Theory Jigsaw</a></td>
-<td><a href="precepts/theorytable.html">Theory Jigsaw Entries (click table)</a><br></td>
-<td><a href="precepts/theoryQuiz.pdf">Theory Mini-quiz</a><br><a href="precepts/theoryQuizAns.pdf">Theory mini-quiz solutions</a></td>
-<td></td>
-</tr>
+  <tr>
+    <td>19</td>
+    <td>4/17, 4/18</td>
+    <td>
+      Theory, Boolean Algebra<br>
+      <a href="precepts/theorytable.html">Theory Jigsaw (click table)</a><br>
+    </td>
+    <td></td>
+    <td><a href="precepts/theoryQuiz.pdf">Theory Mini-quiz</a><br><a href="precepts/theoryQuizAns.pdf">Theory mini-quiz solutions</a></td>
+    <td></td>
+  </tr>
 
-<tr>
-<td>20</td>
-<td>4/22, 4/23</td>
-<td>Circuits</td>
-<td><a href="precepts/CombCircEx.pdf">Boolean Algebra/Circuits</a><br><a href="docs/miniExam2Spring.pdf">Practice Mini-Exam</a></td>
-<td><a href="precepts/CombCircExSol.pdf">Boolean Algebra Answers</a></td>
-<td><a href="exercises/circuits/circuits_worksheet_spring.pdf">Circuits Match-up</a><br><a href="exercises/circuits/index.php">Circuits Match-up Checker</a></td>
-<td></td>
-</tr>
+  <tr>
+    <td>20</td>
+    <td>4/22, 4/23</td>
+    <td>
+      <a href="precepts/CombCircEx.pdf">Boolean Algebra &amp; Circuits</a> (<a href="precepts/CombCircExSol.pdf">Solutions</a>)<br>
+      <a href="docs/miniExam2Spring.pdf">Practice Mini-Exam</a>
+    </td>
+    <td></td>
+    <td><a href="exercises/circuits/circuits_worksheet_spring.pdf">Circuits Match-up</a><br><a href="exercises/circuits/index.php">Circuits Match-up Checker</a></td>
+    <td></td>
+  </tr>
 
   <tr>
     <td>21</td>
     <td>4/24, 4/25</td>
-    <td>Architecture<br>Review</td>
-    <td><a href="precepts/ToyArchEx.pdf">Architecture</a><br><a href="jeopardy/">Jeopardy!</a></td>
-    <td><a href="precepts/ToyArchExSol.pdf">Architecture Solutions</a><br><a href="docs/miniExam2SpringSol.pdf">Practice Mini-Exam Answers</a></td>
+    <td>
+      Architecture Review<br>
+      <a href="precepts/ToyArchEx.pdf">Architecture</a> (<a href="precepts/ToyArchExSol.pdf">Solutions</a>)<br>
+      <a href="jeopardy/">Jeopardy!</a>
+    </td>
+    <td><a href="docs/miniExam2SpringSol.pdf">Practice Mini-Exam Answers</a></td>
     <td>Spr13 Exam2 #7<br><a href="precepts/SciCompQuestions.pdf">Scientific Computing</a><br><a href="precepts/HollywoodSquares.pdf">Scientific Computing Answers</a></td>
     <td></td>
   </tr>
 
-<tr>
-<td colspan=7>4/295/2: Precepts cancelled. Programming midterm 2 Thurs 5/1 evening. See <a href="exams.html">Exams</a> page. Practice: <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MiniPro+MiniPro2">Fall 2013 (MiniPro)</a>, <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Person+TigerBook">Spring 2013 (TigerBook)</a>, <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=BinaryInteger">Spring 2010 (BinaryInteger)</a></td>
-</tr>
-  
-<tr>
-<td colspan="100%">5/25/12: <a href="rphours.html">Special schedule for Atomic final project quasi-precepts.</a></td>
-</tr>
-<tr>
-</tr>
+  <tr>
+    <th colspan="100%">4/29,5/2: Precepts cancelled. Programming midterm 2 Thurs 5/1 evening. See <a href="exams.html">Exams</a> page. Practice: <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=MiniPro+MiniPro2">Fall 2013 (MiniPro)</a>, <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=Person+TigerBook">Spring 2013 (TigerBook)</a>, <a href="http://www.cs.princeton.edu/~cos126/websheets/index.php?group=BinaryInteger">Spring 2010 (BinaryInteger)</a></td>
+  </tr>
 
-</table>
-
+  <tr>
+    <th colspan="100%">5/2,5/12: <a href="rphours.html">Special schedule for Atomic final project quasi-precepts.</a></td>
+  </tr>
 </table>
